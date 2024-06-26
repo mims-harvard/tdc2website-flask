@@ -168,36 +168,59 @@
             
             <ul>
                 
-                
+                {% if task == "adme" %} 
+                <li><a href="/single_pred_tasks/adme" class="is-active"><code>ADME</code> Pharmaco-kinetics</a></li>
+                {% else %}
                 <li><a href="/single_pred_tasks/adme" class=""><code>ADME</code> Pharmaco-kinetics</a></li>
+                {% endif %}
                 
                 
-                
+                {% if task == "tox" %} 
                 <li><a href="/single_pred_tasks/tox" class="is-active"><code>Tox</code> Toxicity</a></li>
+                {% else %}
+                <li><a href="/single_pred_tasks/tox" class=""><code>Tox</code> Toxicity</a></li>
+                {% endif %}
                 
                 
+                {% if task == "hts" %}
+                <li><a href="/single_pred_tasks/hts" class="is-active"><code>HTS</code> High-Throughput Screening</a></li>
+                {% else %}
+                <li><a href="/single_pred_tasks/hts" class=""><code>HTS</code> High-Throughput Screening</a></li>
+                {% endif %}
                 
-                <li><a href="/single_pred_tasks/hts/" class=""><code>HTS</code> High-Throughput Screening</a></li>
-                
-                
-                
-                <li><a href="/single_pred_tasks/qm/" class=""><code>QM</code> Quantum Mechanics</a></li>
-                
-                
-                
-                <li><a href="/single_pred_tasks/yields/" class=""><code>Yields</code> Reaction Yields Prediction</a></li>
-                
-                
-                
-                <li><a href="/single_pred_tasks/epitope/" class=""><code>Epitope</code> Epitope Prediction</a></li>
+                {% if task == "qm" %}
+                <li><a href="/single_pred_tasks/qm" class="is-active"><code>QM</code> Quantum Mechanics</a></li>
+                {% else %}
+                <li><a href="/single_pred_tasks/qm" class=""><code>QM</code> Quantum Mechanics</a></li>
+                {% endif %}
                 
                 
+                {% if task == "yields" %}
+                <li><a href="/single_pred_tasks/yields" class="is-active"><code>Yields</code> Reaction Yields Prediction</a></li>
+                {% else %}
+                <li><a href="/single_pred_tasks/yields" class=""><code>Yields</code> Reaction Yields Prediction</a></li>
+                {% endif %}
                 
-                <li><a href="/single_pred_tasks/develop/" class=""><code>Develop</code> Developability Prediction</a></li>
+                
+                {% if task == "epitope" %}
+                <li><a href="/single_pred_tasks/epitope" class="is-active"><code>Epitope</code> Epitope Prediction</a></li>
+                {% else %}
+                <li><a href="/single_pred_tasks/epitope" class=""><code>Epitope</code> Epitope Prediction</a></li>
+                {% endif %}
                 
                 
+                {% if task == "develop" %}
+                <li><a href="/single_pred_tasks/develop" class="is-active"><code>Develop</code> Developability Prediction</a></li>
+                {% else %}
+                <li><a href="/single_pred_tasks/develop" class=""><code>Develop</code> Developability Prediction</a></li>
+                {% endif %}
                 
-                <li><a href="/single_pred_tasks/CRISPROutcome/" class=""><code>CRISPROutcome</code> CRISPR Repair Prediction</a></li>
+                
+                {% if task == "CRISPROutcome" %}
+                <li><a href="/single_pred_tasks/CRISPROutcome" class="is-active"><code>CRISPROutcome</code> CRISPR Repair Prediction</a></li> 
+                {% else %}
+                <li><a href="/single_pred_tasks/CRISPROutcome" class=""><code>CRISPROutcome</code> CRISPR Repair Prediction</a></li>
+                {% endif %}
                 
                 
             </ul>
@@ -251,6 +274,21 @@
     <li><a href="#tox21">Tox21</a></li>
     <li><a href="#toxcast">ToxCast</a></li>
     {% endif %}
+    {% if task == "hts" %}
+    <li><a href="#butkiewicz-et-al">Butkiewicz et al.</a></li>
+    {% endif %}
+    {% if task == "qm" %}
+    <li><a href="#qm7b">QM7b</a></li>
+    <li><a href="#qm8">QM8</a></li>
+    <li><a href="#qm9">QM9</a></li>
+    {% endif %}
+    {% if task == "develop" %}
+    <li><a href="#tap">TAP</a></li>
+    <li><a href="#sabdab-chen-et-al">SAbDab, Chen et al.</a></li>
+    {% endif %}
+    {% if task == "CRISPROutcome" %}
+    <li><a href="#leenay-et-al">Leenay et al.</a></li>
+    {% endif %}
 </ul>
     </div>
 </div>
@@ -259,24 +297,24 @@
 
 
 <div class="content">
-    <h1 id="toxicity-prediction-task-overview">Toxicity Prediction Task Overview</h1>
+    <h1 id="{{ desc_id }}">{{ desc_title }}</h1>
 
 <div class="box">
 	
 
 <p class="is-size-6">  <strong> Definition: </strong> 
-Majority of the drugs have some extents of toxicity to the human organisms. This learning task aims to predict accurately various types of toxicity of a drug molecule towards human organisms. 
+{{ desc_desc }}
 </p>
 
 <p class="is-size-6"> <strong> Impact: </strong>  
-Toxicity is one of the primary causes of compound attrition. Study shows that approximately 70% of all toxicity-related attrition occurs preclinically (i.e., in cells, animals) while they are strongly predictive of toxicities in humans. This suggests that an early but accurate prediction of toxicity can significantly reduce the compound attribution and boost the likelihood of being marketed. 
+{{ desc_impact }} 
 </p>
 
-<p class="is-size-6"> <strong> Generalization: </strong>  Similar to the ADME prediction, as the drug structures of interest evolve over time, toxicity prediction requires a model to generalize to a set of novel drugs with small structural similarity to the existing drug set.  </p>
+<p class="is-size-6"> <strong> Generalization: </strong>  {{ desc_gen }}  </p>
 
-<p class="is-size-6"> <strong> Product: </strong> Small-molecule. </p>
+<p class="is-size-6"> <strong> Product: </strong> {{ desc_product }} </p>
 
-<p class="is-size-6"> <strong> Pipeline: </strong>Efficacy and safety - lead development and optimization. </p>
+<p class="is-size-6"> <strong> Pipeline: </strong>{{ desc_pipeline }} </p>
 
 </div>
 
@@ -292,17 +330,14 @@ Toxicity is one of the primary causes of compound attrition. Study shows that ap
 </p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 <span class="kn">from</span> <span class="nn">tdc.single_pred</span> <span class="kn">import</span> <span class="n">{{ class }}</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">{{ class }}</span>
-<span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'{{ var }}'</span>
-<span class="p">)</span>
-<span class="n">split</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span>
-<span class="n">get_split</span><span class="p">()</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">{{ class }}</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'{{ var }}'</span><span class="p">)</span>
+<span class="n">split</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
 </code></pre></div></div>
 <p class="is-size-6">  <strong> References: </strong>  </p>
 {% for ref, reflink in refs %}
 <p><a href="{{ reflink }}">{{ ref }}</a></p>
 {% endfor %}
-<p class="is-size-6"> <strong> Dataset License: </strong> <a href="{{ liclink }}">license</a></p>
+<p class="is-size-6"> <strong> Dataset License: </strong> <a href="{{ liclink }}">{{ license }}</a></p>
 <hr />
 {% endfor %}
 
@@ -407,6 +442,372 @@ Toxicity is one of the primary causes of compound attrition. Study shows that ap
 
 <hr />
 {% endif %}
+
+{% if task == "hts" %}
+
+<h3 id="butkiewicz-et-al">Butkiewicz et al.</h3>
+
+<p class="is-size-6">  <strong> Dataset Description: </strong> These are nine high-quality high-throughput screening (HTS) datasets from [1]. These datasets were curated from HTS data at the PubChem database [2]. Typically, HTS categorizes small molecules into hit, inactive, or unspecified against a certain therapeutic target. However, a compound may be falsely classified as a hit due to experimental artifacts such as optical interference. Moreover, because the screening is performed without duplicates, and the cutoff is often set loose to minimize the false negative rates, the results from the primary screens often contain high false positive rates [3]. Hence the result from the primary screen is only used as the first iteration to reduce the compound library to a smaller set of further confirmatory tests.
+
+Here each dataset is carefully collated through confirmation screens to validate active compounds. The curation process is documented in [1]. Each dataset is identified by the PubChem Assay ID (AID).
+
+Features of the datasets: (1) At least 150 confirmed active compounds present; (2) Diverse target classes; (3) Realistic (large number and highly imbalanced label).
+ </p>
+
+<p class="is-size-6">  <strong> Task Description: </strong>Binary classification. Given a compound SMILES string, predict its activity against a diverse set of targets. </p>
+
+<p class="is-size-6">  <strong> Dataset Statistics: </strong> </p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein Target Class</th>
+      <th>PubChem AID</th>
+      <th>Protein Target</th>
+      <th>Total # of Molecules</th>
+      <th># of Active Molecules</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GPCR</td>
+      <td>435008</td>
+      <td>Orexin1 Receptor</td>
+      <td>218,158</td>
+      <td>233</td>
+    </tr>
+    <tr>
+      <td>GPCR</td>
+      <td>1798</td>
+      <td>M1 Muscarinic Receptor Agonists</td>
+      <td>61,833</td>
+      <td>187</td>
+    </tr>
+    <tr>
+      <td>GPCR</td>
+      <td>435034</td>
+      <td>M1 Muscarinic Receptor Antagonists</td>
+      <td>61,756</td>
+      <td>362</td>
+    </tr>
+    <tr>
+      <td>Ion Channel</td>
+      <td>1843</td>
+      <td>Potassium Ion Channel Kir2.1</td>
+      <td>301,493</td>
+      <td>172</td>
+    </tr>
+    <tr>
+      <td>Ion Channel</td>
+      <td>2258</td>
+      <td>KCNQ2 Potassium Channel</td>
+      <td>302,405</td>
+      <td>213</td>
+    </tr>
+    <tr>
+      <td>Ion Channel</td>
+      <td>463087</td>
+      <td>Cav3 T-type Calcium Channels</td>
+      <td>100,875</td>
+      <td>703</td>
+    </tr>
+    <tr>
+      <td>Transporter</td>
+      <td>488997</td>
+      <td>Choline Transporter</td>
+      <td>302,306</td>
+      <td>252</td>
+    </tr>
+    <tr>
+      <td>Kinase</td>
+      <td>2689</td>
+      <td>Serine/Threonine Kinase 33</td>
+      <td>319,792</td>
+      <td>172</td>
+    </tr>
+    <tr>
+      <td>Enzyme</td>
+      <td>485290</td>
+      <td>Tyrosyl-DNA Phosphodiesterase</td>
+      <td>341,365</td>
+      <td>281</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="is-size-6">  <strong> Dataset Split: </strong> <span class="tag is-info is-light">Random Split</span> <span class="tag is-info is-light">Scaffold Split</span>  </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.single_pred</span> <span class="kn">import</span> <span class="n">HTS</span>
+<span class="c1"># Orexin1 Receptor
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">HTS</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'orexin1_receptor_butkiewicz'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_data</span><span class="p">()</span>
+<span class="n">splits</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+
+<span class="c1"># M1 Muscarinic Receptor Agonists
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">HTS</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'m1_muscarinic_receptor_agonists_butkiewicz'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_data</span><span class="p">()</span>
+<span class="n">splits</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+
+<span class="c1"># M1 Muscarinic Receptor Antagonists
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">HTS</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'m1_muscarinic_receptor_antagonists_butkiewicz'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_data</span><span class="p">()</span>
+<span class="n">splits</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+
+<span class="c1"># Potassium Ion Channel Kir2.1 
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">HTS</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'potassium_ion_channel_kir2.1_butkiewicz'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_data</span><span class="p">()</span>
+<span class="n">splits</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+
+<span class="c1"># KCNQ2 Potassium Channel
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">HTS</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'kcnq2_potassium_channel_butkiewicz'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_data</span><span class="p">()</span>
+<span class="n">splits</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+
+<span class="c1"># Cav3 T-type Calcium Channels
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">HTS</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'cav3_t-type_calcium_channels_butkiewicz'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_data</span><span class="p">()</span>
+<span class="n">splits</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+
+<span class="c1"># Choline Transporter
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">HTS</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'choline_transporter_butkiewicz'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_data</span><span class="p">()</span>
+<span class="n">splits</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+
+<span class="c1"># Serine/Threonine Kinase 33
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">HTS</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'serine_threonine_kinase_33_butkiewicz'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_data</span><span class="p">()</span>
+<span class="n">splits</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+
+<span class="c1"># Tyrosyl-DNA Phosphodiesterase
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">HTS</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'tyrosyl-dna_phosphodiesterase_butkiewicz'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_data</span><span class="p">()</span>
+<span class="n">splits</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p class="is-size-6">  <strong> References: </strong>  </p>
+
+<p><a href="https://www.mdpi.com/1420-3049/18/1/735">[1] Butkiewicz, Mariusz, et al. “Benchmarking ligand-based virtual High-Throughput Screening with the PubChem database.” Molecules 18.1 (2013): 735-756.</a></p>
+
+<p><a href="https://academic.oup.com/nar/article/47/D1/D1102/5146201">[2] Kim, Sunghwan, et al. “PubChem 2019 update: improved access to chemical data.” Nucleic acids research 47.D1 (2019): D1102-D1109.</a></p>
+
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5962024/">[3] Butkiewicz, Mariusz, et al. “High-throughput screening assay datasets from the pubchem database.” Chemical informatics (Wilmington, Del.) 3.1 (2017).</a></p>
+
+<p class="is-size-6"> <strong> Dataset License: </strong> Not Specified. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+
+<hr />
+
+{% endif %}
+
+{% if task == "qm" %}
+<h3 id="qm7b">QM7b</h3>
+
+<p class="is-size-6">  <strong> Dataset Description: </strong> QM7 is a subset of GDB-13 (a database of nearly 1 billion stable and synthetically accessible organic molecules) composed of all molecules of up to 23 atoms (including 7 heavy atoms C, N, O, and S), where 14 properties (e.g. polarizability, HOMO and LUMO eigenvalues, excitation energies) have to be predicted at different levels of theory (ZINDO, SCS, PBE0, GW). </p>
+
+<p class="is-size-6">  <strong> Task Description: </strong>Regression. Given a drug 3D xyz coordinates, predict the drug property. </p>
+
+<p class="is-size-6">  <strong> Dataset Statistics: </strong> 7,211 drugs. </p>
+
+<p class="is-size-6">  <strong> Dataset Split: </strong> <span class="tag is-info is-light">Random Split</span> </p>
+
+<p class="is-size-6">  <strong> Note: </strong> QM7b contains multiple properties. To retrieve the specific labels for that property, specify the property name in the <code>label_name</code> variable to the data loader. You can find all available label names by calling: </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.utils</span> <span class="kn">import</span> <span class="n">retrieve_label_name_list</span>
+<span class="n">label_list</span> <span class="o">=</span> <span class="n">retrieve_label_name_list</span><span class="p">(</span><span class="s">'QM7b'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p class="is-size-6"> Then, go to the standard TDC data loader procedure with the label name specified. </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.single_pred</span> <span class="kn">import</span> <span class="n">QM</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">QM</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'QM7b'</span><span class="p">,</span> <span class="n">label_name</span> <span class="o">=</span> <span class="n">label_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">split</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p class="is-size-6">  <strong> References: </strong>  </p>
+
+<p><a href="https://pubs.acs.org/doi/abs/10.1021/ja902302h">[1] Blum, Lorenz C., and Jean-Louis Reymond. “970 million druglike small molecules for virtual screening in the chemical universe database GDB-13.” Journal of the American Chemical Society 131.25 (2009): 8732-8733.</a></p>
+
+<p><a href="https://iopscience.iop.org/article/10.1088/1367-2630/15/9/095003/meta">[2] Montavon, Grégoire, et al. “Machine learning of molecular electronic properties in chemical compound space.” New Journal of Physics 15.9 (2013): 095003.</a></p>
+
+<p class="is-size-6"> <strong> Dataset License: </strong> Not Specified. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+
+<hr />
+
+<h3 id="qm8">QM8</h3>
+
+<p class="is-size-6">  <strong> Dataset Description: </strong> Electronic spectra and excited state energy of small molecules calculated by multiple quantum mechanic methods. Consisting of low-lying singlet-singlet vertical electronic spectra of over 20 000 synthetically feasible small organic molecules with up to eight CONF atom. From MoleculeNet and loaded from DeepChem. </p>
+
+<p class="is-size-6">  <strong> Task Description: </strong>Regression. Given a drug 3D xyz coordinates, predict the drug property. </p>
+
+<p class="is-size-6">  <strong> Dataset Statistics: </strong> 21,786 drugs. </p>
+
+<p class="is-size-6">  <strong> Dataset Split: </strong> <span class="tag is-info is-light">Random Split</span> </p>
+
+<p class="is-size-6">  <strong> Note: </strong> QM8 contains multiple properties. To retrieve the specific labels for that property, specify the property name in the <code>label_name</code> variable to the data loader. You can find all available label names by calling: </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.utils</span> <span class="kn">import</span> <span class="n">retrieve_label_name_list</span>
+<span class="n">label_list</span> <span class="o">=</span> <span class="n">retrieve_label_name_list</span><span class="p">(</span><span class="s">'QM8'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p class="is-size-6"> Then, go to the standard TDC data loader procedure with the label name specified. </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.single_pred</span> <span class="kn">import</span> <span class="n">QM</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">QM</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'QM8'</span><span class="p">,</span> <span class="n">label_name</span> <span class="o">=</span> <span class="n">label_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">split</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p class="is-size-6">  <strong> References: </strong>  </p>
+
+<p><a href="https://pubs.acs.org/doi/abs/10.1021/ci300415d">[1] Ruddigkeit, Lars, et al. “Enumeration of 166 billion organic small molecules in the chemical universe database GDB-17.” Journal of chemical information and modeling 52.11 (2012): 2864-2875.</a></p>
+
+<p><a href="https://aip.scitation.org/doi/abs/10.1063/1.4928757?casa_token=mVBximpm4AMAAAAA:iG5mbej2eVDthAfXQFx7LIcQ4-b3I9W_5NsUxE_3LjDRHgGzgqJe-LfCmBiPy1W-ZhjO3oB0RXyW">[2] Ramakrishnan, Raghunathan, et al. “Electronic spectra from TDDFT and machine learning in chemical space.” The Journal of chemical physics 143.8 (2015): 084111.</a></p>
+
+<p><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=6OiRDwAAQBAJ&amp;oi=fnd&amp;pg=PT19&amp;dq=deep+learning+for+life+science+Bharath+Ramsundar&amp;ots=SwHP1HB_qK&amp;sig=iox0o4HN7pBkWC-Bw0X1qDNfwwQ">[3] Ramsundar, Bharath, et al. Deep learning for the life sciences: applying deep learning to genomics, microscopy, drug discovery, and more. “ O’Reilly Media, Inc.”, 2019.</a></p>
+
+<p><a href="https://pubs.rsc.org/--/content/articlehtml/2018/sc/c7sc02664a">[4] Wu, Zhenqin, et al. “MoleculeNet: a benchmark for molecular machine learning.” Chemical science 9.2 (2018): 513-530.</a></p>
+
+<p class="is-size-6"> <strong> Dataset License: </strong> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+
+<hr />
+
+<h3 id="qm9">QM9</h3>
+
+<p class="is-size-6">  <strong> Dataset Description: </strong> computed geometric, energetic, electronic, and thermodynamic properties for 134k stable small organic molecules made up of CHONF. These molecules correspond to the subset of all 133,885 species with up to nine heavy atoms (CONF) out of the GDB-17 chemical universe of 166 billion organic molecules. We report geometries minimal in energy, corresponding harmonic frequencies, dipole moments, polarizabilities, along with energies, enthalpies, and free energies of atomization. All properties were calculated at the B3LYP/6-31G(2df,p) level of quantum chemistry. From MoleculeNet and loaded from DeepChem. </p>
+
+<p class="is-size-6">  <strong> Task Description: </strong>Regression. Given a drug 3D xyz coordinates, predict the drug property. </p>
+
+<p class="is-size-6">  <strong> Dataset Statistics: </strong> 133,885 drugs. </p>
+
+<p class="is-size-6">  <strong> Dataset Split: </strong> <span class="tag is-info is-light">Random Split</span> </p>
+
+<p class="is-size-6">  <strong> Note: </strong> QM8 contains multiple properties. To retrieve the specific labels for that property, specify the property name in the <code>label_name</code> variable to the data loader. You can find all available label names by calling: </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.utils</span> <span class="kn">import</span> <span class="n">retrieve_label_name_list</span>
+<span class="n">label_list</span> <span class="o">=</span> <span class="n">retrieve_label_name_list</span><span class="p">(</span><span class="s">'QM9'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p class="is-size-6"> Then, go to the standard TDC data loader procedure with the label name specified. </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.single_pred</span> <span class="kn">import</span> <span class="n">QM</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">QM</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'QM9'</span><span class="p">,</span> <span class="n">label_name</span> <span class="o">=</span> <span class="n">label_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">split</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p class="is-size-6">  <strong> References: </strong>  </p>
+
+<p><a href="https://pubs.acs.org/doi/abs/10.1021/ci300415d">[1] Ruddigkeit, Lars, et al. “Enumeration of 166 billion organic small molecules in the chemical universe database GDB-17.” Journal of chemical information and modeling 52.11 (2012): 2864-2875.</a></p>
+
+<p><a href="https://aip.scitation.org/doi/abs/10.1063/1.4928757?casa_token=mVBximpm4AMAAAAA:iG5mbej2eVDthAfXQFx7LIcQ4-b3I9W_5NsUxE_3LjDRHgGzgqJe-LfCmBiPy1W-ZhjO3oB0RXyW">[2] Ramakrishnan, Raghunathan, et al. “Electronic spectra from TDDFT and machine learning in chemical space.” The Journal of chemical physics 143.8 (2015): 084111.</a></p>
+
+<p><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=6OiRDwAAQBAJ&amp;oi=fnd&amp;pg=PT19&amp;dq=deep+learning+for+life+science+Bharath+Ramsundar&amp;ots=SwHP1HB_qK&amp;sig=iox0o4HN7pBkWC-Bw0X1qDNfwwQ">[3] Ramsundar, Bharath, et al. Deep learning for the life sciences: applying deep learning to genomics, microscopy, drug discovery, and more. “ O’Reilly Media, Inc.”, 2019.</a></p>
+
+<p><a href="https://pubs.rsc.org/--/content/articlehtml/2018/sc/c7sc02664a">[4] Wu, Zhenqin, et al. “MoleculeNet: a benchmark for molecular machine learning.” Chemical science 9.2 (2018): 513-530.</a></p>
+
+<p class="is-size-6"> <strong> Dataset License: </strong> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+
+<hr />
+{% endif %}
+
+{% if task == "develop" %}
+<h3 id="tap">TAP</h3>
+
+<p class="is-size-6">  <strong> Dataset Description: </strong> Immunogenicity, instability, self-association, high viscosity, polyspecificity, or poor expression can all preclude an antibody from becoming a therapeutic. Early identification of these negative characteristics is essential. Akin to the Lipinski guidelines, which measure druglikeness in small molecules, Therapeutic Antibody Profiler (TAP) highlights antibodies that possess characteristics that are rare/unseen in clinical-stage mAb therapeutics. In this dataset, TDC includes five metrics measuring developability of an antibody: CDR length, patches of surface hydrophobicity (PSH), patches of positive charge (PPC), patches of negative charge (PNC), structural Fv charge symmetry parameter (SFvCSP). </p>
+
+<p class="is-size-6">  <strong> Task Description: </strong>Regression. Given the antibody's heavy chain and light chain sequence, predict its developability. The input X is a list of two sequences where the first is the heavy chain and the second light chain.</p>
+
+<p class="is-size-6">  <strong> Dataset Statistics: </strong> 242 antibodies. </p>
+
+<p class="is-size-6">  <strong> Dataset Split: </strong> <span class="tag is-info is-light">Random Split</span> </p>
+
+<p class="is-size-6">  <strong> Note: </strong> TAP contains five developability metrics. To retrieve the specific labels for that metric, specify the label name in the <code>label_name</code> variable to the data loader. You can find all available label names by calling: </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.utils</span> <span class="kn">import</span> <span class="n">retrieve_label_name_list</span>
+<span class="n">label_list</span> <span class="o">=</span> <span class="n">retrieve_label_name_list</span><span class="p">(</span><span class="s">'TAP'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p class="is-size-6"> Then, go to the standard TDC data loader procedure with the label name specified. </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.single_pred</span> <span class="kn">import</span> <span class="n">Develop</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">Develop</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'TAP'</span><span class="p">,</span> <span class="n">label_name</span> <span class="o">=</span> <span class="n">label_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">split</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p class="is-size-6">  <strong> References: </strong>  </p>
+
+<p><a href="https://www.pnas.org/content/116/10/4025.short">[1] Raybould, Matthew IJ, et al. “Five computational developability guidelines for therapeutic antibody profiling.” Proceedings of the National Academy of Sciences 116.10 (2019): 4025-4030.</a></p>
+
+<p class="is-size-6"> <strong> Dataset License: </strong>  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+
+<hr />
+
+<h3 id="sabdab-chen-et-al">SAbDab, Chen et al.</h3>
+
+<p class="is-size-6">  <strong> Dataset Description: </strong> Antibody data from Chen et al, where they process from the SAbDab. From an initial dataset of 3816 antibodies, they retained 2426 antibodies that satisfy the following criteria: 1. have both sequence (FASTA) and Protein Data Bank (PDB) structure files, 2. contain both a heavy chain and a light chain, and 3. have crystal structures with resolution &lt; 3 Å. The DI label is derived from BIOVIA's pipelines.  </p>
+
+<p class="is-size-6">  <strong> Task Description: </strong>Binary classification. Given the antibody's heavy chain and light chain sequence, predict its developability. The input X is a list of two sequences where the first is the heavy chain and the second light chain.</p>
+
+<p class="is-size-6">  <strong> Dataset Statistics: </strong> 2,409 antibodies. </p>
+
+<p class="is-size-6">  <strong> Dataset Split: </strong> <span class="tag is-info is-light">Random Split</span> </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.single_pred</span> <span class="kn">import</span> <span class="n">Develop</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">Develop</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'SAbDab_Chen'</span><span class="p">)</span>
+<span class="n">split</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p class="is-size-6">  <strong> Note: </strong> Since <code>0.3.7</code>, TDC now supports graphein protein representation for this task. To obtain protein representation, see a tutorial <a href="https://github.com/mims-harvard/TDC/blob/main/tutorials/graphein_demo_developability.ipynb"> here! </a> </p>
+
+<p class="is-size-6">  <strong> References: </strong>  </p>
+
+<p><a href="https://www.biorxiv.org/content/10.1101/2020.06.18.159798v1.abstract">[1] Chen, Xingyao, et al. “Predicting antibody developability from sequence using machine learning.” bioRxiv (2020).
+</a></p>
+
+<p><a href="https://academic.oup.com/nar/article-abstract/42/D1/D1140/1044118">[2] Dunbar, James, et al. “SAbDab: the structural antibody database.” Nucleic acids research 42.D1 (2014): D1140-D1146.
+</a></p>
+
+<p><a href="">[3] Biovia, Dassault Systèmes. “BIOVIA pipeline pilot.” Dassault Systèmes: San Diego, BW, Release (2017).
+</a></p>
+
+<p class="is-size-6"> <strong> Dataset License: </strong>  <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+
+<hr />
+
+{% endif %}
+
+{% if task == "CRISPROutcome" %}
+<h3 id="leenay-et-al">Leenay et al.</h3>
+
+<p class="is-size-6">  <strong> Dataset Description: </strong> Primary T cells are a promising cell type for therapeutic genome editing, as they can be engineered efficiently ex vivo and transferred to patients. This dataset consists of the DNA repair outcomes of CRISPR-CAS9 knockout experiments on primary CD4+ T cells drawn from 15 donors. For each of the 1,521 unique genomic locations from 553 genes, we provide the 20-nucleotide guide sequence along with the 3-nucletoide PAM sequence. </p>
+
+<p class="is-size-6"> 5 repair outcomes are included for prediction: fraction of indel reads with an insertion, average insertion length, average deletion length, indel diversity, fraction of repair outcomes with a frameshift. </p>
+
+<p class="is-size-6">  <strong> Task Description: </strong>Regression. Given a DNA sequence, predict the repair outcomes of a CRISPR-CAS9 knockout experiment. </p>
+
+<p class="is-size-6">  <strong> Dataset Statistics: </strong> 1,521 DNA sequences (guide+PAM) with 5 repair outcomes for each measured across different donor populations of primary T cells. </p>
+
+<p class="is-size-6">  <strong> Dataset Split: </strong> <span class="tag is-info is-light">Random Split</span> </p>
+
+<p>To obtain the label names,</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.utils</span> <span class="kn">import</span> <span class="n">retrieve_label_name_list</span>
+<span class="n">label_list</span> <span class="o">=</span> <span class="n">retrieve_label_name_list</span><span class="p">(</span><span class="s">'Leenay'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Then, proceed with the usual data loader:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.single_pred</span> <span class="kn">import</span> <span class="n">CRISPROutcome</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">CRISPROutcome</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'Leenay'</span><span class="p">,</span> <span class="n">label_name</span> <span class="o">=</span> <span class="n">label_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">split</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p class="is-size-6">  <strong> References: </strong>  </p>
+
+<p><a href="https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41587-019-0203-2&amp;casa_token=nIKOlfHR0fkAAAAA:LspabShsQSiLsP0z4vu0xYJWwIOWLbWfKBTwIwNgEFNuSan3vxMKI133KNyMTB6onOYHAS7Ql27lkl4_Og">[1] Leenay, Ryan T., et al. “Large dataset enables prediction of repair after CRISPR–Cas9 editing in primary T cells.” Nature biotechnology 37.9 (2019): 1034-1037.</a></p>
+
+<p class="is-size-6"> <strong> Dataset License: </strong><a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+
+<hr />
+{% endif %}
+
 
 </div>
                 </div>

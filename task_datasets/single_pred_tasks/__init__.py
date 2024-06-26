@@ -1,5 +1,5 @@
 
-from .tasks import _TASKS
+from .tasks import _TASKS, _DESC
 from .datasets import _DATASETS, _META
 
 class SinglePredTasks:
@@ -7,4 +7,5 @@ class SinglePredTasks:
         self.tasks = _TASKS
         self.datasets = _DATASETS
         self.meta = _META
+        self.desc = _DESC
         

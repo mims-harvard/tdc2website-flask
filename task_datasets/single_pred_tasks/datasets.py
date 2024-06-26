@@ -188,5 +188,167 @@ _META = {
         ],
         "CC BY 4.0.",
         "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "SARSCoV2_Vitro_Touret": [
+        "sars-cov-2-in-vitro-touret-et-al",
+        "SARSCoV2 Vitro Touret",
+        "An in-vitro screen of the Prestwick chemical library composed of 1,480 approved drugs in an \
+            infected cell-based assay. From MIT AiCures. ",
+        "Binary classification. Given a drug SMILES string, predict its activity against SARSCoV2.",
+        "1,480 drugs. ",
+        ["Random Split", "Scaffold Split"],
+        "HTS",
+        [
+            [
+                "[1] Touret, F., Gilles, M., Barral, K. et al. In vitro screening of a FDA approved \
+                    chemical library reveals potential inhibitors of SARS-CoV-2 replication. Sci Rep 10, 13093 (2020).",
+                "https://www.nature.com/articles/s41598-020-70143-6"
+            ],
+            [
+                "[2] MIT AI Cures.",
+                "https://www.aicures.mit.edu/data"
+            ],
+        ],
+        "CC BY 4.0.",
+        "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "SARSCoV2_3CLPro_Diamond": [
+        "sars-cov-2-3cl-protease-diamond",
+        "SARS-CoV-2 3CL Protease, Diamond.",
+        "A large XChem crystallographic fragment screen against SARS-CoV-2 main protease at high resolution. From MIT AiCures.",
+        "Binary classification. Given a drug SMILES string, predict its activity against SARSCoV2 3CL Protease",
+        "879 drugs. ",
+        ["Random Split", "Scaffold Split"],
+        "HTS",
+        [
+            [
+                "[1] Diamond Light Source ",
+                "https://www.diamond.ac.uk/covid-19/for-scientists/Main-protease-structure-and-XChem.html"
+            ],
+            [
+                "[2] MIT AI Cures.",
+                "https://www.aicures.mit.edu/data"
+            ]
+        ],
+        "CC BY 4.0.",
+        "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "HIV": [
+        "hiv",
+        "HIV",
+        " The HIV dataset was introduced by the Drug Therapeutics Program (DTP) AIDS Antiviral Screen, which tested \
+            the ability to inhibit HIV replication for over 40,000 compounds. From MoleculeNet.",
+        "Binary classification. Given a drug SMILES string, predict its activity against HIV virus.",
+        "41,127 drugs. ",
+        ["Random Split", "Scaffold Split"],
+        "HTS",
+        [
+            [
+                "[1] AIDS Antiviral Screen Data. ",
+                "https://wiki.nci.nih.gov/display/NCIDTPdata/AIDS+Antiviral+Screen+Data"
+            ],
+            [
+                "[2] Wu, Zhenqin, et al. “MoleculeNet: a benchmark for molecular machine learning.” Chemical science 9.2 (2018): 513-530.",
+                "https://pubs.rsc.org/--/content/articlehtml/2018/sc/c7sc02664a"
+            ]
+        ],
+        "CC BY 4.0.",
+        "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "Buchwald-Hartwig": [
+        "buchwald-hartwig",
+        "Buchwald-Hartwig",
+        "Ahneman et al. performed high-throughput experiments on Pd-catalysed Buchwald–Hartwig C-N cross coupling reactions, \
+            measuring the yields for each reaction.",
+        "Given reactant and product set X, predict the yields Y.",
+        "55,370 reactions.",
+        ["Random Split"],
+        "Yields",
+        [
+            [
+                "[1] Sandfort et al. “A structure-based platform for predicting chemical reactivity.” Chem (2020). ",
+                "https://www.sciencedirect.com/science/article/pii/S2451929420300851"
+            ],
+            [
+                "[2] Ahneman et al. “Predicting reaction performance in C–N cross-coupling using machine learning.” Science \
+                    360.6385 (2018): 186-190. ",
+                "https://science.sciencemag.org/content/360/6385/186.abstract?casa_token=Y1YYm8zLW4YAAAAA:U2B1Mqw-wjgZuqf2jd5e\
+                    DUSmOCHm9dKMIqrMR5aGs4Js6eCwXV4gGPvA95wgqF-Gf6UjomO9FaAFeJQ",
+            ],
+            [
+                "[3] Schwaller, Philippe, et al. “Prediction of Chemical Reaction Yields using Deep Learning.” (2020). ChemRxiv.",
+                "https://chemrxiv.org/ndownloader/files/25011413"
+            ],
+        ],
+        "CC BY 4.0.",
+        "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "USPTO": [
+        "uspto",
+        "USPTO",
+        "TDC parses the yields outcome from the full USPTO (United States Patent and Trademark Office) dataset.",
+        "Given reactant and product set X, predict the yields Y.",
+        "853,638 reactions.",
+        ["Random Split"],
+        "Yields",
+        [
+            [
+                "[1] Lowe, Daniel Mark. Extraction of chemical structures and reactions from the literature. Diss. \
+                    University of Cambridge, 2012. ",
+                "https://aspace.repository.cam.ac.uk/handle/1810/244727"
+            ]
+        ],
+        "CC0",
+        "https://creativecommons.org/share-your-work/public-domain/cc0/"
+    ],
+    "IEDB_Jespersen" : [
+        "iedb-jespersen-et-al",
+        "IEDB, Jespersen et al.",
+        "Epitope prediction is to predict the active region in the antigen. This dataset is from Bepipred, which curates a \
+            dataset from IEDB. It collects B-cell epitopes and non-epitope amino acids determined from crystal structures.",
+        "Token-level classification. Given an amino acid sequence, predict amino acid token that is active in binding, i.e. X is\
+            amino acid sequence, Y is a list of indices for the active positions in X.",
+        "3,159 antigens.",
+        ["Random Split"],
+        "Epitope",
+        [
+            [
+                "[1] Vita, Randi, et al. “The immune epitope database (IEDB): 2018 update.” Nucleic acids research 47.D1 (2019):\
+                    D339-D343.",
+                "https://academic.oup.com/nar/article-abstract/47/D1/D339/5144151"
+            ],
+            [
+                "[2] Jespersen, Martin Closter, et al. “BepiPred-2.0: improving sequence-based B-cell epitope prediction using \
+                    conformational epitopes.” Nucleic acids research 45.W1 (2017): W24-W29.",
+                "https://pubmed.ncbi.nlm.nih.gov/28472356/"
+            ]
+        ],
+        "CC BY 4.0.",
+        "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "PDB_Jespersen": [
+        "pdb-jespersen-et-al",
+        "PDB, Jespersen et al.",
+        "Epitope prediction is to predict the active region in the antigen. This dataset is from Bepipred, which curates a dataset\
+            from PDB. It collects B-cell epitopes and non-epitope amino acids determined from crystal structures.",
+        "Token-level classification. Given the antigen's amino acid sequence, predict amino acid token that is active in binding, \
+            i.e. X is an amino acid sequence, Y is a list of indices for the active tokens in X.",
+        "447 antigens.",
+        ["Random Split"],
+        "Epitope",
+        [
+            [
+                "[1] Jespersen, Martin Closter, et al. “BepiPred-2.0: improving sequence-based B-cell epitope prediction using \
+                    conformational epitopes.” Nucleic acids research 45.W1 (2017): W24-W29.",
+                "https://pubmed.ncbi.nlm.nih.gov/28472356/"
+            ],
+            [
+                "[2] Berman, Helen M., et al. “The protein data bank.” Nucleic acids research 28.1 (2000): 235-242. ",
+                "https://academic.oup.com/nar/article-abstract/28/1/235/2384399"
+            ]
+        ],
+        " CC BY 4.0.",
+        "https://creativecommons.org/licenses/by/4.0/"
     ]
+    
 }

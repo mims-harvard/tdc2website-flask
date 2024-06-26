@@ -27,7 +27,7 @@ def single_pred_tasks():
 
 @app.route("/single_pred_tasks/<task>")
 def single_pred_tasks_data(task):
-    task = task.lower()
+    # task = task.lower()
     if task == "adme":
         return render_template("single_pred_tasks/adme.html")
     elif task in data.single_pred_tasks.datasets:
@@ -37,9 +37,17 @@ def single_pred_tasks_data(task):
                 if len(data.single_pred_tasks.meta[var]) != 10:
                     raise Exception(var, len(data.single_pred_tasks.meta[var])) 
                 datasets.append([var] + data.single_pred_tasks.meta[var])
+        desc = data.single_pred_tasks.desc[task]
         args = {
             "datasets": datasets,
             "task": task,
+            "desc_id": desc[0],
+            "desc_title": desc[1],
+            "desc_desc": desc[2],
+            "desc_impact": desc[3],
+            "desc_gen": desc[4],
+            "desc_product": desc[5],
+            "desc_pipeline": desc[6],
         }
         return render_template("single_pred_tasks/task.html", **args)
     return redirect("/single_pred_tasks/overview")
