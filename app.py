@@ -109,7 +109,22 @@ def multi_pred_task_data(task):
     else:
         return redirect("/multi_pred_tasks/overview")
         
+@app.route("/generation_tasks/overview")
+def generation_tasks():
+    return render_template("generation_tasks/index.html")
 
+@app.route("/generation_tasks/<task>")
+def generation_tasks_data(task):
+    if task == "molgen":
+        return render_template("generation_tasks/molgen.html")
+    elif task == "reaction":
+        return render_template("generation_tasks/reaction.html")
+    elif task == "retrosyn":
+        return render_template("generation_tasks/retrosyn.html")
+    elif task == "sbdd":
+        return render_template("generation_tasks/sbdd.html")
+    else:
+        return redirect("/generation_tasks/overview")
 
 if __name__ == '__main__':
     app.run(debug=True)  # debug=True for development mode
