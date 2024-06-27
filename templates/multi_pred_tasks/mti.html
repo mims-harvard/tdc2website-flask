@@ -4,24 +4,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Therapeutics Data Commons - TDC</title>
+    <title>miRNA-Target Interaction - TDC</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
     <link rel="shortcut icon" type="image/png"
            href="{{ url_for('static', filename='images/favicon.png') }}" 
     />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Therapeutics Data Commons | TDC</title>
-<meta property="og:title" content="Therapeutics Data Commons" />
+<title>miRNA-Target Interaction | TDC</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="miRNA-Target Interaction" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Artificial intelligence foundation for therapeutic science" />
 <meta property="og:description" content="Artificial intelligence foundation for therapeutic science" />
+<link rel="canonical" href="http://localhost:4000/multi_pred_tasks/mti" />
+<meta property="og:url" content="http://localhost:4000/multi_pred_tasks/mti" />
 <meta property="og:site_name" content="TDC" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Therapeutics Data Commons" />
+<meta property="twitter:title" content="miRNA-Target Interaction" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Artificial intelligence foundation for therapeutic science","headline":"Therapeutics Data Commons","name":"TDC","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Artificial intelligence foundation for therapeutic science","headline":"miRNA-Target Interaction","url":"http://localhost:4000/multi_pred_tasks/mti"}</script>
 <!-- End Jekyll SEO tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-183522810-1"></script>
 <script>
@@ -31,6 +34,7 @@
   gtag('js', new Date());
   gtag('config', 'UA-183522810-1');
 </script><!-- head scripts --></head>
+
   <body>
     
 <nav class="navbar is-primary" >
@@ -160,12 +164,70 @@
     <ul class="menu-list">
         
         <li>
-            <a href="/single_pred_tasks/overview" class="is-active"><strong>Single-instance Prediction Problem</strong></a>
+            <a href="/multi_pred_tasks/overview" class=""><strong>Multi-instance Prediction Problem</strong></a>
             
             <ul>
-                {% for endpt, label, name in items %}
-                    <li><a href="/single_pred_tasks/{{ endpt }}" ><code>{{ label }}</code> {{ name }}</a></li>
-                {% endfor %}
+                
+                
+                <li><a href="/multi_pred_tasks/dti" class=""><code>DTI</code> Drug-Target Interaction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/ddi" class=""><code>DDI</code> Drug-Drug Interaction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/ppi" class=""><code>PPI</code> Protein-Protein Interaction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/gdi" class=""><code>GDA</code> Gene-Disease Association</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/drugres" class=""><code>DrugRes</code> Drug Response Prediction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/drugsyn" class=""><code>DrugSyn</code> Drug Synergy Prediction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/peptidemhc" class=""><code>PeptideMHC</code> Peptide-MHC Binding</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/antibodyaff" class=""><code>AntibodyAff</code> Antibody-Antigen Affinity</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/mti" class="is-active"><code>MTI</code> miRNA-Target Interaction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/catalyst" class=""><code>Catalyst</code> Catalyst Prediction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/tcrepitope" class=""><code>TCREpitopeBinding</code> TCR-Epitope Binding</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/trialoutcome" class=""><code>TrialOutcome</code> Clinical Trial Outcome Prediction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/proteinpeptide" class=""><code>ProteinPeptide</code> Protein-Peptide Interaction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/counterfactual" class=""><code>PerturbOutcome</code> Counterfactual Prediction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/scdti" class=""><code>scDTI</code> Single-cell Drug-Target Interaction</a></li>
+                
+                
             </ul>
             
         </li>
@@ -181,7 +243,7 @@
             <ul>
                 
                 
-                <li><a href="/multi_pred_tasks/overview" class="">Multi-instance Prediction Problem</a></li>
+                <li><a href="/single_pred_tasks/overview" class="">Single-instance Prediction Problem</a></li>
                 
                 
                 
@@ -202,35 +264,75 @@
                     
                     
                     
-<div class="content">
-    <h2 id="single-instance-prediction-datasets">Single-instance Prediction Datasets</h2>
+    
+    
 
-<table class="table is-hoverable">
-   <thead>
-      <tr>
-      	 <th>Task</th>
-      	 <th>Dataset</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-      	<th><a href="/single_pred_tasks/adme"><code>ADME</code></a></th>
-      	<td> <ul class="mt-0">
-      		<li><strong>Absorption</strong>: Caco2_Wang, HIA_Hou, Pgp_Broccatelli, Bioavailability_Ma, Lipophilicity_AstraZeneca, Solubility_AqSolDB, HydrationFreeEnergy_FreeSolv </li>
-      		<li><strong>Distribution</strong>: BBB_Martins, PPBR_AZ, VDss_Lombardo </li>
-      		<li> <strong>Metabolism</strong>: CYP2C19_Veith, CYP2D6_Veith, CYP3A4_Veith, CYP_1A2_Veith, CYP2C9_Veith, CYP2C9_Substrate_CarbonMangels, CYP2D6_Substrate_CarbonMangels, CYP3A4_Substrate_CarbonMangels </li>
-      		<li><strong>Execretion</strong>: Half_Life_Obach, Clearance_Hepatocyte_AZ, Clearance_Microsome_AZ</li>
-      		</ul>
-      	</td>
-      </tr>
-      {% for endpt, label, datasets in data %}
-      <tr>
-      <th><a href="/single_pred_tasks/{{ endpt }}"><code>{{ label }}</code></a></th>
-      <td>{{ datasets | join(', ') }}</td>
-      </tr>
-      {% endfor %}
-   </tbody>
-</table>
+<div class="contents">
+    <div class="menu">
+        <p class="menu-label">Dataset Index</p>
+        <ul class="menu-list">
+  <li><a href="#mirtarbase">miRTarBase</a></li>
+</ul>
+    </div>
+</div>
+
+
+
+
+<div class="content">
+    <h1 id="microrna-target-interaction-prediction-task-overview">MicroRNA-Target Interaction Prediction Task Overview</h1>
+
+<div class="box">
+	
+
+<p class="is-size-6">  <strong> Definition: </strong> 
+MicroRNA (miRNA) is small noncoding RNA that plays an important role in regulating biological processes such as cell proliferation, cell differentiation and so on. They usually function to downregulate gene targets. This task is to predict the interaction activity between miRNA and the gene target.
+</p>
+
+<p class="is-size-6"> <strong> Impact: </strong>  
+Accurately predicting the unknown interaction between miRNA and target can lead to a more complete knowledge about disease mechanism and also could result in potential disease target biomarkers. They can also help identify miRNA hits for miRNA therapeutics candidates.
+</p>
+
+<p class="is-size-6"> <strong> Generalization: </strong> 
+The model needs to learn the biochemicals of miRNA and target proteins so that it can extrapolate to new set of novel miRNAs and targets in various disease groups and tissues.
+</p>
+
+<p class="is-size-6"> <strong> Product: </strong> Small-molecule, miRNA therapeutic. </p>
+
+<p class="is-size-6"> <strong> Pipeline: </strong> Basic biomedical research, target discovery, activity. </p>
+
+</div>
+
+<h3 id="mirtarbase">miRTarBase</h3>
+
+<p class="is-size-6">  <strong> Dataset Description: </strong> miRTarBase has accumulated more than three hundred and sixty thousand miRNA-target interactions (MTIs), which are collected by manually surveying pertinent literature after NLP of the text systematically to filter research articles related to functional studies of miRNAs. Generally, the collected MTIs are validated experimentally by reporter assay, western blot, microarray and next-generation sequencing experiments. TDC uses miRBase to obtain miRNA mature sequence. </p>
+
+<p class="is-size-6">  <strong> Task Description: </strong> Binary Classification. Given the miRNA mature sequence and target amino acid sequence, predict their likelihood of interaction. </p>
+
+<p class="is-size-6">  <strong> Dataset Statistics: </strong> 400,082 MTI pairs, 3,465 miRNAs, 21,242 targets </p>
+
+<p class="is-size-6">  <strong> Dataset Split: </strong> <span class="tag is-info is-light">Random Split</span> </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.multi_pred</span> <span class="kn">import</span> <span class="n">MTI</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">MTI</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'miRTarBase'</span><span class="p">)</span>
+<span class="n">split</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p class="is-size-6"> <strong>Note:</strong> The dataset contains only positive pairs. To get the negative samples, you can call: </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">neg_sample</span><span class="p">(</span><span class="n">frac</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p class="is-size-6">  <strong> References: </strong>  </p>
+
+<p><a href="https://academic.oup.com/nar/article-abstract/46/D1/D296/4595852">[1] Chou, Chih-Hung, et al. “miRTarBase update 2018: a resource for experimentally validated microRNA-target interactions.” Nucleic acids research 46.D1 (2018): D296-D302.</a></p>
+
+<p><a href="https://academic.oup.com/nar/article-abstract/47/D1/D155/5179337">[2] Kozomara, Ana, Maria Birgaoanu, and Sam Griffiths-Jones. “miRBase: from microRNA sequences to function.” Nucleic acids research 47.D1 (2019): D155-D162.</a></p>
+
+<p class="is-size-6"> <strong> Dataset License: </strong> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+
+<hr />
+
 
 </div>
                 </div>
@@ -245,7 +347,7 @@
         <div class="columns is-mobile">
             <div class="column is-8 has-text-left is-vcentered">
                 <a class="navbar-brand" href="/">
-                    <span><img src="{{ url_for('static', filename='images/tdc_horizontal.png') }}" alt="Logo" style="max-height: 40px; max-width: 250px;"></span>
+                    <span><img src="/tdc_horizontal.png" alt="Logo" style="max-height: 40px; max-width: 250px;"></span>
                 </a>
             </div>
             <div class="column is-4 has-text-right is-vcentered">

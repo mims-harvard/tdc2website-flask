@@ -4,24 +4,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Therapeutics Data Commons - TDC</title>
+    <title>Multi-instance Prediction - TDC</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
     <link rel="shortcut icon" type="image/png"
            href="{{ url_for('static', filename='images/favicon.png') }}" 
     />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Therapeutics Data Commons | TDC</title>
-<meta property="og:title" content="Therapeutics Data Commons" />
+<title>Multi-instance Prediction | TDC</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Multi-instance Prediction" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Artificial intelligence foundation for therapeutic science" />
 <meta property="og:description" content="Artificial intelligence foundation for therapeutic science" />
+<link rel="canonical" href="http://localhost:4000/multi_pred_tasks/overview" />
+<meta property="og:url" content="http://localhost:4000/multi_pred_tasks/overview" />
 <meta property="og:site_name" content="TDC" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Therapeutics Data Commons" />
+<meta property="twitter:title" content="Multi-instance Prediction" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Artificial intelligence foundation for therapeutic science","headline":"Therapeutics Data Commons","name":"TDC","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Artificial intelligence foundation for therapeutic science","headline":"Multi-instance Prediction","url":"http://localhost:4000/multi_pred_tasks/overview"}</script>
 <!-- End Jekyll SEO tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-183522810-1"></script>
 <script>
@@ -31,6 +34,7 @@
   gtag('js', new Date());
   gtag('config', 'UA-183522810-1');
 </script><!-- head scripts --></head>
+
   <body>
     
 <nav class="navbar is-primary" >
@@ -160,14 +164,13 @@
     <ul class="menu-list">
         
         <li>
-            <a href="/single_pred_tasks/overview" class="is-active"><strong>Single-instance Prediction Problem</strong></a>
+            <a href="/multi_pred_tasks/overview" class="is-active"><strong>Multi-instance Prediction Problem</strong></a>
             
             <ul>
                 {% for endpt, label, name in items %}
-                    <li><a href="/single_pred_tasks/{{ endpt }}" ><code>{{ label }}</code> {{ name }}</a></li>
+                    <li><a href="/multi_pred_tasks/{{ endpt }}" ><code>{{ label }}</code> {{ name }}</a></li>
                 {% endfor %}
             </ul>
-            
         </li>
             
     </ul>
@@ -181,7 +184,7 @@
             <ul>
                 
                 
-                <li><a href="/multi_pred_tasks/overview" class="">Multi-instance Prediction Problem</a></li>
+                <li><a href="/single_pred_tasks/overview" class="">Single-instance Prediction Problem</a></li>
                 
                 
                 
@@ -203,7 +206,7 @@
                     
                     
 <div class="content">
-    <h2 id="single-instance-prediction-datasets">Single-instance Prediction Datasets</h2>
+    <h2 id="multi-instance-prediction-datasets">Multi-instance Prediction Datasets</h2>
 
 <table class="table is-hoverable">
    <thead>
@@ -213,22 +216,12 @@
       </tr>
    </thead>
    <tbody>
+    {% for endpt, label, datasets in data %}
       <tr>
-      	<th><a href="/single_pred_tasks/adme"><code>ADME</code></a></th>
-      	<td> <ul class="mt-0">
-      		<li><strong>Absorption</strong>: Caco2_Wang, HIA_Hou, Pgp_Broccatelli, Bioavailability_Ma, Lipophilicity_AstraZeneca, Solubility_AqSolDB, HydrationFreeEnergy_FreeSolv </li>
-      		<li><strong>Distribution</strong>: BBB_Martins, PPBR_AZ, VDss_Lombardo </li>
-      		<li> <strong>Metabolism</strong>: CYP2C19_Veith, CYP2D6_Veith, CYP3A4_Veith, CYP_1A2_Veith, CYP2C9_Veith, CYP2C9_Substrate_CarbonMangels, CYP2D6_Substrate_CarbonMangels, CYP3A4_Substrate_CarbonMangels </li>
-      		<li><strong>Execretion</strong>: Half_Life_Obach, Clearance_Hepatocyte_AZ, Clearance_Microsome_AZ</li>
-      		</ul>
-      	</td>
-      </tr>
-      {% for endpt, label, datasets in data %}
-      <tr>
-      <th><a href="/single_pred_tasks/{{ endpt }}"><code>{{ label }}</code></a></th>
+      <th><a href="/multi_pred_tasks/{{ endpt }}"><code>{{ label }}</code></a></th>
       <td>{{ datasets | join(', ') }}</td>
       </tr>
-      {% endfor %}
+    {% endfor %}
    </tbody>
 </table>
 
@@ -245,11 +238,11 @@
         <div class="columns is-mobile">
             <div class="column is-8 has-text-left is-vcentered">
                 <a class="navbar-brand" href="/">
-                    <span><img src="{{ url_for('static', filename='images/tdc_horizontal.png') }}" alt="Logo" style="max-height: 40px; max-width: 250px;"></span>
+                    <span><img src="/tdc_horizontal.png" alt="Logo" style="max-height: 40px; max-width: 250px;"></span>
                 </a>
             </div>
             <div class="column is-4 has-text-right is-vcentered">
-                <a href="https://arxiv.org/abs/2102.09548">
+                <a href="https://www.biorxiv.org/content/10.1101/2024.06.12.598655v2">
                     <span class="icon is-large">
                       <i class="fas fa-file-alt fa-3x"></i>
                     </span>

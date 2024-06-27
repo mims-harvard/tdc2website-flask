@@ -4,24 +4,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Therapeutics Data Commons - TDC</title>
+    <title>Catalyst Prediction - TDC</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
     <link rel="shortcut icon" type="image/png"
            href="{{ url_for('static', filename='images/favicon.png') }}" 
     />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Therapeutics Data Commons | TDC</title>
-<meta property="og:title" content="Therapeutics Data Commons" />
+<title>Catalyst Prediction | TDC</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Catalyst Prediction" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Artificial intelligence foundation for therapeutic science" />
 <meta property="og:description" content="Artificial intelligence foundation for therapeutic science" />
+<link rel="canonical" href="http://localhost:4000/multi_pred_tasks/catalyst" />
+<meta property="og:url" content="http://localhost:4000/multi_pred_tasks/catalyst" />
 <meta property="og:site_name" content="TDC" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Therapeutics Data Commons" />
+<meta property="twitter:title" content="Catalyst Prediction" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Artificial intelligence foundation for therapeutic science","headline":"Therapeutics Data Commons","name":"TDC","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Artificial intelligence foundation for therapeutic science","headline":"Catalyst Prediction","url":"http://localhost:4000/multi_pred_tasks/catalyst"}</script>
 <!-- End Jekyll SEO tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-183522810-1"></script>
 <script>
@@ -31,6 +34,7 @@
   gtag('js', new Date());
   gtag('config', 'UA-183522810-1');
 </script><!-- head scripts --></head>
+
   <body>
     
 <nav class="navbar is-primary" >
@@ -160,12 +164,70 @@
     <ul class="menu-list">
         
         <li>
-            <a href="/single_pred_tasks/overview" class="is-active"><strong>Single-instance Prediction Problem</strong></a>
+            <a href="/multi_pred_tasks/overview" class=""><strong>Multi-instance Prediction Problem</strong></a>
             
             <ul>
-                {% for endpt, label, name in items %}
-                    <li><a href="/single_pred_tasks/{{ endpt }}" ><code>{{ label }}</code> {{ name }}</a></li>
-                {% endfor %}
+                
+                
+                <li><a href="/multi_pred_tasks/dti" class=""><code>DTI</code> Drug-Target Interaction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/ddi" class=""><code>DDI</code> Drug-Drug Interaction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/ppi" class=""><code>PPI</code> Protein-Protein Interaction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/gdi" class=""><code>GDA</code> Gene-Disease Association</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/drugres" class=""><code>DrugRes</code> Drug Response Prediction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/drugsyn" class=""><code>DrugSyn</code> Drug Synergy Prediction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/peptidemhc" class=""><code>PeptideMHC</code> Peptide-MHC Binding</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/antibodyaff" class=""><code>AntibodyAff</code> Antibody-Antigen Affinity</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/mti" class=""><code>MTI</code> miRNA-Target Interaction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/catalyst" class="is-active"><code>Catalyst</code> Catalyst Prediction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/tcrepitope" class=""><code>TCREpitopeBinding</code> TCR-Epitope Binding</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/trialoutcome" class=""><code>TrialOutcome</code> Clinical Trial Outcome Prediction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/proteinpeptide" class=""><code>ProteinPeptide</code> Protein-Peptide Interaction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/counterfactual" class=""><code>PerturbOutcome</code> Counterfactual Prediction</a></li>
+                
+                
+                
+                <li><a href="/multi_pred_tasks/scdti" class=""><code>scDTI</code> Single-cell Drug-Target Interaction</a></li>
+                
+                
             </ul>
             
         </li>
@@ -181,7 +243,7 @@
             <ul>
                 
                 
-                <li><a href="/multi_pred_tasks/overview" class="">Multi-instance Prediction Problem</a></li>
+                <li><a href="/single_pred_tasks/overview" class="">Single-instance Prediction Problem</a></li>
                 
                 
                 
@@ -202,35 +264,76 @@
                     
                     
                     
-<div class="content">
-    <h2 id="single-instance-prediction-datasets">Single-instance Prediction Datasets</h2>
+    
+    
 
-<table class="table is-hoverable">
-   <thead>
-      <tr>
-      	 <th>Task</th>
-      	 <th>Dataset</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-      	<th><a href="/single_pred_tasks/adme"><code>ADME</code></a></th>
-      	<td> <ul class="mt-0">
-      		<li><strong>Absorption</strong>: Caco2_Wang, HIA_Hou, Pgp_Broccatelli, Bioavailability_Ma, Lipophilicity_AstraZeneca, Solubility_AqSolDB, HydrationFreeEnergy_FreeSolv </li>
-      		<li><strong>Distribution</strong>: BBB_Martins, PPBR_AZ, VDss_Lombardo </li>
-      		<li> <strong>Metabolism</strong>: CYP2C19_Veith, CYP2D6_Veith, CYP3A4_Veith, CYP_1A2_Veith, CYP2C9_Veith, CYP2C9_Substrate_CarbonMangels, CYP2D6_Substrate_CarbonMangels, CYP3A4_Substrate_CarbonMangels </li>
-      		<li><strong>Execretion</strong>: Half_Life_Obach, Clearance_Hepatocyte_AZ, Clearance_Microsome_AZ</li>
-      		</ul>
-      	</td>
-      </tr>
-      {% for endpt, label, datasets in data %}
-      <tr>
-      <th><a href="/single_pred_tasks/{{ endpt }}"><code>{{ label }}</code></a></th>
-      <td>{{ datasets | join(', ') }}</td>
-      </tr>
-      {% endfor %}
-   </tbody>
-</table>
+<div class="contents">
+    <div class="menu">
+        <p class="menu-label">Dataset Index</p>
+        <ul class="menu-list">
+  <li><a href="#uspto">USPTO</a></li>
+</ul>
+    </div>
+</div>
+
+
+
+
+<div class="content">
+    <h1 id="catalyst-prediction-task-overview">Catalyst Prediction Task Overview</h1>
+
+<div class="box">
+	
+
+<p class="is-size-6">  <strong> Definition: </strong> 
+During chemical reaction, catalyst is able to increase the rate of the reaction. Catalysts are not consumed in the catalyzed reaction but can act repeatedly. This learning task aims to predict the catalyst for a reaction given both reactant molecules and product molecules.
+</p>
+
+<p class="is-size-6"> <strong> Impact: </strong>  
+Conventionally, chemists design and synthesize catalysts by trial and error with chemical intuition, which is usually time-consuming and costly. Machine learning model and automate and accelerate the process, understand the catalytic mechanism, and providing an insight into novel catalytic design. 
+
+</p>
+
+<p class="is-size-6"> <strong> Generalization: </strong> 
+In real-world discovery, as discussed, the molecule structures in reaction of interest evolve over time. We expect model to generalize to the unseen molecules and reaction. 
+</p>
+
+<p class="is-size-6"> <strong> Product: </strong> Small-molecule. </p>
+
+<p class="is-size-6"> <strong> Pipeline: </strong> Manufacturing - synthesis planning.</p>
+
+</div>
+
+<h3 id="uspto">USPTO</h3>
+
+<p class="is-size-6">  <strong> Dataset Description: </strong> USPTO (United States Patent and Trademark Office)  50K consists of 50K extracted atom-mapped reactions with 10 reaction types. TDC selects the most common catalysts that have occurences higher than 100 times. </p>
+
+<p class="is-size-6">  <strong> Task Description: </strong> Given reactant and product set X, predict the catalyst Y from a set of most common catalysts. </p>
+
+<p class="is-size-6">  <strong> Dataset Statistics: </strong> 721,799 reactions, 712,757 reactants and 702,940 products with 888 common catalyst types. </p>
+
+<p class="is-size-6">  <strong> Dataset Split: </strong> <span class="tag is-info is-light">Random Split</span> </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.multi_pred</span> <span class="kn">import</span> <span class="n">Catalyst</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">Catalyst</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'USPTO_Catalyst'</span><span class="p">)</span>
+<span class="n">split</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p class="is-size-6">  <strong> Note: </strong> To know what type of catalyst the label index corresponds to, use:  </p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.utils</span> <span class="kn">import</span> <span class="n">get_label_map</span>
+<span class="n">get_label_map</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'USPTO_Catalyst'</span><span class="p">,</span> <span class="n">task</span> <span class="o">=</span> <span class="s">'Catalyst'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p class="is-size-6">  <strong> References: </strong>  </p>
+
+<p><a href="https://aspace.repository.cam.ac.uk/handle/1810/244727">[1] Lowe, Daniel Mark. Extraction of chemical structures and reactions from the literature. Diss. University of Cambridge, 2012. </a></p>
+
+<p><a href="https://pubs.acs.org/doi/abs/10.1021/acscentsci.8b00357">[2] Gao, Hanyu, et al. “Using machine learning to predict suitable conditions for organic reactions.” ACS central science 4.11 (2018): 1465-1476. </a></p>
+
+<p class="is-size-6"> <strong> Dataset License: </strong> <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a>.</p>
+<hr />
+
 
 </div>
                 </div>
@@ -245,7 +348,7 @@
         <div class="columns is-mobile">
             <div class="column is-8 has-text-left is-vcentered">
                 <a class="navbar-brand" href="/">
-                    <span><img src="{{ url_for('static', filename='images/tdc_horizontal.png') }}" alt="Logo" style="max-height: 40px; max-width: 250px;"></span>
+                    <span><img src="/tdc_horizontal.png" alt="Logo" style="max-height: 40px; max-width: 250px;"></span>
                 </a>
             </div>
             <div class="column is-4 has-text-right is-vcentered">
