@@ -27,7 +27,6 @@ def single_pred_tasks():
 
 @app.route("/single_pred_tasks/<task>")
 def single_pred_tasks_data(task):
-    # task = task.lower()
     if task == "adme":
         return render_template("single_pred_tasks/adme.html")
     elif task in data.single_pred_tasks.datasets:
@@ -125,6 +124,24 @@ def generation_tasks_data(task):
         return render_template("generation_tasks/sbdd.html")
     else:
         return redirect("/generation_tasks/overview")
+
+@app.route("/fct_overview")
+def fct_overview():
+    return render_template("/fct_overview.html")
+
+@app.route("/functions/<section>")
+def function_page(section):
+    if section == "oracles":
+        return render_template("/functions/oracles.html")
+    elif section == "data_evaluation":
+        return render_template("/functions/data_evaluation.html")
+    elif section == "data_process":
+        return render_template("/functions/data_process.html")
+    elif section == "data_split":
+        return render_template("/functions/data_split.html")
+    else:
+        return redirect("/fct_overview")
+    
 
 if __name__ == '__main__':
     app.run(debug=True)  # debug=True for development mode

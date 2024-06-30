@@ -4,27 +4,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Antibody-antigen Affinity - TDC</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>Protein-Peptide Binding Affinity Benchmark Group - TDC</title>
+    <link rel="stylesheet" href="/assets/css/app.css">
     <link rel="shortcut icon" type="image/png"
-           href="{{ url_for('static', filename='images/favicon.png') }}" 
+           href="/favicon.png" 
     />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Antibody-antigen Affinity | TDC</title>
+<title>Protein-Peptide Binding Affinity Benchmark Group | TDC</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Antibody-antigen Affinity" />
+<meta property="og:title" content="Protein-Peptide Binding Affinity Benchmark Group" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Artificial intelligence foundation for therapeutic science" />
 <meta property="og:description" content="Artificial intelligence foundation for therapeutic science" />
-<link rel="canonical" href="http://localhost:4000/multi_pred_tasks/antibodyaff" />
-<meta property="og:url" content="http://localhost:4000/multi_pred_tasks/antibodyaff" />
+<link rel="canonical" href="http://localhost:4000/benchmark/proteinpeptide_group/overview/" />
+<meta property="og:url" content="http://localhost:4000/benchmark/proteinpeptide_group/overview/" />
 <meta property="og:site_name" content="TDC" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Antibody-antigen Affinity" />
+<meta property="twitter:title" content="Protein-Peptide Binding Affinity Benchmark Group" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Artificial intelligence foundation for therapeutic science","headline":"Antibody-antigen Affinity","url":"http://localhost:4000/multi_pred_tasks/antibodyaff"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Artificial intelligence foundation for therapeutic science","headline":"Protein-Peptide Binding Affinity Benchmark Group","url":"http://localhost:4000/benchmark/proteinpeptide_group/overview/"}</script>
 <!-- End Jekyll SEO tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-183522810-1"></script>
 <script>
@@ -41,7 +41,7 @@
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-brand" href="/">
-            <span><img src="{{ url_for('static', filename='images/logonav.png') }}" alt="Logo" style="height: auto; width: auto; max-height: 45px; max-width: 250px;"></span>
+            <span><img src="/logonav.png" alt="Logo" style="height: auto; width: auto; max-height: 45px; max-width: 250px;"></span>
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
                 <span aria-hidden="true"></span>
@@ -63,10 +63,10 @@
                 
                     
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a href="/overview" class="navbar-link ">Datasets</a>
+                        <a href="/overview/" class="navbar-link ">Datasets</a>
                         <div class="navbar-dropdown">
                             
-                            <a href="/overview" class="navbar-item ">Overview</a>
+                            <a href="/overview/" class="navbar-item ">Overview</a>
                             
                             <a href="/single_pred_tasks/overview" class="navbar-item ">Single-instance Prediction</a>
                             
@@ -80,18 +80,18 @@
                 
                     
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a href="/fct_overview" class="navbar-link ">Data Functions</a>
+                        <a href="/fct_overview/" class="navbar-link ">Data Functions</a>
                         <div class="navbar-dropdown">
                             
-                            <a href="/fct_overview" class="navbar-item ">Overview</a>
+                            <a href="/fct_overview/" class="navbar-item ">Overview</a>
                             
-                            <a href="/functions/data_evaluation" class="navbar-item ">Model Evaluation</a>
+                            <a href="/functions/data_evaluation/" class="navbar-item ">Model Evaluation</a>
                             
-                            <a href="/functions/data_split" class="navbar-item ">Dataset Splits</a>
+                            <a href="/functions/data_split/" class="navbar-item ">Dataset Splits</a>
                             
-                            <a href="/functions/data_process" class="navbar-item ">Data Processing</a>
+                            <a href="/functions/data_process/" class="navbar-item ">Data Processing</a>
                             
-                            <a href="/functions/oracles" class="navbar-item ">Molecule Generation Oracles</a>
+                            <a href="/functions/oracles/" class="navbar-item ">Molecule Generation Oracles</a>
                             
                         </div>
                     </div>
@@ -99,10 +99,10 @@
                 
                     
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a href="/benchmark/overview" class="navbar-link ">Leaderboards</a>
+                        <a href="/benchmark/overview/" class="navbar-link ">Leaderboards</a>
                         <div class="navbar-dropdown">
                             
-                            <a href="/benchmark/overview" class="navbar-item ">Guidelines</a>
+                            <a href="/benchmark/overview/" class="navbar-item ">Guidelines</a>
                             
                             <a href="/benchmark/admet_group/overview" class="navbar-item ">ADMET Group</a>
                             
@@ -164,68 +164,25 @@
     <ul class="menu-list">
         
         <li>
-            <a href="/multi_pred_tasks/overview" class=""><strong>Multi-instance Prediction Problem</strong></a>
+            <a href="/benchmark/proteinpeptide_group/overview" class=""><strong>Protein-Peptide Binding Affinity Group Leaderboard</strong></a>
             
             <ul>
                 
                 
-                <li><a href="/multi_pred_tasks/dti" class=""><code>DTI</code> Drug-Target Interaction</a></li>
+                <li><a href="/benchmark/proteinpeptide_group/brown_mdm2_ace2_12ca5/" class=""><code>TDC.brown_mdm2_ace2_12ca5</code> Leaderboard</a></li>
                 
                 
-                
-                <li><a href="/multi_pred_tasks/ddi" class=""><code>DDI</code> Drug-Drug Interaction</a></li>
-                
-                
-                
-                <li><a href="/multi_pred_tasks/ppi" class=""><code>PPI</code> Protein-Protein Interaction</a></li>
-                
-                
-                
-                <li><a href="/multi_pred_tasks/gdi" class=""><code>GDA</code> Gene-Disease Association</a></li>
+            </ul>
+            
+        </li>
+        
+        <li>
+            <a href="/benchmark/proteinpeptide_group/overview" class=""><strong>TCR-Epitope Binding Interaction Group Leaderboard</strong></a>
+            
+            <ul>
                 
                 
-                
-                <li><a href="/multi_pred_tasks/drugres" class=""><code>DrugRes</code> Drug Response Prediction</a></li>
-                
-                
-                
-                <li><a href="/multi_pred_tasks/drugsyn" class=""><code>DrugSyn</code> Drug Synergy Prediction</a></li>
-                
-                
-                
-                <li><a href="/multi_pred_tasks/peptidemhc" class=""><code>PeptideMHC</code> Peptide-MHC Binding</a></li>
-                
-                
-                
-                <li><a href="/multi_pred_tasks/antibodyaff" class="is-active"><code>AntibodyAff</code> Antibody-Antigen Affinity</a></li>
-                
-                
-                
-                <li><a href="/multi_pred_tasks/mti" class=""><code>MTI</code> miRNA-Target Interaction</a></li>
-                
-                
-                
-                <li><a href="/multi_pred_tasks/catalyst" class=""><code>Catalyst</code> Catalyst Prediction</a></li>
-                
-                
-                
-                <li><a href="/multi_pred_tasks/tcrepitope" class=""><code>TCREpitopeBinding</code> TCR-Epitope Binding</a></li>
-                
-                
-                
-                <li><a href="/multi_pred_tasks/trialoutcome" class=""><code>TrialOutcome</code> Clinical Trial Outcome Prediction</a></li>
-                
-                
-                
-                <li><a href="/multi_pred_tasks/proteinpeptide" class=""><code>ProteinPeptide</code> Protein-Peptide Interaction</a></li>
-                
-                
-                
-                <li><a href="/multi_pred_tasks/counterfactual" class=""><code>PerturbOutcome</code> Counterfactual Prediction</a></li>
-                
-                
-                
-                <li><a href="/multi_pred_tasks/scdti" class=""><code>scDTI</code> Single-cell Drug-Target Interaction</a></li>
+                <li><a href="/benchmark/proteinpeptide_group/tchard/" class=""><code>TDC.tchard</code> Leaderboard</a></li>
                 
                 
             </ul>
@@ -238,16 +195,24 @@
     <ul class="menu-list">
         
         <li>
-            <a href="/overview" class=""><strong>Others</strong></a>
+            <a href="" class=""><strong>References</strong></a>
             
             <ul>
                 
                 
-                <li><a href="/single_pred_tasks/overview" class="">Single-instance Prediction Problem</a></li>
+                <li><a href="/benchmark/overview/#step-by-step-instructions" class="">Submission Instructions</a></li>
                 
                 
                 
-                <li><a href="/generation_tasks/overview" class="">Generation Problem</a></li>
+                <li><a href="/benchmark/overview/#further-details-about-benchmark-groups-in-tdc" class="">BenchmarkGroup Class Documentation</a></li>
+                
+                
+                
+                <li><a href="/benchmark/overview/" class="">Leaderboard Guidelines</a></li>
+                
+                
+                
+                <li><a href="https://dataverse.harvard.edu/file.xhtml?fileId=9649623&version=85.0" class="">Dataset Description</a></li>
                 
                 
             </ul>
@@ -264,71 +229,48 @@
                     
                     
                     
-    
-    
-
-<div class="contents">
-    <div class="menu">
-        <p class="menu-label">Dataset Index</p>
-        <ul class="menu-list">
-  <li><a href="#sabdab">SAbDab</a></li>
-</ul>
-    </div>
-</div>
-
-
-
-
 <div class="content">
-    <h1 id="antibody-antigen-affinity-prediction-task-overview">Antibody-antigen Affinity Prediction Task Overview</h1>
+    <h2 id="protein-peptide-interaction-benchmark-group-tcr-epitope">Protein-Peptide Interaction Benchmark Group (+TCR-Epitope)</h2>
 
-<div class="box">
-	
+<p class="is-size-5">TDC-2 introduces the Protein-Peptide Binding Affinity prediction task. The predictive, non-generative task is to learn a model estimating a function of a protein, peptide, antigen processing pathway, biological context, and interaction features. It outputs a binding affinity value or binary label indicating strong or weak binding. The binary label can also include additional biomarkers, such as allowing for a positive label if and only if the binding interaction is specific. 
+  <br />
+  To account for additional biomarkers beyond binding affinity value, our task is specified with a binary label.
+<br />
+TDC-2 provides datasets and benchmarks for a generalized protein-peptide binding interaction prediction task and a TCR-Epitope binding interaction prediction task.</p>
 
-<p class="is-size-6">  <strong> Definition: </strong> 
-Antibodies recognize pathogen antigens and destroy them. The activity is measured by their binding affinities. This task is to predict the affinity from the amino acid sequences of both antigen and antibodies. 
-</p>
+<p class="is-size-5"></p>
 
-<p class="is-size-6"> <strong> Impact: </strong>  
-Compared to small-molecule drugs, antibodies have numerous ideal properties such as minimal adverse effect and also can bind to many "undruggable" targets due to different biochemical mechanisms. Besides, a reliable affinity predictor can help accelerate the antibody development processes by reducing the amount of wet-lab experiments.
-</p>
+<p class="is-size-5">To access a generalized protein-peptide benchmark in the group, use the following code:</p>
 
-<p class="is-size-6"> <strong> Generalization: </strong> 
-The models are expected to extrapolate to unseen classes of antigen and antibody pairs.
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.benchmark_group.protein_peptide_group</span> <span class="kn">import</span> <span class="n">ProteinPeptideGroup</span>
+<span class="n">group</span> <span class="o">=</span> <span class="n">ProteinPeptideGroup</span><span class="p">()</span>
+<span class="n">train</span><span class="p">,</span> <span class="n">val</span> <span class="o">=</span> <span class="n">group</span><span class="p">.</span><span class="n">get_train_valid_split</span><span class="p">()</span> <span class="c1"># val dataset will be empty. use the train dataset if fine-tuning desired.
+</span><span class="n">test</span> <span class="o">=</span> <span class="n">group</span><span class="p">.</span><span class="n">get_test</span><span class="p">()</span>
 
-</p>
-
-<p class="is-size-6"> <strong> Product: </strong> Antibody, immunotherapy. </p>
-
-<p class="is-size-6"> <strong> Pipeline: </strong> Activity. </p>
-
-</div>
-
-<h3 id="sabdab">SAbDab</h3>
-
-<p class="is-size-6">  <strong> Dataset Description: </strong> Antibody-antigen affinity measures the efficacy of the antibody to the antigen. Processed from SAbDab dataset, where we only use protein/peptide antigens for sequence compatbility. </p>
-
-<p class="is-size-6">  <strong> Task Description: </strong>Regression. Given the amino acid sequence of antibody and antigen, predict their binding affinity. </p>
-
-<p class="is-size-6">  <strong> Dataset Statistics: </strong> 493 pairs, 431 antibodies and 401 antigens.  </p>
-
-<p class="is-size-6">  <strong> Note: </strong> In the antibody column, each antibody is organized from left to right as heavy chain to light chain. Also, we highly suggest you take the log affinity when making prediction. </p>
-
-<p class="is-size-6">  <strong> Dataset Split: </strong> <span class="tag is-info is-light">Random Split</span> </p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.multi_pred</span> <span class="kn">import</span> <span class="n">AntibodyAff</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">AntibodyAff</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">'Protein_SAbDab'</span><span class="p">)</span>
-<span class="n">split</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get_split</span><span class="p">()</span>
+<span class="c1">## --- (optional) train your model --- ##
+</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>  <span class="c1"># modify as per your model code and test output
+</span><span class="n">out</span> <span class="o">=</span> <span class="n">group</span><span class="p">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">predictions</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p class="is-size-6">  <strong> References: </strong>  </p>
+<p class="is-size-5">To access a TCR-Epitope benchmark in the group, use the following code:</p>
 
-<p><a href="https://academic.oup.com/nar/article-abstract/42/D1/D1140/1044118">[1] Dunbar, James, et al. “SAbDab: the structural antibody database.” Nucleic acids research 42.D1 (2014): D1140-D1146. </a></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tdc.benchmark_group.protein_peptide_group</span> <span class="kn">import</span> <span class="n">ProteinPeptideGroup</span>
+<span class="n">group</span> <span class="o">=</span> <span class="n">TCREpitopeGroup</span><span class="p">()</span>
+<span class="n">train</span><span class="p">,</span> <span class="n">val</span> <span class="o">=</span> <span class="n">group</span><span class="p">.</span><span class="n">get_train_valid_split</span><span class="p">()</span> 
+<span class="n">test</span> <span class="o">=</span> <span class="n">group</span><span class="p">.</span><span class="n">get_test</span><span class="p">()</span>
 
-<p class="is-size-6"> <strong> Dataset License: </strong> <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+<span class="c1">## --- train your model --- ##
+</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>  <span class="c1"># modify as per your model code and test output
+</span><span class="n">res</span> <span class="o">=</span> <span class="n">group</span><span class="p">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">predictions</span><span class="p">)</span>
+</code></pre></div></div>
 
-<hr />
+<p class="is-size-5"> Follow the <b><a href="/benchmark/overview/">instructions</a></b> on how to use the <code>BenchmarkGroup</code> class and obtain training, validation, and test sets, and how to submit your model to the leaderboard. </p>
 
+<div class="column is-12">
+    <hr />
+</div>
 
 </div>
                 </div>
