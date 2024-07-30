@@ -213,6 +213,10 @@ _LEADERBOARDS = {
                 0.617,
                 0.009
             ],
+            [
+                0.613,
+                0.015
+            ],
         ],
         ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
         ["TDC.Bioavailability_Ma" , "%", "640", "Binary", "AUROC", "Scaffold"],
@@ -476,7 +480,7 @@ _LEADERBOARDS = {
                 "https://pubmed.ncbi.nlm.nih.gov/31408336/", "300,806", 0.974
             ],
             [
-                "RDKit2D + MLP (DeepPurpose)", "Kexin Huang", "kexinhuang@hsph.harvard.edu". 
+                "RDKit2D + MLP (DeepPurpose)", "Kexin Huang", "kexinhuang@hsph.harvard.edu", 
                 "https://github.com/mims-harvard/TDC/tree/master/examples/single_pred/admet", "https://doi.org/10.1093/bioinformatics/btaa1005",
                 "633,409", 0.972
             ]
@@ -623,7 +627,7 @@ _LEADERBOARDS = {
                 0.902,
                 0.020
             ]
-        ]
+        ],
         ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
         ["TDC.Pgp_Broccatelli ", "%", "1,212", "Binary", "AUROC", "Scaffold"]
     ],
@@ -1242,7 +1246,7 @@ _LEADERBOARDS = {
         ],
         ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
         ["TDC.CYP3A4_Veith ", "%", "12,328", "Binary", "AUPRC", "Scaffold"]
-    ]
+    ],
     "CYP2C9_Substrate_CarbonMangels": [
         "old",
         ["Rank", "Model", "Contact", "Link", "#Params", "AUPRC"],
@@ -1382,8 +1386,885 @@ _LEADERBOARDS = {
                 "https://www.biorxiv.org/content/10.1101/2022.12.13.520154v1", "N/A", 0.685
             ],
             [
-                
+                "RDKit2D + MLP (DeepPurpose)", "Kexin Huang", "kexinhuang@hsph.harvard.edu", 
+                "https://github.com/mims-harvard/TDC/tree/master/examples/single_pred/admet", 
+                "https://doi.org/10.1093/bioinformatics/btaa1005", "633,409", 0.677
+            ],
+            [
+                "Morgan + MLP (DeepPurpose)", "Kexin Huang", "kexinhuang@hsph.harvard.edu", 
+                "https://github.com/mims-harvard/TDC/tree/master/examples/single_pred/admet", 
+                "https://doi.org/10.1093/bioinformatics/btaa1005", "1,477,185", 0.671
+            ],
+            [
+                "Chemprop", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
+                "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.632
             ]
-        ]
+        ],
+        [
+            [
+                0.736,
+                0.024
+            ],
+            [
+                0.731,
+                0.037
+            ],
+            [
+                0.720,
+                0.002
+            ],
+            [
+                0.713,
+                0.009
+            ],
+            [
+                0.704,
+                0.015
+            ],
+            [
+                0.686,
+                0.031
+            ],
+            [
+                0.685,
+                0.029
+            ],
+            [
+                0.677,
+                0.047
+            ],
+            [
+                0.671,
+                0.066
+            ],
+            [
+                0.632,
+                0.037
+            ]
+        ],
+        ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
+        ["TDC.CYP2D6_Substrate_CarbonMangels ", "%", "664", "Binary", "AUPRC", "Scaffold"]
+    ],
+    "CYP3A4_Substrate_CarbonMangels": [
+        "old",
+        ["Rank", "Model", "Contact", "Link", "#Params", "AUROC"],
+        "desc",
+        [
+            [
+                "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", 
+                "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3", "N/A", 0.667
+            ],
+            [
+                "CNN (DeepPurpose)", "Kexin Huang", "kexinhuang@hsph.harvard.edu", 
+                "https://github.com/mims-harvard/TDC/tree/master/examples/single_pred/admet", 
+                "https://doi.org/10.1093/bioinformatics/btaa1005", "226,625", 0.662
+            ],
+            [
+                "DeepMol (AutoML)", "DeepMol Team", "jcapels96@gmail.com", "https://github.com/BioSystemsUM/deepmol_case_studies",
+                "https://doi.org/10.1101/2024.05.27.595849", "N/A", 0.665
+            ],
+            [
+                "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
+                "https://arxiv.org/abs/2310.00174", "N/A", 0.650
+            ],
+            [
+                "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
+                "https://arxiv.org/abs/2310.00174", "N/A", 0.647
+            ],
+            [
+                "SimGCN", "Suman Kalyan Bera", "suman@katanagraph.com", "https://github.com/KatanaGraph/SimGCN-TDC", 
+                "https://github.com/KatanaGraph/SimGCN-TDC/blob/main/Report_SimGCN_for_TDC_Benchmarks.pdf", "1,103,000", 0.640
+            ],
+            [
+                "RDKit2D + MLP (DeepPurpose)", "Kexin Huang", "kexinhuang@hsph.harvard.edu", 
+                "https://github.com/mims-harvard/TDC/tree/master/examples/single_pred/admet", 
+                "https://doi.org/10.1093/bioinformatics/btaa1005", "633,409", 0.639
+            ],
+            [
+                "Morgan + MLP (DeepPurpose)", "Kexin Huang", "kexinhuang@hsph.harvard.edu", 
+                "https://github.com/mims-harvard/TDC/tree/master/examples/single_pred/admet", 
+                "https://doi.org/10.1093/bioinformatics/btaa1005", "1,477,185", 0.633
+            ],
+            [
+                "ZairaChem", "Gemma Turon", "gemma@ersilia.io", "https://github.com/ersilia-os/zaira-chem-tdc-benchmark", 
+                "https://www.biorxiv.org/content/10.1101/2022.12.13.520154v1", "N/A", 0.630
+            ],
+            [
+                "Euclia ML model", "Euclia", "euclia@euclia.io", "https://github.com/euclia/public-models", 
+                "https://github.com/euclia/public-models", "50", 0.629
+            ],
+            [
+                "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
+                "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.619
+            ]
+        ],
+        [
+            [
+                0.667,
+                0.019
+            ],
+            [
+                0.662,
+                0.031
+            ],
+            [
+                0.655,
+                0.003
+            ],
+            [
+                0.650,
+                0.006
+            ],
+            [
+                0.647,
+                0.008
+            ],
+            [
+                0.640,
+                0.016
+            ],
+            [
+                0.639,
+                0.012
+            ],
+            [
+                0.633,
+                0.013
+            ],
+            [
+                0.630,
+                0.008
+            ],
+            [
+                0.629,
+                0.027
+            ],
+            [
+                0.619,
+                0.030
+            ]
+        ],
+        ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
+        ["TDC.CYP3A4_Substrate_CarbonMangels ", "%", "667", "Binary", "AUROC", "Scaffold"]
+    ],
+    "Half_Life_Obach": [
+        "old",
+        ["Rank", "Model", "Contact", "Link", "#Params", "Spearman"],
+        "desc",
+        [
+            [
+                "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", 
+                "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3", "N/A", 0.576
+            ],
+            [
+                "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
+                "https://arxiv.org/abs/2310.00174", "N/A", 0.562
+            ],
+            [
+                "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
+                "https://arxiv.org/abs/2310.00174", "N/A", 0.557
+            ],
+            [
+                "Euclia ML model", "Euclia", "euclia@euclia.io", "https://github.com/euclia/public-models", 
+                "https://github.com/euclia/public-models", "50", 0.547
+            ],
+            [
+                "Voting Regressor (KNN, SVM)", "Euclia", "euclia@euclia.io", "https://tdcommons.ai/benchmark/admet_group/16halflife/",
+                "https://tdcommons.ai/benchmark/admet_group/16halflife/", "5", 0.544
+            ],
+            [
+                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main",
+                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf",
+                "N/A", 0.511
+            ],
+            [
+                "DeepMol (AutoML)", "DeepMol Team", "jcapels96@gmail.com", "https://github.com/BioSystemsUM/deepmol_case_studies",
+                "https://doi.org/10.1101/2024.05.27.595849", "N/A", 0.485
+            ],
+            [
+                "Basic ML", "Nilavo Boral", "nilavoboral@gmail.com", "https://github.com/NilavoBoral/Therapeutics-Data-Commons",
+                "https://www.biorxiv.org/content/10.1101/2022.06.29.115436v1", "N/A", 0.438
+            ],
+            [
+                "SimGCN", "Suman Kalyan Bera", "suman@katanagraph.com", "https://github.com/KatanaGraph/SimGCN-TDC",
+                "https://github.com/KatanaGraph/SimGCN-TDC/blob/main/Report_SimGCN_for_TDC_Benchmarks.pdf", "1,103,000", 0.392
+            ],
+            [
+                "Morgan + MLP (DeepPurpose)", "Kexin Huang", "kexinhuang@hsph.harvard.edu", "https://github.com/mims-harvard/TDC/tree/master/examples/single_pred/admet",
+                "https://doi.org/10.1093/bioinformatics/btaa1005", "1,477,185", 0.329
+            ],
+            [
+                "Chemprop", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
+                "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.265
+            ],
+            [
+                "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
+                "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.239
+            ]
+        ],
+        [
+            [
+                0.576,
+                0.025
+            ],
+            [
+                0.562,
+                0.008
+            ],
+            [
+                0.557,
+                0.034
+            ],
+            [
+                0.547,
+                0.032
+            ],
+            [
+                0.544,
+                0.034
+            ],
+            [
+                0.511,
+                0.000
+            ],
+            [
+                0.485,
+                0.039
+            ],
+            [
+                0.438,
+                0.011
+            ],
+            [
+                0.392,
+                0.065
+            ],
+            [
+                0.329,
+                0.083
+            ],
+            [
+                0.265,
+                0.032
+            ],
+            [
+                0.239,
+                0.019
+            ]
+        ],
+        ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
+        ["TDC.Half_Life_Obach ", "hr", "667", "Regression", "Spearman", "Scaffold"]   
+    ],
+    "Clearance_Hepatocyte_AZ": [
+        "old",
+        ["Rank", "Model", "Contact", "Link", "#Params", "Spearman"],
+        "desc",
+        [
+            [
+                "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", 
+                "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3", "N/A", 0.536
+            ],
+            [
+                "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
+                "https://arxiv.org/abs/2310.00174", "N/A", 0.498
+            ],
+            [
+                "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
+                "https://arxiv.org/abs/2310.00174", "N/A", 0.466
+            ],
+            [
+                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", 
+                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main", 
+                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf",
+                "N/A", 0.457
+            ],
+            [
+                "Basic ML", "Nilavo Boral", "nilavoboral@gmail.com", "https://github.com/NilavoBoral/Therapeutics-Data-Commons",
+                "https://www.biorxiv.org/content/10.1101/2022.06.29.115436v1", "N/A", 0.440
+            ],
+            [
+                "DeepMol (AutoML)", "DeepMol Team", "jcapels96@gmail.com", "https://github.com/BioSystemsUM/deepmol_case_studies",
+                "https://doi.org/10.1101/2024.05.27.595849", "N/A", 0.440
+            ],
+            [
+                "ContextPred", "Kexin Huang", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/single_pred/admet",
+                "https://arxiv.org/abs/1905.12265", "2,067,053", 0.439
+            ],
+            [
+                "Chemprop", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
+                "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.431
+            ],
+            [
+                "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop",
+                "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.430
+            ],
+            [
+                "Euclia ML model", "Euclia", "euclia@euclia.io", "https://github.com/euclia/public-models", "https://github.com/euclia/public-models",
+                "50", 0.424
+            ],
+            [
+                "AttrMasking", "Kexin Huang", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/single_pred/admet",
+                "https://arxiv.org/abs/1905.12265", "2,067,053", 0.413
+            ],
+            [
+                "NeuralFP", "Kexin Huang", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/single_pred/admet",
+                "https://ieeexplore.ieee.org/document/9412489", "480,193", 0.401
+            ]
+        ],
+        [
+            [
+                0.536,
+                0.020
+            ],
+            [
+                0.498,
+                0.009
+            ],
+            [
+                0.466,
+                0.012
+            ],
+            [
+                0.457,
+                0.013
+            ],
+            [
+                0.440,
+                0.003
+            ],
+            [
+                0.440,
+                0.011
+            ],
+            [
+                0.439,
+                0.026
+            ],
+            [
+                0.431,
+                0.006
+            ],
+            [
+                0.430,
+                0.021
+            ],
+            [
+                0.424,
+                0.008
+            ],
+            [
+                0.413,
+                0.028
+            ],
+            [
+                0.401,
+                0.037
+            ]
+        ],
+        ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
+        ["TDC.Clearance_Hepatocyte_AZ ", "uL.min-1.(10^6 cells)-1", "1,020", "Regression", "Spearman", "Scaffold"]
+    ],
+    "Clearance_Microsome_AZ": [
+        "old",
+        ["Rank", "Model", "Contact", "Link", "#Params", "Spearman"],
+        "desc",
+        [
+            [
+                "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
+                "https://arxiv.org/abs/2310.00174", "N/A", 0.630
+            ],
+            [
+                "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
+                "https://arxiv.org/abs/2310.00174", "N/A", 0.626
+            ],
+            [
+                "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3",
+                "N/A", 0.625
+            ],
+            [
+                "RFStacker", "Andrew Li", "andrew@oloren.ai", "https://github.com/Oloren-AI/OCE-TDC/blob/main/submission.ipynb",
+                "https://github.com/Oloren-AI/OCE-TDC/blob/main/Report.pdf", "1,858,225", 0.625
+            ],
+            [
+                "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
+                "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.599
+            ],
+            [
+                "SimGCN", "Suman Kalyan Bera", "suman@katanagraph.com", "https://github.com/KatanaGraph/SimGCN-TDC",
+                "https://github.com/KatanaGraph/SimGCN-TDC/blob/main/Report_SimGCN_for_TDC_Benchmarks.pdf", "1,103,000", 0.597
+            ],
+            [
+                "RDKit2D + MLP (DeepPurpose)", "Kexin Huang", "kexinhuang@hsph.harvard.edu", "https://github.com/mims-harvard/TDC/tree/master/examples/single_pred/admet",
+                "https://doi.org/10.1093/bioinformatics/btaa1005", "633,409", 0.586
+            ],
+            [
+                "AttrMasking", "Kexin Huang", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/single_pred/admet",
+                "https://arxiv.org/abs/1905.12265", "2,067,053", 0.585
+            ],
+            [
+                "ContextPred", "Kexin Huang", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/single_pred/admet",
+                "https://arxiv.org/abs/1905.12265", "2,067,053", 0.578
+            ],
+            [
+                "Euclia ML model", "Euclia", "euclia@euclia.io", "https://github.com/euclia/public-models", 
+                "https://github.com/euclia/public-models", "50", 0.572
+            ]
+        ],
+        [
+            [
+                0.630,
+                0.010
+            ],
+            [
+                0.626,
+                0.008
+            ],
+            [
+                0.625,
+                0.012
+            ],
+            [
+                0.625,
+                0.002
+            ],
+            [
+                0.599,
+                0.025
+            ],
+            [
+                0.597,
+                0.025
+            ],
+            [
+                0.586,
+                0.014
+            ],
+            [
+                0.585,
+                0.034
+            ],
+            [
+                0.578,
+                0.007
+            ],
+            [
+                0.572,
+                0.010
+            ]
+        ],
+        ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
+        ["TDC.Clearance_Microsome_AZ ", "mL.min-1.g-1", "1,102", "Regression", "Spearman", "Scaffold"]
+    ],
+    "LD50_Zhu": [
+        "old",
+        ["Rank", "Model", "Contact", "Link", "#Params", "MAE"],
+        "incr",
+        [
+            [
+                "BaseBoosting KyQVZ6b2", "David Huang", "david@oloren.ai", "https://github.com/Oloren-AI/OCE-TDC/tree/main",
+                "https://chemrxiv.org/engage/chemrxiv/article-details/6350b9d186473a47d31a8492", "N/A", 0.552
+            ],
+            [
+                "MACCS keys + autoML", "Alexander Scarlat", "ascarlat@mitre.org", "https://github.com/scarlat1/AcuteToxicityLD50",
+                "https://tdcommons.ai/benchmark/admet_group/19ld50/NaN", "N/A", 0.588
+            ],
+            [
+                "Chemprop", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237",
+                "N/A", 0.606
+            ],
+            [
+                "DeepMol (AutoML)", "DeepMol Team", "jcapels96@gmail.com", "https://github.com/BioSystemsUM/deepmol_case_studies",
+                "https://doi.org/10.1101/2024.05.27.595849", "N/A", 0.614
+            ],
+            [
+                "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", "https://arxiv.org/abs/2310.00174",
+                "N/A", 0.621
+            ],
+            [
+                "QuGIN", "Shuai Shi", "310284598@qq.com", "https://github.com/NumnumM/QuGIN.git", "https://arxiv.org/pdf/1810.00826.pdf",
+                "1,797,506", 0.622
+            ],
+            [
+                "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
+                "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.625
+            ],
+            [
+                "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3",
+                "N/A", 0.630
+            ],
+            [
+                "CMPNN", "Devansh Amin", "devanshamin97@gmail.com", "https://github.com/devanshamin/LitGNN", "https://www.ijcai.org/Proceedings/2020/392",
+                "3.0M", 0.631
+            ],
+            [
+                "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", "https://arxiv.org/abs/2310.00174",
+                "N/A", 0.633
+            ],
+            [
+                "Basic ML", "Nilavo Boral", "nilavoboral@gmail.com", "https://github.com/NilavoBoral/Therapeutics-Data-Commons", "https://www.biorxiv.org/content/10.1101/2022.06.29.115436v1",
+                "N/A", 0.636
+            ],
+            [
+                "Euclia ML model", "Euclia", "euclia@euclia.io", "https://github.com/euclia/public-models", "https://github.com/euclia/public-models",
+                "50", 0.646
+            ]
+        ],
+        [
+            [
+                0.522,
+                0.009
+            ],
+            [
+                0.588,
+                0.005
+            ],
+            [
+                0.606,
+                0.024
+            ],
+            [
+                0.614,
+                0.004
+            ],
+            [
+                0.621,
+                0.003
+            ],
+            [
+                0.622,
+                0.015
+            ],
+            [
+                0.625,
+                0.022
+            ],
+            [
+                0.630,
+                0.012
+            ],
+            [
+                0.631,
+                0.021
+            ],
+            [
+                0.633,
+                0.003
+            ],
+            [
+                0.636,
+                0.001
+            ],
+            [
+                0.646,
+                0.011
+            ]
+        ],
+        ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
+        ["TDC.LD50_Zhu ", "log(1/(mol/kg))", "7,385", "Regression", "MAE", "Scaffold"]
+    ],
+    "hERG": [
+        "old",
+        ["Rank", "Model", "Contact", "Link", "#Params", "AUROC"],
+        "desc",
+        [
+            [
+                "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
+                "https://arxiv.org/abs/2310.00174", "N/A", 0.880
+            ],
+            [
+                "CFA", "Nan Jiang",  "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3",
+                "N/A", 0.875
+            ],
+            [
+                "SimGCN", "Suman Kalyan Bera", "suman@katanagraph.com", "https://github.com/KatanaGraph/SimGCN-TDC", "https://github.com/KatanaGraph/SimGCN-TDC/blob/main/Report_SimGCN_for_TDC_Benchmarks.pdf",
+                "1,103,000", 0.874
+            ],
+            [
+                "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", "https://arxiv.org/abs/2310.00174",
+                "N/A", 0.871
+            ],
+            [
+                "ZairaChem", "Gemma Turon", "gemma@ersilia.io", "https://github.com/ersilia-os/zaira-chem-tdc-benchmark", 
+                "https://www.biorxiv.org/content/10.1101/2022.12.13.520154v1", "N/A", 0.856
+            ],
+            [
+                "RDKit2D + MLP (DeepPurpose)", "Kexin Huang", "kexinhuang@hsph.harvard.edu", "https://github.com/mims-harvard/TDC/tree/master/examples/single_pred/admet",
+                "https://doi.org/10.1093/bioinformatics/btaa1005", "633,409", 0.841
+            ],
+            [
+                "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237",
+                "N/A", 0.840
+            ],
+            [
+                "AttentiveFP", "Kexin Huang", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/single_pred/admet",
+                "https://pubmed.ncbi.nlm.nih.gov/31408336/", "300,806", 0.825
+            ],
+            [
+                "AttrMasking", "Kexin Huang", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/single_pred/admet",
+                "https://arxiv.org/abs/1905.12265", "2,067,053", 0.778
+            ],
+            [
+                "DeepMol (AutoML)", "DeepMol Team", "jcapels96@gmail.com", "https://github.com/BioSystemsUM/deepmol_case_studies",
+                "https://arxiv.org/abs/1905.12265", "2,067,053", 0.756
+            ],
+            [
+                "ContextPred", "Kexin Huang", "kexinhuang@hsph.harvard.edu", "https://github.com/mims-harvard/TDC/tree/master/examples/single_pred/admet",
+                "https://doi.org/10.1093/bioinformatics/btaa1005", "2,067,053", 0.756
+            ]
+        ],
+        [
+            [
+                0.880,
+                0.002
+            ],
+            [
+                0.875,
+                0.014
+            ],
+            [
+                0.874,
+                0.014
+            ],
+            [
+                0.871,
+                0.004
+            ],
+            [
+                0.856,
+                0.009
+            ],
+            [
+                0.841,
+                0.020
+            ],
+            [
+                0.840,
+                0.007
+            ],
+            [
+                0.825,
+                0.007
+            ],
+            [
+                0.778,
+                0.046
+            ],
+            [
+                0.763,
+                0.015
+            ],
+            [
+                0.756,
+                0.023
+            ]
+        ],
+        ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
+        ["TDC.hERG ", "%", "648", "Binary", "AUROC", "Scaffold"]
+    ],
+    "AMES": [
+        "old",
+        ["Rank", "Model", "Contact", "Link", "#Params", "AUROC"],
+        "desc",
+        [
+            [
+                "ZairaChem", "Gemma Turon", "gemma@ersilia.io", "https://github.com/ersilia-os/zaira-chem-tdc-benchmark",
+                "https://www.biorxiv.org/content/10.1101/2022.12.13.520154v1", "N/A", 0.871
+            ],
+            [
+                "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
+                "https://arxiv.org/abs/2310.00174", "N/A", 0.869
+            ],
+            [
+                "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
+                "https://arxiv.org/abs/2310.00174", "N/A", 0.868
+            ],
+            [
+                "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3",
+                "N/A", 0.852
+            ],
+            [
+                "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237",
+                "N/A", 0.850
+            ],
+            [
+                "DeepMol (AutoML)", "DeepMol Team", "jcapels96@gmail.com", "https://github.com/BioSystemsUM/deepmol_case_studies",
+                "https://doi.org/10.1101/2024.05.27.595849", "N/A", 0.847
+            ],
+            [
+                "CMPNN", "Devansh Amin", "devanshamin97@gmail.com", "https://github.com/devanshamin/LitGNN", "https://www.ijcai.org/Proceedings/2020/392",
+                "3.0M", 0.843
+            ],
+            [
+                "Chemprop", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237",
+                "N/A", 0.842
+            ],
+            [
+                "AttrMasking", "Kexin Huang", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/single_pred/admet",
+                "https://arxiv.org/abs/1905.12265", "2,067,053", 0.842
+            ],
+            [
+                "ContextPred", "Kexin Huang", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/single_pred/admet",
+                "https://arxiv.org/abs/1905.12265", "2,067,053", 0.837
+            ],
+            [
+                "NeuralFP", "Kexin Huang", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/single_pred/admet",
+                "https://ieeexplore.ieee.org/document/9412489", "480,193", 0.823
+            ],
+            [
+                "RDKit2D + MLP (DeepPurpose)", "Kexin Huang", "kexinhuang@hsph.harvard.edu", "https://github.com/mims-harvard/TDC/tree/master/examples/single_pred/admet",
+                "https://doi.org/10.1093/bioinformatics/btaa1005", "633,409", 0.823
+            ]
+        ],
+        [
+            [
+                0.871,
+                0.002
+            ],
+            [
+                0.869,
+                0.002
+            ],
+            [
+                0.868,
+                0.002
+            ],
+            [
+                0.852,
+                0.005
+            ],
+            [
+                0.850,
+                0.004
+            ],
+            [
+                0.847,
+                0.007
+            ],
+            [
+                0.843,
+                0.009
+            ],
+            [
+                0.842,
+                0.014
+            ],
+            [
+                0.842,
+                0.008
+            ],
+            [
+                0.837,
+                0.009
+            ],
+            [
+                0.823,
+                0.006
+            ],
+            [
+                0.823,
+                0.011
+            ]
+        ],
+        ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
+        ["TDC.AMES ", "%", "7,255", "Binary", "AUROC", "Scaffold"]
+    ],
+    "DILI": [
+        "old",
+        ["Rank", "Model", "Contact", "Link", "#Params", "AUROC"],
+        "desc",
+        [
+            [
+                "ZairaChem", "Gemma Turon", "gemma@ersilia.io", "https://github.com/ersilia-os/zaira-chem-tdc-benchmark", 
+                "https://www.biorxiv.org/content/10.1101/2022.12.13.520154v1", "N/A", 0.925
+            ],
+            [
+                "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3",
+                "N/A", 0.919
+            ],
+            [
+                "AttrMasking", "Kexin Huang", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/single_pred/admet",
+                "https://arxiv.org/abs/1905.12265", "2,067,053", 0.919
+            ],
+            [
+                "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
+                "https://arxiv.org/abs/2310.00174", "N/A", 0.917
+            ],
+            [
+                "SimGCN", "Suman Kalyan Bera", "suman@katanagraph.com", "https://github.com/KatanaGraph/SimGCN-TDC", 
+                "https://github.com/KatanaGraph/SimGCN-TDC/blob/main/Report_SimGCN_for_TDC_Benchmarks.pdf", "1,103,000", 0.909
+            ],
+            [
+                "Chemprop", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
+                "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.899
+            ],
+            [
+                "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
+                "https://arxiv.org/abs/2310.00174", "N/A", 0.887
+            ],
+            [
+                "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
+                "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.887
+            ],
+            [
+                "AttentiveFP", "Kexin Huang", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/single_pred/admet",
+                "https://pubmed.ncbi.nlm.nih.gov/31408336/", "300,806", 0.886
+            ],
+            [
+                "DeepMol (AutoML)", "DeepMol Team", "jcapels96@gmail.com", "https://github.com/BioSystemsUM/deepmol_case_studies",
+                "https://doi.org/10.1101/2024.05.27.595849", "N/A", 0.885
+            ],
+            [
+                "RDKit2D + MLP (DeepPurpose)", "Kexin Huang", "kexinhuang@hsph.harvard.edu", "https://github.com/mims-harvard/TDC/tree/master/examples/single_pred/admet",
+                "https://doi.org/10.1093/bioinformatics/btaa1005", "633,409", 0.875
+            ]
+        ],
+        [
+            [
+                0.925,
+                0.005
+            ],
+            [
+                0.919,
+                0.014
+            ],
+            [
+                0.919,
+                0.008
+            ],
+            [
+                0.917,
+                0.005
+            ],
+            [
+                0.909,
+                0.011
+            ],
+            [
+                0.899,
+                0.008
+            ],
+            [
+                0.887,
+                0.006
+            ],
+            [
+                0.887,
+                0.011
+            ],
+            [
+                0.886,
+                0.015
+            ],
+            [
+                0.885,
+                0.014
+            ],
+            [
+                0.875,
+                0.019
+            ]
+        ],
+        ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
+        ["TDC.DILI ", "%", "475", "Binary", "AUROC", "Scaffold"]
     ]
 }
