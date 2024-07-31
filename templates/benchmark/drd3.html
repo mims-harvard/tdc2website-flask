@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DRD3 Leaderboard - TDC</title>
-    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
     <link rel="shortcut icon" type="image/png"
-           href="/favicon.png" 
+           href="{{ url_for('static', filename='images/favicon.png') }}" 
     />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
@@ -41,7 +41,7 @@
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-brand" href="/">
-            <span><img src="/logonav.png" alt="Logo" style="height: auto; width: auto; max-height: 45px; max-width: 250px;"></span>
+            <span><img src="{{ url_for('static', filename='images/logonav.png') }}" alt="Logo" style="height: auto; width: auto; max-height: 45px; max-width: 250px;"></span>
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
                 <span aria-hidden="true"></span>
@@ -127,11 +127,11 @@
                     
                 
                     
-                    <a href="/news/" class="navbar-item ">News</a>
+                    <a href="/news" class="navbar-item ">News</a>
                     
                 
                     
-                    <a href="/team/" class="navbar-item ">Team</a>
+                    <a href="/team" class="navbar-item ">Team</a>
                     
                 
                 <a href="https://arxiv.org/abs/2102.09548" class="navbar-item">NeurIPS Paper</a>
@@ -806,7 +806,7 @@ function sortTable(n, name, d) {
         <div class="columns is-mobile">
             <div class="column is-8 has-text-left is-vcentered">
                 <a class="navbar-brand" href="/">
-                    <span><img src="/tdc_horizontal.png" alt="Logo" style="max-height: 40px; max-width: 250px;"></span>
+                    <span><img src="{{ url_for('static', filename='images/tdc_horizontal.png') }}" alt="Logo" style="max-height: 40px; max-width: 250px;"></span>
                 </a>
             </div>
             <div class="column is-4 has-text-right is-vcentered">
