@@ -19,6 +19,14 @@ def start():
 def overview():
     return render_template('overview/index.html')
 
+@app.route("/news")
+def news():
+    return render_template('news.html')
+
+@app.route("/team")
+def team():
+    return render_template('team.html')
+
 @app.route('/single_pred_tasks/overview')
 def single_pred_tasks():
     vars = {
