@@ -2266,5 +2266,358 @@ _LEADERBOARDS = {
         ],
         ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
         ["TDC.DILI ", "%", "475", "Binary", "AUROC", "Scaffold"]
-    ]
+    ],
+    "DrugComb_HSA": [
+        "old",
+        ["Rank", "Model", "Contact", "Link", "#Params", "MAE"],
+        "incr",
+        [
+            [
+                "MLP", "Yusuf Roohani", "yroohani@stanford.edu", "https://github.com/mims-harvard/TDC/tree/master/examples/multi_pred/drugcombo",
+                "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2509-3", "7,141,297", 4.453
+            ],
+        ],
+        [
+            [
+                4.453,
+                0.002
+            ]
+        ],
+        ["Label", "Size", "Task", "Metric", "Dataset Split"],
+        ["TDC.DrugComb_HSA", "297,098", "Regression", "MAE", "Combination"],
+    ],
+    "DrugComb_Loewe": [
+        "old",
+        ["Rank", "Model", "Contact", "Link", "#Params", "MAE"],
+        "incr",
+        [
+            [
+                "MLP", "Yusuf Roohani", "yroohani@stanford.edu", "https://github.com/mims-harvard/TDC/tree/master/examples/multi_pred/drugcombo",
+                "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2509-3", "7,141,297", 9.184
+            ],
+        ],
+        [
+            [
+                9.184,
+                0.001
+            ],
+        ],
+        ["Label", "Size", "Task", "Metric", "Dataset Split"],
+        ["TDC.DrugComb_Loewe", "297,098", "Regression", "MAE", "Combination"],
+    ],
+    "DrugComb_Bliss": [
+        "old",
+        ["Rank", "Model", "Contact", "Link", "#Params", "MAE"],
+        "incr",
+        [
+            [
+                "MLP", "Yusuf Roohani", "yroohani@stanford","https://github.com/mims-harvard/TDC/tree/master/examples/multi_pred/drugcombo",
+                "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2509-3", "7,141,297", 4.560 
+            ],
+        ],
+        [
+            [
+                4.560,
+                0.000
+            ],
+        ],
+        ["Label", "Size", "Task", "Metric", "Dataset Split"],
+        ["TDC.DrugComb_Bliss", "297,098", "Regression", "MAE", "Combination"],
+    ],
+    "DrugComb_ZIP": [
+        "old",
+        ["Rank", "Model", "Contact", "Link", "#Params", "MAE"],
+        "incr",
+        [
+            [
+                "MLP", "Yusuf Roohani", "yroohani@stanford","https://github.com/mims-harvard/TDC/tree/master/examples/multi_pred/drugcombo",
+                "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2509-3", "7,141,297", 4.027  
+            ],
+        ],
+        [
+            [
+                4.027,
+                0.003
+            ],
+        ],
+        ["Label", "Size", "Task", "Metric", "Dataset Split"],
+        ["TDC.DrugComb_ZIP", "297,098", "Regression", "MAE", "Combination"],
+        
+    ],
+    "BindingDB_Patent": [
+        "new",
+        ["Rank", "Model", "Contact", "Link", "PCC"],
+        "desc",
+        [
+            [
+                "Otter-Knowledge-Ensemble", "Hoang Thanh Lam", "t.l.hoang@ie.ibm.com", "https://github.com/IBM/otter-knowledge", 
+                "https://arxiv.org/abs/2306.12802", 0.588
+            ],
+            [
+                "OrangeBalls-ProtBertMorgan", "Samuel Sledzieski", "samsl@mit.edu", "https://github.com/samsledje/MLSB2021_PLM_DTI/blob/main/train_plm_dti-TDC-DG.py",
+                "https://www.mlsb.io/papers_2021/MLSB2021_Adapting_protein_language_models.pdf", 0.538
+            ],
+            [
+                "MMD", "Kexin", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/multi_pred/dti_dg",
+                "https://arxiv.org/abs/2007.01434", 0.433
+            ],
+            [
+                "CORAL", "Kexin", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/multi_pred/dti_dg",
+                "https://arxiv.org/abs/2007.01434", 0.432
+            ],
+            [
+                "ERM", "Kexin", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/multi_pred/dti_dg",
+                "https://arxiv.org/abs/2007.01434", 0.427
+            ],
+            [
+                "MTL", "Kexin", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/multi_pred/dti_dg",
+                "https://arxiv.org/abs/2007.01434", 0.425
+            ],
+            [
+                "GroupDRO", "Kexin", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/multi_pred/dti_dg",
+                "https://arxiv.org/abs/2007.01434", 0.384
+            ],
+            [
+                "AndMASK", "Kexin","kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/multi_pred/dti_dg",
+                "https://arxiv.org/abs/2007.01434", 0.288
+            ],
+            [
+                "IRM", "Kexin", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/multi_pred/dti_dg",
+                "https://arxiv.org/abs/2007.01434", 0.284
+            ],
+        ],
+        [
+            [
+                0.588,
+                0.002
+            ],
+            [
+                0.538,
+                0.008
+            ],
+            [
+                0.433,
+                0.010
+            ],
+            [
+                0.432,
+                0.010
+            ],
+            [
+                0.427,
+                0.012
+            ],
+            [
+                0.425,
+                0.010
+            ],
+            [
+                0.384,
+                0.006
+            ],
+            [
+                0.288,
+                0.019
+            ],
+            [
+                0.284,
+                0.021
+            ]
+        ],
+        [],
+        [],
+    ],
+    "opentargets_dti_ra": [
+        "new",
+        ["Rank", "Model", "Contact", "Link", "APR@5 Top 20 CT"],
+        "desc",
+        [
+            [
+                "PINNACLE", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/mims-harvard/PINNACLE",
+                "https://www.biorxiv.org/content/10.1101/2023.07.18.549602v2", 0.913
+            ],
+        ],
+        [
+            [
+                0.913,
+                0.059
+            ],
+        ],
+        [],
+        [],
+    ],
+    "opentargets_dti_ibd": [
+        "new",
+        ["Rank", "Model", "Contact", "Link", "APR@5 Top 20 CT"],
+        "desc",
+        [
+            [
+                "PINNACLE", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/mims-harvard/PINNACLE",
+                "https://www.biorxiv.org/content/10.1101/2023.07.18.549602v2", 0.873
+            ],
+        ],
+        [
+            [
+                0.873,
+                0.069
+            ],
+        ],
+        [],
+        [],
+    ],
+    "brown_mdm2_ace2_12ca5": [
+        "new",
+        ["Rank", "Model", "Contact", "Link", "X"],
+        "desc",
+        [
+            [
+                "TO BE ANNOUNCED", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "", "", 0
+            ],
+        ],
+        [
+            [
+                "classified",
+                "classified",
+            ],
+        ],
+        [],
+        [],
+    ],
+    "tchard_na": [
+        "new",
+        ["Rank", "Model", "Contact", "Link", "AUPRC"],
+        "desc",
+        [
+            [
+                "MIX-TPI", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/Wolverinerine/MIX-TPI",
+                "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10423027/", 0.995
+            ],
+            [
+                "NET-TCR2", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/mnielLab/NetTCR-2.0",
+                "https://www.nature.com/articles/s42003-021-02610-3", 0.985
+            ],
+            [
+                "TEINet", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/jiangdada1221/TEINet",
+                "https://www.biorxiv.org/content/10.1101/2022.10.20.513029v1", 0.981
+            ],
+            [
+                "AVIB-TCR", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/nec-research/vibtcr",
+                "https://pubmed.ncbi.nlm.nih.gov/36571499/", 0.949
+            ],
+            [
+                "TITAN", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/PaccMann/TITAN",
+                "https://pubmed.ncbi.nlm.nih.gov/34252922/", 0.661
+            ],
+            [
+                "PanPep", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/bm2-lab/PanPep",
+                "https://www.nature.com/articles/s42256-023-00619-3", 0.499
+            ],
+        ],
+        [
+            [
+                0.995,
+                0.001
+            ],
+            [
+                0.985,
+                0.005
+            ],
+            [
+                0.981,
+                0.006
+            ],
+            [
+                0.949,
+                0.023
+            ],
+            [
+                0.661,
+                0.040
+            ],
+            [
+                0.499,
+                0.031
+            ],
+        ],
+        [],
+        [],
+    ],
+    "tchard_rn": [
+        "new",
+        ["Rank", "Model", "Contact", "Link", "AUPRC"],
+        "desc",
+        [
+            [
+                "AVIB-TCR", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/nec-research/vibtcr",
+                "https://pubmed.ncbi.nlm.nih.gov/36571499/", 0.605
+            ],
+            [
+                "MIX-TPI", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/Wolverinerine/MIX-TPI",
+                "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10423027/", 0.597
+            ],
+            [
+                "TEINet", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/jiangdada1221/TEINet",
+                "https://www.biorxiv.org/content/10.1101/2022.10.20.513029v1", 0.581
+            ],
+            [
+                "PanPep", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/bm2-lab/PanPep",
+                "https://www.nature.com/articles/s42256-023-00619-3", 0.579
+            ],
+            [
+                "NET-TCR2", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/mnielLab/NetTCR-2.0",
+                "https://www.nature.com/articles/s42003-021-02610-3", 0.554
+            ],
+            [
+                "TITAN", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/PaccMann/TITAN",
+                "https://pubmed.ncbi.nlm.nih.gov/34252922/", 0.523
+            ],
+        ],
+        [
+            [
+                0.605,
+                0.044
+            ],
+            [
+                0.597,
+                0.049
+            ],
+            [
+                0.581,
+                0.043
+            ],
+            [
+                0.579,
+                0.040
+            ],
+            [
+                0.554,
+                0.075
+            ],
+            [
+                0.523,
+                0.055
+            ],
+        ],
+        [],
+        [],
+    ],
+    "TOP": [
+        "new",
+        ["Rank", "Model", "Contact", "Link", "Indication Level AUPRC"],
+        "desc",
+        [
+            [
+                "HINT", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/futianfan/clinical-trial-outcome-prediction",
+                "https://www.sciencedirect.com/science/article/pii/S2666389922000186", 0.703
+            ],
+        ],
+        [
+            [
+                0.703,
+                "undefined",
+            ],
+        ],
+        [],
+        [],
+    ],
 }

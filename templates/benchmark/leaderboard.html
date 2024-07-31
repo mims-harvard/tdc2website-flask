@@ -13,16 +13,16 @@
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Caco2_Wang Leaderboard | TDC</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Caco2_Wang Leaderboard" />
+<meta property="og:title" content="{{ leaderboard }} Leaderboard" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Artificial intelligence foundation for therapeutic science" />
 <meta property="og:description" content="Artificial intelligence foundation for therapeutic science" />
-<link rel="canonical" href="http://localhost:4000/benchmark/admet_group/caco2_wang/" />
-<meta property="og:url" content="http://localhost:4000/benchmark/admet_group/caco2_wang/" />
+<link rel="canonical" href="http://localhost:4000/benchmark/admet_group/{{ leaderboard }}" />
+<meta property="og:url" content="http://localhost:4000/benchmark/admet_group/{{ leaderboard }}" />
 <meta property="og:site_name" content="TDC" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Caco2_Wang Leaderboard" />
+<meta property="twitter:title" content="{{ leaderboard }} Leaderboard" />
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebPage","description":"Artificial intelligence foundation for therapeutic science","headline":"Caco2_Wang Leaderboard","url":"http://localhost:4000/benchmark/admet_group/caco2_wang/"}</script>
 <!-- End Jekyll SEO tag -->
@@ -80,18 +80,18 @@
                 
                     
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a href="/fct_overview/" class="navbar-link ">Data Functions</a>
+                        <a href="/fct_overview" class="navbar-link ">Data Functions</a>
                         <div class="navbar-dropdown">
                             
-                            <a href="/fct_overview/" class="navbar-item ">Overview</a>
+                            <a href="/fct_overview" class="navbar-item ">Overview</a>
                             
-                            <a href="/functions/data_evaluation/" class="navbar-item ">Model Evaluation</a>
+                            <a href="/functions/data_evaluation" class="navbar-item ">Model Evaluation</a>
                             
-                            <a href="/functions/data_split/" class="navbar-item ">Dataset Splits</a>
+                            <a href="/functions/data_split" class="navbar-item ">Dataset Splits</a>
                             
-                            <a href="/functions/data_process/" class="navbar-item ">Data Processing</a>
+                            <a href="/functions/data_process" class="navbar-item ">Data Processing</a>
                             
-                            <a href="/functions/oracles/" class="navbar-item ">Molecule Generation Oracles</a>
+                            <a href="/functions/oracles" class="navbar-item ">Molecule Generation Oracles</a>
                             
                         </div>
                     </div>
@@ -99,10 +99,10 @@
                 
                     
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a href="/benchmark/overview/" class="navbar-link ">Leaderboards</a>
+                        <a href="/benchmark/overview" class="navbar-link ">Leaderboards</a>
                         <div class="navbar-dropdown">
                             
-                            <a href="/benchmark/overview/" class="navbar-item ">Guidelines</a>
+                            <a href="/benchmark/overview" class="navbar-item ">Guidelines</a>
                             
                             <a href="/benchmark/admet_group/overview" class="navbar-item ">ADMET Group</a>
                             
@@ -185,15 +185,15 @@
             <ul>
                 
                 
-                <li><a href="/benchmark/overview/#step-by-step-instructions" class="">Submission Instructions</a></li>
+                <li><a href="/benchmark/overview#step-by-step-instructions" class="">Submission Instructions</a></li>
                 
                 
                 
-                <li><a href="/benchmark/overview/#further-details-about-benchmark-groups-in-tdc" class="">BenchmarkGroup Class Documentation</a></li>
+                <li><a href="/benchmark/overview#further-details-about-benchmark-groups-in-tdc" class="">BenchmarkGroup Class Documentation</a></li>
                 
                 
                 
-                <li><a href="/benchmark/overview/" class="">Leaderboard Guidelines</a></li>
+                <li><a href="/benchmark/overview" class="">Leaderboard Guidelines</a></li>
                 
                 
             </ul>
@@ -252,7 +252,9 @@
 <td>{{ entry[0] }}</td>
 <td><a href="mailto:{{ entry[2] }}">{{ entry[1] }}</a></td>
 <td><a href="{{ entry[3] }}">Github</a>, <a href="{{ entry[4] }}"> Paper </a></td>
+{% if style=="old" %}
 <td>{{ entry[5] }}</td>
+{% endif %}
 <td>{{ scores[loop.index - 1][0] }} <span>&#177;</span> {{ scores[loop.index - 1][1] }}</td>
 </tr>
 {% endfor %}

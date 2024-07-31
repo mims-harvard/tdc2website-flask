@@ -50,11 +50,13 @@ _GROUP_MEMBERSHIP = {
         "BindingDB_Patent",
     ],
     "scdti_group": [
-        "opentargets_dti",
+        "opentargets_dti_ra",
+        "opentargets_dti_ibd",
     ],
     "proteinpeptide_group": [
         "brown_mdm2_ace2_12ca5",
-        "tchard",
+        "tchard_na",
+        "tchard_rn",
     ],
     "counterfactual_group": [
         "scperturb_drug_SrivatsanTrapnell2020_sciplex2",

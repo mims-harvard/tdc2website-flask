@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Drug Combination Benchmark Group - TDC</title>
-    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
     <link rel="shortcut icon" type="image/png"
-           href="/favicon.png" 
+           href="{{ url_for('static', filename='images/favicon.png') }}" 
     />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
@@ -41,7 +41,7 @@
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-brand" href="/">
-            <span><img src="/logonav.png" alt="Logo" style="height: auto; width: auto; max-height: 45px; max-width: 250px;"></span>
+            <span><img src="{{ url_for('static', filename='images/logonav.png') }}" alt="Logo" style="height: auto; width: auto; max-height: 45px; max-width: 250px;"></span>
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
                 <span aria-hidden="true"></span>
@@ -80,18 +80,18 @@
                 
                     
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a href="/fct_overview/" class="navbar-link ">Data Functions</a>
+                        <a href="/fct_overview" class="navbar-link ">Data Functions</a>
                         <div class="navbar-dropdown">
                             
-                            <a href="/fct_overview/" class="navbar-item ">Overview</a>
+                            <a href="/fct_overview" class="navbar-item ">Overview</a>
                             
-                            <a href="/functions/data_evaluation/" class="navbar-item ">Model Evaluation</a>
+                            <a href="/functions/data_evaluation" class="navbar-item ">Model Evaluation</a>
                             
-                            <a href="/functions/data_split/" class="navbar-item ">Dataset Splits</a>
+                            <a href="/functions/data_split" class="navbar-item ">Dataset Splits</a>
                             
-                            <a href="/functions/data_process/" class="navbar-item ">Data Processing</a>
+                            <a href="/functions/data_process" class="navbar-item ">Data Processing</a>
                             
-                            <a href="/functions/oracles/" class="navbar-item ">Molecule Generation Oracles</a>
+                            <a href="/functions/oracles" class="navbar-item ">Molecule Generation Oracles</a>
                             
                         </div>
                     </div>
@@ -99,10 +99,10 @@
                 
                     
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a href="/benchmark/overview/" class="navbar-link ">Leaderboards</a>
+                        <a href="/benchmark/overview" class="navbar-link ">Leaderboards</a>
                         <div class="navbar-dropdown">
                             
-                            <a href="/benchmark/overview/" class="navbar-item ">Guidelines</a>
+                            <a href="/benchmark/overview" class="navbar-item ">Guidelines</a>
                             
                             <a href="/benchmark/admet_group/overview" class="navbar-item ">ADMET Group</a>
                             
@@ -165,27 +165,9 @@
             <a href="/benchmark/drugcombo_group/overview" class=""><strong>Drug Combination Group Leaderboard</strong></a>
             
             <ul>
-                
-                
-                <li><a href="/benchmark/drugcombo_group/drugcomb_css/" class=""><code>TDC.DrugComb_CSS</code> Leaderboard</a></li>
-                
-                
-                
-                <li><a href="/benchmark/drugcombo_group/drugcomb_hsa/" class=""><code>TDC.DrugComb_HSA</code> Leaderboard</a></li>
-                
-                
-                
-                <li><a href="/benchmark/drugcombo_group/drugcomb_loewe/" class=""><code>TDC.DrugComb_Loewe</code> Leaderboard</a></li>
-                
-                
-                
-                <li><a href="/benchmark/drugcombo_group/drugcomb_bliss/" class=""><code>TDC.DrugComb_Bliss</code> Leaderboard</a></li>
-                
-                
-                
-                <li><a href="/benchmark/drugcombo_group/drugcomb_zip/" class=""><code>TDC.DrugComb_ZIP</code> Leaderboard</a></li>
-                
-                
+                {% for l in leaderboards %}
+                <li><a href="/benchmark/drugcombo_group/{{l}}" class=""><code>TDC.{{l}}</code> Leaderboard</a></li>
+                {% endfor %}
             </ul>
             
         </li>
@@ -201,15 +183,15 @@
             <ul>
                 
                 
-                <li><a href="/benchmark/overview/#step-by-step-instructions" class="">Submission Instructions</a></li>
+                <li><a href="/benchmark/overview#step-by-step-instructions" class="">Submission Instructions</a></li>
                 
                 
                 
-                <li><a href="/benchmark/overview/#further-details-about-benchmark-groups-in-tdc" class="">BenchmarkGroup Class Documentation</a></li>
+                <li><a href="/benchmark/overview#further-details-about-benchmark-groups-in-tdc" class="">BenchmarkGroup Class Documentation</a></li>
                 
                 
                 
-                <li><a href="/benchmark/overview/" class="">Leaderboard Guidelines</a></li>
+                <li><a href="/benchmark/overview" class="">Leaderboard Guidelines</a></li>
                 
                 
             </ul>
@@ -279,9 +261,9 @@ Note that the output includes the automatic evaluations across tissues:
 '''</span>
 </code></pre></div></div>
 
-<p class="is-size-5"> Follow the <b><a href="/benchmark/overview/">instructions</a></b> on how to use the <code>BenchmarkGroup</code> class and obtain training, validation, and test sets, and how to submit your model to the leaderboard. </p>
+<p class="is-size-5"> Follow the <b><a href="/benchmark/overview">instructions</a></b> on how to use the <code>BenchmarkGroup</code> class and obtain training, validation, and test sets, and how to submit your model to the leaderboard. </p>
 
-<p class="is-size-5"> For every dataset in the benchmark, we use the <a href="/functions/data_split/">drug combination split</a> to partition the dataset into training, validation, and test sets. We hold out 20% data samples for the test set. The performance metric is MAE. </p>
+<p class="is-size-5"> For every dataset in the benchmark, we use the <a href="/functions/data_split">drug combination split</a> to partition the dataset into training, validation, and test sets. We hold out 20% data samples for the test set. The performance metric is MAE. </p>
 
 <p class="is-size-5"> Note that tissue types are <b>automatically</b> determined based on test set prediction on the <code>TDC.DrugComb_CSS</code> endpoint.</p>
 

@@ -156,12 +156,21 @@ def benchmark_overview():
 def benchmark_leaderboard_overview(group, leaderboard):
     leads = benchmark_groups._GROUP_MEMBERSHIP[group]
     if leaderboard == "overview":
-        group = '_'.join(group.split("_")[:-1])
-        s = "/benchmark/{}.html".format(group)
+        if group != "clinical_trial":
+            group = '_'.join(group.split("_")[:-1])
+            s = "/benchmark/{}.html".format(group)
+        else:
+            s = "/benchmark/clinical_trial.html"
         args = {
             "leaderboards": leads
         }
         return render_template(s, **args)
+    elif leaderboard == "DrugComb_CSS" and group == "drugcombo_group":
+        return render_template("/benchmark/drugcomb_css.html")
+    elif leaderboard == "DRD3" and group == "docking_group":
+        return render_template("/benchmark/drd3.html")
+    elif leaderboard == "scperturb_drug_SrivatsanTrapnell2020_sciplex2" and group == "counterfactual_group":
+        return render_template("/benchmark/scperturb_drug_SrivatsanTrapnell2020_sciplex2.html")
     else:
         lb = benchmark_leaderboards._LEADERBOARDS[leaderboard]
         order, entries, scores = lb[2], lb[3], lb[4]

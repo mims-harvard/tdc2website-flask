@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Leaderboard Guide - TDC</title>
-    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
     <link rel="shortcut icon" type="image/png"
-           href="/favicon.png" 
+           href="{{ url_for('static', filename='images/favicon.png') }}" 
     />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
@@ -17,14 +17,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Artificial intelligence foundation for therapeutic science" />
 <meta property="og:description" content="Artificial intelligence foundation for therapeutic science" />
-<link rel="canonical" href="http://localhost:4000/benchmark/overview/" />
-<meta property="og:url" content="http://localhost:4000/benchmark/overview/" />
+<link rel="canonical" href="http://localhost:4000/benchmark/overview" />
+<meta property="og:url" content="http://localhost:4000/benchmark/overview" />
 <meta property="og:site_name" content="TDC" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Leaderboard Guide" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Artificial intelligence foundation for therapeutic science","headline":"Leaderboard Guide","url":"http://localhost:4000/benchmark/overview/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Artificial intelligence foundation for therapeutic science","headline":"Leaderboard Guide","url":"http://localhost:4000/benchmark/overview"}</script>
 <!-- End Jekyll SEO tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-183522810-1"></script>
 <script>
@@ -41,7 +41,7 @@
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-brand" href="/">
-            <span><img src="/logonav.png" alt="Logo" style="height: auto; width: auto; max-height: 45px; max-width: 250px;"></span>
+            <span><img src="{{ url_for('static', filename='images/logonav.png') }}" alt="Logo" style="height: auto; width: auto; max-height: 45px; max-width: 250px;"></span>
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
                 <span aria-hidden="true"></span>
@@ -80,18 +80,18 @@
                 
                     
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a href="/fct_overview/" class="navbar-link ">Data Functions</a>
+                        <a href="/fct_overview" class="navbar-link ">Data Functions</a>
                         <div class="navbar-dropdown">
                             
-                            <a href="/fct_overview/" class="navbar-item ">Overview</a>
+                            <a href="/fct_overview" class="navbar-item ">Overview</a>
                             
-                            <a href="/functions/data_evaluation/" class="navbar-item ">Model Evaluation</a>
+                            <a href="/functions/data_evaluation" class="navbar-item ">Model Evaluation</a>
                             
-                            <a href="/functions/data_split/" class="navbar-item ">Dataset Splits</a>
+                            <a href="/functions/data_split" class="navbar-item ">Dataset Splits</a>
                             
-                            <a href="/functions/data_process/" class="navbar-item ">Data Processing</a>
+                            <a href="/functions/data_process" class="navbar-item ">Data Processing</a>
                             
-                            <a href="/functions/oracles/" class="navbar-item ">Molecule Generation Oracles</a>
+                            <a href="/functions/oracles" class="navbar-item ">Molecule Generation Oracles</a>
                             
                         </div>
                     </div>
@@ -99,10 +99,10 @@
                 
                     
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a href="/benchmark/overview/" class="navbar-link is-active">Leaderboards</a>
+                        <a href="/benchmark/overview" class="navbar-link is-active">Leaderboards</a>
                         <div class="navbar-dropdown">
                             
-                            <a href="/benchmark/overview/" class="navbar-item is-active">Guidelines</a>
+                            <a href="/benchmark/overview" class="navbar-item is-active">Guidelines</a>
                             
                             <a href="/benchmark/admet_group/overview" class="navbar-item ">ADMET Group</a>
                             
@@ -242,7 +242,7 @@
 <span class="c1"># {'caco2_wang': {'mae': 0.234}}
 </span></code></pre></div></div>
 
-<p class="is-size-5"> You can use <code>train_val</code> to construct training and validation sets as you see best fit. For example, you can (1) construct a customized training and validation set using the <code>train_val</code> or (2) use a <a href="https://tdcommons.ai/functions/data_split/">TDC utility function</a> to get data splits for different random seeds: </p>
+<p class="is-size-5"> You can use <code>train_val</code> to construct training and validation sets as you see best fit. For example, you can (1) construct a customized training and validation set using the <code>train_val</code> or (2) use a <a href="https://tdcommons.ai/functions/data_split">TDC utility function</a> to get data splits for different random seeds: </p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">train</span><span class="p">,</span> <span class="n">valid</span> <span class="o">=</span> <span class="n">group</span><span class="p">.</span><span class="n">get_train_valid_split</span><span class="p">(</span><span class="n">benchmark</span> <span class="o">=</span> <span class="s">'Caco2_Wang'</span><span class="p">,</span> <span class="n">split_type</span> <span class="o">=</span> <span class="s">'default'</span><span class="p">,</span> <span class="n">seed</span> <span class="o">=</span> <span class="mi">42</span><span class="p">)</span>
 </code></pre></div></div>
