@@ -2452,7 +2452,7 @@ _LEADERBOARDS = {
         "desc",
         [
             [
-                "PINNACLE", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/mims-harvard/PINNACLE",
+                "PINNACLE", "Michelle Li", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/mims-harvard/PINNACLE",
                 "https://www.biorxiv.org/content/10.1101/2023.07.18.549602v2", 0.873
             ],
         ],
@@ -2489,27 +2489,27 @@ _LEADERBOARDS = {
         "desc",
         [
             [
-                "MIX-TPI", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/Wolverinerine/MIX-TPI",
+                "MIX-TPI", "Xiang Lin", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/Wolverinerine/MIX-TPI",
                 "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10423027/", 0.995
             ],
             [
-                "NET-TCR2", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/mnielLab/NetTCR-2.0",
+                "NET-TCR2", "Xiang Lin", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/mnielLab/NetTCR-2.0",
                 "https://www.nature.com/articles/s42003-021-02610-3", 0.985
             ],
             [
-                "TEINet", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/jiangdada1221/TEINet",
+                "TEINet", "Xiang Lin", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/jiangdada1221/TEINet",
                 "https://www.biorxiv.org/content/10.1101/2022.10.20.513029v1", 0.981
             ],
             [
-                "AVIB-TCR", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/nec-research/vibtcr",
+                "AVIB-TCR", "Xiang Lin", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/nec-research/vibtcr",
                 "https://pubmed.ncbi.nlm.nih.gov/36571499/", 0.949
             ],
             [
-                "TITAN", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/PaccMann/TITAN",
+                "TITAN", "Xiang Lin", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/PaccMann/TITAN",
                 "https://pubmed.ncbi.nlm.nih.gov/34252922/", 0.661
             ],
             [
-                "PanPep", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/bm2-lab/PanPep",
+                "PanPep", "Xiang Lin", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/bm2-lab/PanPep",
                 "https://www.nature.com/articles/s42256-023-00619-3", 0.499
             ],
         ],
@@ -2548,27 +2548,27 @@ _LEADERBOARDS = {
         "desc",
         [
             [
-                "AVIB-TCR", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/nec-research/vibtcr",
+                "AVIB-TCR", "Xiang Lin", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/nec-research/vibtcr",
                 "https://pubmed.ncbi.nlm.nih.gov/36571499/", 0.605
             ],
             [
-                "MIX-TPI", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/Wolverinerine/MIX-TPI",
+                "MIX-TPI", "Xiang Lin", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/Wolverinerine/MIX-TPI",
                 "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10423027/", 0.597
             ],
             [
-                "TEINet", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/jiangdada1221/TEINet",
+                "TEINet", "Xiang Lin", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/jiangdada1221/TEINet",
                 "https://www.biorxiv.org/content/10.1101/2022.10.20.513029v1", 0.581
             ],
             [
-                "PanPep", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/bm2-lab/PanPep",
+                "PanPep", "Xiang Lin", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/bm2-lab/PanPep",
                 "https://www.nature.com/articles/s42256-023-00619-3", 0.579
             ],
             [
-                "NET-TCR2", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/mnielLab/NetTCR-2.0",
+                "NET-TCR2", "Xiang Lin", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/mnielLab/NetTCR-2.0",
                 "https://www.nature.com/articles/s42003-021-02610-3", 0.554
             ],
             [
-                "TITAN", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/PaccMann/TITAN",
+                "TITAN", "Xiang Lin", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/PaccMann/TITAN",
                 "https://pubmed.ncbi.nlm.nih.gov/34252922/", 0.523
             ],
         ],
@@ -2607,7 +2607,7 @@ _LEADERBOARDS = {
         "desc",
         [
             [
-                "HINT", "Alejandro Velez-Arce", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/futianfan/clinical-trial-outcome-prediction",
+                "HINT", "Tianfan Fu", "alejandro_velez-arce@hms.harvard.edu", "https://github.com/futianfan/clinical-trial-outcome-prediction",
                 "https://www.sciencedirect.com/science/article/pii/S2666389922000186", 0.703
             ],
         ],

@@ -186,7 +186,8 @@ _META = {
                                     known association with the therapeutic area of interest according to Open Targets. A protein is\
                                         deemed druggable if targeted by at least one existing drug. We extract drugs and their \
                                             nominal targets from Drugbank. We retain negative training examples activated in at \
-                                                least one cell type-specific protein interaction network.",
+                                                least one cell type-specific protein interaction network. Note: to get the exact cell-type-specific \
+                                                    data and labels used in the PINNACLE paper, please refer to the TDC.scDTI benchmark group.",
         "Classification. Given the protein and cell-context, predict whether the protein is a therapeutic target. ",
         "The final number of positive (negative) samples for RA and IBD were 152 (1,465) and 114 (1,377), respectively. In PINNACLE,\
             this dataset was augmented to include 156 cell types.",
@@ -194,8 +195,9 @@ _META = {
         "DataLoader",
         [
             [
-                "[1] Li, Michelle, et al. “Contextualizing Protein Representations Using Deep Learning on Protein Networks \
-                    and Single-Cell Data” bioRxiv (2023) ",
+                "Michelle M. Li, Yepeng Huang, Marissa Sumathipala, Man Qing Liang, \
+                    Alberto Valdeolivas, Ashwin N. Ananthakrishnan, Katherine Liao, \
+                        Daniel Marbach and Marinka Zitnik Nature Methods 2024",
                 "https://www.biorxiv.org/content/10.1101/2023.07.18.549602v1"
             ]
         ],
