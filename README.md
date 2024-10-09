@@ -21,6 +21,7 @@ B. Instructions for replicating your results running these codes.
 C. Description of the hardware used for training the model.
 D. Link to paper to be included on the website
 E. Paper authors and developers of the model.
+F. The dictionary string output of running the TDC benchmark group evaluations.
 
 Please feel free to reach out with any questions.
 
