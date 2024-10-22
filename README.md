@@ -28,6 +28,6 @@ E. Paper authors and developers of the model.
 
 F. The dictionary string output of running the TDC benchmark group evaluations.
 
-Please feel free to reach out with any questions.
+See example here https://github.com/mims-harvard/tdc2website-flask/pull/2 . Please feel free to reach out with any questions.
 
 
