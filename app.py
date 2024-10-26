@@ -11,23 +11,23 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/start')
+@app.route('/start', strict_slashes=False)
 def start():
     return render_template('start.html')
 
-@app.route('/overview')
+@app.route('/overview', strict_slashes=False)
 def overview():
     return render_template('overview/index.html')
 
-@app.route("/news")
+@app.route("/news", strict_slashes=False)
 def news():
     return render_template('news.html')
 
-@app.route("/team")
+@app.route("/team", strict_slashes=False)
 def team():
     return render_template('team.html')
 
-@app.route('/single_pred_tasks/overview')
+@app.route('/single_pred_tasks/overview', strict_slashes=False)
 def single_pred_tasks():
     vars = {
         "items": data.single_pred_tasks.tasks,
@@ -35,7 +35,7 @@ def single_pred_tasks():
     }
     return render_template('single_pred_tasks/index.html', **vars)
 
-@app.route("/single_pred_tasks/<task>")
+@app.route("/single_pred_tasks/<task>", strict_slashes=False)
 def single_pred_tasks_data(task):
     if task == "adme":
         return render_template("single_pred_tasks/adme.html")
@@ -61,7 +61,7 @@ def single_pred_tasks_data(task):
         return render_template("single_pred_tasks/task.html", **args)
     return redirect("/single_pred_tasks/overview")
 
-@app.route("/multi_pred_tasks/overview")
+@app.route("/multi_pred_tasks/overview", strict_slashes=False)
 def multi_pred_tasks():
     vars = {
         "items": data.multi_pred_tasks.tasks,
@@ -69,7 +69,7 @@ def multi_pred_tasks():
     }
     return render_template("multi_pred_tasks/index.html", **vars)
 
-@app.route("/multi_pred_tasks/<task>")
+@app.route("/multi_pred_tasks/<task>", strict_slashes=False)
 def multi_pred_task_data(task):
     if task == "catalyst":
         return render_template("multi_pred_tasks/catalyst.html")
@@ -118,11 +118,11 @@ def multi_pred_task_data(task):
     else:
         return redirect("/multi_pred_tasks/overview")
         
-@app.route("/generation_tasks/overview")
+@app.route("/generation_tasks/overview", strict_slashes=False)
 def generation_tasks():
     return render_template("generation_tasks/index.html")
 
-@app.route("/generation_tasks/<task>")
+@app.route("/generation_tasks/<task>", strict_slashes=False)
 def generation_tasks_data(task):
     if task == "molgen":
         return render_template("generation_tasks/molgen.html")
@@ -135,11 +135,11 @@ def generation_tasks_data(task):
     else:
         return redirect("/generation_tasks/overview")
 
-@app.route("/fct_overview")
+@app.route("/fct_overview", strict_slashes=False)
 def fct_overview():
     return render_template("/fct_overview.html")
 
-@app.route("/functions/<section>")
+@app.route("/functions/<section>", strict_slashes=False)
 def function_page(section):
     if section == "oracles":
         return render_template("/functions/oracles.html")
@@ -152,15 +152,15 @@ def function_page(section):
     else:
         return redirect("/fct_overview")
 
-@app.route("/benchmark")
+@app.route("/benchmark", strict_slashes=False)
 def benchmark():
     return render_template("/benchmark/index.html")
 
-@app.route("/benchmark/overview")
+@app.route("/benchmark/overview", strict_slashes=False)
 def benchmark_overview():
     return render_template("/benchmark/index.html")
 
-@app.route("/benchmark/<group>/<leaderboard>")
+@app.route("/benchmark/<group>/<leaderboard>", strict_slashes=False)
 def benchmark_leaderboard_overview(group, leaderboard):
     leads = benchmark_groups._GROUP_MEMBERSHIP[group]
     if leaderboard == "overview":
