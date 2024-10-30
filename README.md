@@ -1,7 +1,7 @@
 # tc2website-flask
 Hello, this is the flask implementation for tdc-2 website. Our documentation is still under development. For most matters, you can refer to theh original TDC repo.
 
-We have developed a new more decentralized method for adding entries to TDC leaderboards. While things are still under development, we want to unblock users trying to add their entries to the leaderboard by providing the following minimalist guide.
+We have developed a new more decentralized method for adding entries to TDC leaderboards. Use the following minimalist guide to add your entries to the leaderboards.
 
 To add your entry to the leaderboard, add your results to the corresponding leaderboard in this file
 https://github.com/mims-harvard/tdc2website-flask/blob/main/benchmark/leaderboards.py
