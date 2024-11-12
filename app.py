@@ -39,6 +39,8 @@ def single_pred_tasks():
 def single_pred_tasks_data(task):
     if task == "adme":
         return render_template("single_pred_tasks/adme.html")
+    if task.lower() == "mpc":
+        return render_template("single_pred_tasks/MPC.html")
     elif task in data.single_pred_tasks.datasets:
         datasets = []
         for var in data.single_pred_tasks.datasets[task]:
