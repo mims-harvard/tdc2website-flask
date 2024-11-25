@@ -34,6 +34,10 @@ _LEADERBOARDS = {
                 "https://www.biorxiv.org/content/10.1101/2022.06.29.115436v1", "N/A", 0.321
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "12.6M", 0.322
+            ],
+            [
                 "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
                 "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.330
             ],
@@ -85,6 +89,10 @@ _LEADERBOARDS = {
                 0.005
             ],
             [
+                0.322,
+                0.026
+            ],
+            [
                 0.330,
                 0.024
             ],
@@ -133,6 +141,10 @@ _LEADERBOARDS = {
             [
                 "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.730
+            ],
+            [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "13.0M", 0.715
             ],
             [
                 "ZairaChem", "Gemma Turon", "gemma@ersilia.io", "https://github.com/ersilia-os/zaira-chem-tdc-benchmark", 
@@ -190,6 +202,10 @@ _LEADERBOARDS = {
                 0.010
             ],
             [
+                0.715,
+                0.011
+            ],
+            [
                 0.706,
                 0.031
             ],
@@ -226,6 +242,10 @@ _LEADERBOARDS = {
         ["Rank", "Model", "Contact", "Link", "#Params", "MAE"],
         "incr",
         [
+            [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "13.0M", 0.460
+            ],
             [
                 "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
                 "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.467
@@ -289,6 +309,10 @@ _LEADERBOARDS = {
         ],
         [
             [
+                0.460,
+                0.006
+            ],
+            [
                 0.467,
                 0.006
             ],
@@ -350,6 +374,10 @@ _LEADERBOARDS = {
         "incr",
         [
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "13.0M", 0.725
+            ],
+            [
                 "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
                 "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.761
             ],
@@ -394,6 +422,10 @@ _LEADERBOARDS = {
             
         ],
         [
+            [
+                0.725,
+                0.011
+            ],
             [
                 0.761,
                 0.025
@@ -460,6 +492,10 @@ _LEADERBOARDS = {
                 "N/A", 0.986
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "1.6M", 0.984
+            ],
+            [
                 "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", 
                 "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3", "N/A", 0.981
             ],
@@ -503,6 +539,10 @@ _LEADERBOARDS = {
                 0.000
             ],
             [
+                0.984,
+                0.004
+            ],
+            [
                 0.981,
                 0.009
             ],
@@ -542,6 +582,10 @@ _LEADERBOARDS = {
             [
                 "ZairaChem", "Gemma Turon", "gemma@ersilia.io", "https://github.com/ersilia-os/zaira-chem-tdc-benchmark", 
                 "https://www.biorxiv.org/content/10.1101/2022.12.13.520154v1", "N/A", 0.935
+            ],
+            [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "1.6M", 0.931
             ],
             [
                 "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
@@ -590,6 +634,10 @@ _LEADERBOARDS = {
             [
                 0.935,
                 0.006
+            ],
+            [
+                0.931,
+                0.003
             ],
             [
                 0.930,
@@ -667,6 +715,10 @@ _LEADERBOARDS = {
                 "https://github.com/lanternpharma/tdc-bbb-martins/blob/main/Lantern_TDC_BBBmartins.pdf", "319", 0.908
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "13.0M", 0.908
+            ],
+            [
                 "Lantern RADR SVM", "Rick Fontenot", "rick@lanternpharma.com", "https://github.com/lanternpharma/tdc-bbb-martins",
                 "https://github.com/lanternpharma/tdc-bbb-martins/blob/main/Lantern_TDC_BBBmartins.pdf", "241", 0.905
             ],
@@ -710,6 +762,10 @@ _LEADERBOARDS = {
                 0.002
             ],
             [
+                0.908,
+                0.010
+            ],
+            [
                 0.905,
                 0.007
             ],
@@ -730,6 +786,10 @@ _LEADERBOARDS = {
         ["Rank", "Model", "Contact", "Link", "#Params", "MAE"],
         "incr",
         [
+            [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "26.0M", 7.505
+            ],
             [
                 "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
                 "https://arxiv.org/abs/2310.00174", "N/A", 7.526
@@ -784,6 +844,10 @@ _LEADERBOARDS = {
             ]
         ],
         [
+            [
+                7.505,
+                0.073
+            ],
             [
                 7.526,
                 0.106
@@ -856,6 +920,10 @@ _LEADERBOARDS = {
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.707
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "26.0M", 0.662
+            ],
+            [
                 "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", 
                 "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3", "N/A", 0.628
             ],
@@ -906,6 +974,10 @@ _LEADERBOARDS = {
             [
                 0.707,
                 0.009
+            ],
+            [
+                0.662,
+                0.013
             ],
             [
                 0.628,
@@ -967,6 +1039,10 @@ _LEADERBOARDS = {
                 "2,067,053", 0.829
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "13.0M", 0.788
+            ],
+            [
                 "ZairaChem", "Gemma Turon", "gemma@ersilia.io", "https://github.com/ersilia-os/zaira-chem-tdc-benchmark",
                 "https://www.biorxiv.org/content/10.1101/2022.12.13.520154v1", "N/A", 0.786
             ],
@@ -1013,6 +1089,10 @@ _LEADERBOARDS = {
             [
                 0.829,
                 0.003
+            ],
+            [
+                0.788,
+                0.005
             ],
             [
                 0.786,
@@ -1074,6 +1154,10 @@ _LEADERBOARDS = {
                 "2,067,053", 0.721
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "26.0M", 0.704
+            ],
+            [
                 "DeepMol (AutoML)", "DeepMol Team", "jcapels96@gmail.com", "https://github.com/BioSystemsUM/deepmol_case_studies",
                 "https://doi.org/10.1101/2024.05.27.595849", "N/A", 0.685
             ],
@@ -1120,6 +1204,10 @@ _LEADERBOARDS = {
             [
                 0.721,
                 0.009
+            ],
+            [
+                0.704,
+                0.003
             ],
             [
                 0.685,
@@ -1177,6 +1265,10 @@ _LEADERBOARDS = {
                 "N/A", 0.881
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "26.0M", 0.878
+            ],
+            [
                 "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
                 "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.876
             ],
@@ -1218,6 +1310,10 @@ _LEADERBOARDS = {
             [
                 0.881,
                 0.001
+            ],
+            [
+                0.878,
+                0.003
             ],
             [
                 0.876,
@@ -1282,6 +1378,10 @@ _LEADERBOARDS = {
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.415
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "26.0M", 0.414
+            ],
+            [
                 "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
                 "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.400
             ],
@@ -1329,6 +1429,10 @@ _LEADERBOARDS = {
                 0.008
             ],
             [
+                0.414,
+                0.027
+            ],
+            [
                 0.400,
                 0.008
             ],
@@ -1353,6 +1457,10 @@ _LEADERBOARDS = {
         ["Rank", "Model", "Contact", "Link", "#Params", "AUPRC"],
         "desc",
         [
+            [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "1.6M", 0.739
+            ],
             [
                 "ContextPred", "Kexin Huang", "kexinh@stanford.edu", "https://github.com/mims-harvard/TDC/tree/main/examples/single_pred/admet",
                 "https://arxiv.org/abs/1905.12265", "2,067,053", 0.736
@@ -1401,6 +1509,10 @@ _LEADERBOARDS = {
             ]
         ],
         [
+            [
+                0.739,
+                0.024
+            ],
             [
                 0.736,
                 0.024
@@ -1464,6 +1576,10 @@ _LEADERBOARDS = {
                 "https://doi.org/10.1101/2024.05.27.595849", "N/A", 0.665
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "52.0M", 0.654
+            ],
+            [
                 "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.650
             ],
@@ -1510,6 +1626,10 @@ _LEADERBOARDS = {
             [
                 0.655,
                 0.003
+            ],
+            [
+                0.654,
+                0.022
             ],
             [
                 0.650,
@@ -1565,6 +1685,10 @@ _LEADERBOARDS = {
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.557
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "6.5M", 0.551
+            ],
+            [
                 "Euclia ML model", "Euclia", "euclia@euclia.io", "https://github.com/euclia/public-models", 
                 "https://github.com/euclia/public-models", "50", 0.547
             ],
@@ -1614,6 +1738,10 @@ _LEADERBOARDS = {
             [
                 0.557,
                 0.034
+            ],
+            [
+                0.551,
+                0.020
             ],
             [
                 0.547,
@@ -1669,6 +1797,10 @@ _LEADERBOARDS = {
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.498
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "1.6M", 0.495
+            ],
+            [
                 "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.466
             ],
@@ -1719,6 +1851,10 @@ _LEADERBOARDS = {
             [
                 0.498,
                 0.009
+            ],
+            [
+                0.495,
+                0.030
             ],
             [
                 0.466,
@@ -1786,6 +1922,10 @@ _LEADERBOARDS = {
                 "https://github.com/Oloren-AI/OCE-TDC/blob/main/Report.pdf", "1,858,225", 0.625
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "3.2M", 0.611
+            ],
+            [
                 "Chemprop-RDKit", "Kyle Swanson", "swansonk@stanford.edu", "https://github.com/chemprop/chemprop", 
                 "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.599
             ],
@@ -1828,6 +1968,10 @@ _LEADERBOARDS = {
                 0.002
             ],
             [
+                0.611,
+                0.016
+            ],
+            [
                 0.599,
                 0.025
             ],
@@ -1860,6 +2004,10 @@ _LEADERBOARDS = {
         ["Rank", "Model", "Contact", "Link", "#Params", "MAE"],
         "incr",
         [
+            [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "13.0M", 0.541
+            ],
             [
                 "BaseBoosting KyQVZ6b2", "David Huang", "david@oloren.ai", "https://github.com/Oloren-AI/OCE-TDC/tree/main",
                 "https://chemrxiv.org/engage/chemrxiv/article-details/6350b9d186473a47d31a8492", "N/A", 0.552
@@ -1911,7 +2059,11 @@ _LEADERBOARDS = {
         ],
         [
             [
-                0.522,
+                0.541,
+                0.015
+            ],
+            [
+                0.552,
                 0.009
             ],
             [
@@ -1988,6 +2140,10 @@ _LEADERBOARDS = {
                 "https://www.biorxiv.org/content/10.1101/2022.12.13.520154v1", "N/A", 0.856
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "13.0M", 0.848
+            ],
+            [
                 "RDKit2D + MLP (DeepPurpose)", "Kexin Huang", "kexinhuang@hsph.harvard.edu", "https://github.com/mims-harvard/TDC/tree/master/examples/single_pred/admet",
                 "https://doi.org/10.1093/bioinformatics/btaa1005", "633,409", 0.841
             ],
@@ -2034,6 +2190,10 @@ _LEADERBOARDS = {
                 0.009
             ],
             [
+                0.848,
+                0.009
+            ],
+            [
                 0.841,
                 0.020
             ],
@@ -2077,6 +2237,10 @@ _LEADERBOARDS = {
             [
                 "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.868
+            ],
+            [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "6.5M", 0.854
             ],
             [
                 "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3",
@@ -2129,6 +2293,10 @@ _LEADERBOARDS = {
                 0.002
             ],
             [
+                0.854,
+                0.007
+            ],
+            [
                 0.852,
                 0.005
             ],
@@ -2178,6 +2346,10 @@ _LEADERBOARDS = {
                 "https://www.biorxiv.org/content/10.1101/2022.12.13.520154v1", "N/A", 0.925
             ],
             [
+                "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
+                "https://arxiv.org/abs/2410.21422", "13M", 0.920
+            ],
+            [
                 "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3",
                 "N/A", 0.919
             ],
@@ -2222,6 +2394,10 @@ _LEADERBOARDS = {
             [
                 0.925,
                 0.005
+            ],
+            [
+                0.920,
+                0.012
             ],
             [
                 0.919,
