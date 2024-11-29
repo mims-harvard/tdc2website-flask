@@ -5,6 +5,11 @@ _LEADERBOARDS = {
         "incr", # increasing or descending order
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/", 
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.148
+            ],
+            [
                 "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.276
             ],
@@ -20,6 +25,10 @@ _LEADERBOARDS = {
                 "MolMapNet-D", "Shen Wan Xiang", "wanxiang.shen@u.nus.edu", "https://github.com/shenwanxiang/bidd-molmap/tree\
                     /master/misc/tdc_leaderboard_submission/Caco2_Wang-MolMapNet-D.ipynb", 
                     "https://www.nature.com/articles/s42256-021-00301-6", "407,617", 0.287
+            ],
+            [
+                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main",
+                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf", "N/A", 0.289
             ],
             [
                 "XGBoost", "Andrew Li", "andrew@oloren.ai", "https://github.com/Oloren-AI/OCE-TDC/blob/main/submission.ipynb", 
@@ -61,6 +70,10 @@ _LEADERBOARDS = {
         ], # meta info: model, contact_name, contact_email, GH, repo, .. other .., value to rank by
         [
             [
+                0.148,
+                0.007
+            ],
+            [
                 0.276,
                 0.005
             ],
@@ -74,6 +87,10 @@ _LEADERBOARDS = {
             ],
             [
                 0.287,
+                0.005
+            ],
+            [
+                0.289,
                 0.005
             ],
             [
@@ -121,6 +138,11 @@ _LEADERBOARDS = {
         ["Rank", "Model", "Contact", "Link", "#Params", "AUROC"],
         "desc",
         [
+            [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/", 
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.955
+            ],
             [
                 "HistGradientBoostingClassifier (DeepMol)", "DeepMol Team", "jcapels96@gmail.com", 
                 "https://github.com/BioSystemsUM/deepmol_case_studies", "https://doi.org/10.1101/2024.05.27.595849",
@@ -182,6 +204,10 @@ _LEADERBOARDS = {
         ],
         [
             [
+                0.955,
+                0.017
+            ],
+            [
                 0.753,
                 0
             ],
@@ -242,6 +268,11 @@ _LEADERBOARDS = {
         ["Rank", "Model", "Contact", "Link", "#Params", "MAE"],
         "incr",
         [
+            [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.227
+            ],
             [
                 "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
                 "https://arxiv.org/abs/2410.21422", "13.0M", 0.460
@@ -309,6 +340,10 @@ _LEADERBOARDS = {
         ],
         [
             [
+                0.227,
+                0.018
+            ],
+            [
                 0.460,
                 0.006
             ],
@@ -374,6 +409,11 @@ _LEADERBOARDS = {
         "incr",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.387
+            ], 
+            [
                 "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
                 "https://arxiv.org/abs/2410.21422", "13.0M", 0.725
             ],
@@ -382,9 +422,8 @@ _LEADERBOARDS = {
                 "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.761
             ],
             [
-                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", "https://github.com/Innoplexus-opensource/\
-                    ics-therapeutics-data-commons/tree/main", "https://github.com/Innoplexus-opensource/ics-therapeutics-data\
-                        -commons/blob/main/Innoplexus_ADME_Model_report.pdf", "N/A", 0.771
+                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main",
+                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf", "N/A", 0.771
             ],
             [
                 "DeepMol (AutoML) ", "DeepMol Team", "jcapels96@gmail.com", "https://github.com/BioSystemsUM/deepmol_case_studies",
@@ -422,6 +461,10 @@ _LEADERBOARDS = {
             
         ],
         [
+            [
+                0.387,
+                0.035
+            ],
             [
                 0.725,
                 0.011
@@ -492,6 +535,11 @@ _LEADERBOARDS = {
                 "N/A", 0.986
             ],
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.985
+            ],
+            [
                 "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
                 "https://arxiv.org/abs/2410.21422", "1.6M", 0.984
             ],
@@ -539,6 +587,10 @@ _LEADERBOARDS = {
                 0.000
             ],
             [
+                0.985,
+                0.029
+            ],
+            [
                 0.984,
                 0.004
             ],
@@ -575,6 +627,11 @@ _LEADERBOARDS = {
         ["Rank", "Model", "Contact", "Link", "#Params", "AUROC" ],
         "desc",
         [
+            [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.985
+            ],
             [
                 "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.938
@@ -627,6 +684,10 @@ _LEADERBOARDS = {
             ],
         ],
         [
+            [
+                0.985,
+                0.006
+            ],
             [
                 0.938,
                 0.002
@@ -685,6 +746,11 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.978
+            ],        
+            [
                 "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", 
                 "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3", "N/A", 0.920
             ],
@@ -733,6 +799,10 @@ _LEADERBOARDS = {
             ],
         ],
         [
+            [
+                0.978,
+                0.004
+            ],
             [
                 0.920,
                 0.006
@@ -787,6 +857,11 @@ _LEADERBOARDS = {
         "incr",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 3.744
+            ],
+            [
                 "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
                 "https://arxiv.org/abs/2410.21422", "26.0M", 7.505
             ],
@@ -815,10 +890,8 @@ _LEADERBOARDS = {
                 "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 8.288
             ],
             [
-                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf",
-                "N/A", 8.582
+                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main",
+                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf", "N/A", 8.582
             ],
             [
                 "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", 
@@ -844,6 +917,10 @@ _LEADERBOARDS = {
             ]
         ],
         [
+            [
+                3.744,
+                0.152
+            ],
             [
                 7.505,
                 0.073
@@ -906,14 +983,17 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.715
+            ],
+            [
                 "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.713
             ],
             [
-                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf",
-                "N/A", 0.707
+                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main",
+                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf", "N/A", 0.707
             ],
             [
                 "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
@@ -963,6 +1043,10 @@ _LEADERBOARDS = {
             ],
         ],
         [
+            [
+                0.715,
+                0.043
+            ],
             [
                 0.713,
                 0.007
@@ -1025,6 +1109,11 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.958
+	    ],
+            [
                 "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.859
             ],
@@ -1078,6 +1167,10 @@ _LEADERBOARDS = {
             ],
         ],
         [
+            [
+                0.958,
+                0.006
+            ], 
             [
                 0.859,
                 0.001
@@ -1136,6 +1229,11 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.936
+            ],
+            [
                 "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.790
             ],
@@ -1189,6 +1287,10 @@ _LEADERBOARDS = {
             ],
         ],
         [
+            [
+                0.936,
+                0.013
+            ],
             [
                 0.790,
                 0.001
@@ -1247,6 +1349,11 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.975
+            ],
+            [
                 "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.916
             ],
@@ -1295,6 +1402,10 @@ _LEADERBOARDS = {
             ],
         ],
         [
+            [
+                0.975,
+                0.005
+            ],
             [
                 0.916,
                 0.000
@@ -1349,6 +1460,11 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.913
+            ],
+            [
                 "ZairaChem", "Gemma Turon", "gemma@ersilia.io", "https://github.com/ersilia-os/zaira-chem-tdc-benchmark", 
                 "https://www.biorxiv.org/content/10.1101/2022.12.13.520154v1", "N/A", 0.441
             ],
@@ -1400,6 +1516,10 @@ _LEADERBOARDS = {
             ]
         ],
         [
+            [
+                0.913,
+                0.038
+            ],
             [
                 0.441,
                 0.033
@@ -1458,6 +1578,12 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf",
+                "305,794", 0.983
+            ], 
+            [
                 "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
                 "https://arxiv.org/abs/2410.21422", "1.6M", 0.739
             ],
@@ -1509,6 +1635,10 @@ _LEADERBOARDS = {
             ]
         ],
         [
+            [
+                0.983,
+                0.013
+            ],
             [
                 0.739,
                 0.024
@@ -1563,6 +1693,11 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.975
+            ],
+            [
                 "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", 
                 "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3", "N/A", 0.667
             ],
@@ -1615,6 +1750,10 @@ _LEADERBOARDS = {
             ]
         ],
         [
+            [
+                0.975,
+                0.008
+            ],
             [
                 0.667,
                 0.019
@@ -1698,12 +1837,16 @@ _LEADERBOARDS = {
             ],
             [
                 "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main",
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf",
-                "N/A", 0.511
+                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf", "N/A", 0.511
             ],
             [
                 "DeepMol (AutoML)", "DeepMol Team", "jcapels96@gmail.com", "https://github.com/BioSystemsUM/deepmol_case_studies",
                 "https://doi.org/10.1101/2024.05.27.595849", "N/A", 0.485
+            ],
+            [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.445
             ],
             [
                 "Basic ML", "Nilavo Boral", "nilavoboral@gmail.com", "https://github.com/NilavoBoral/Therapeutics-Data-Commons",
@@ -1760,6 +1903,10 @@ _LEADERBOARDS = {
                 0.039
             ],
             [
+                0.445,
+                0.078
+            ],
+            [
                 0.438,
                 0.011
             ],
@@ -1789,6 +1936,11 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.789
+            ],
+            [
                 "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", 
                 "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3", "N/A", 0.536
             ],
@@ -1805,10 +1957,8 @@ _LEADERBOARDS = {
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.466
             ],
             [
-                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf",
-                "N/A", 0.457
+                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main",
+                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf", "N/A", 0.457
             ],
             [
                 "Basic ML", "Nilavo Boral", "nilavoboral@gmail.com", "https://github.com/NilavoBoral/Therapeutics-Data-Commons",
@@ -1844,6 +1994,10 @@ _LEADERBOARDS = {
             ]
         ],
         [
+            [
+                0.789,
+                0.019
+            ],
             [
                 0.536,
                 0.020
@@ -1906,6 +2060,11 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.783
+            ],
+            [
                 "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.630
             ],
@@ -1920,6 +2079,10 @@ _LEADERBOARDS = {
             [
                 "RFStacker", "Andrew Li", "andrew@oloren.ai", "https://github.com/Oloren-AI/OCE-TDC/blob/main/submission.ipynb",
                 "https://github.com/Oloren-AI/OCE-TDC/blob/main/Report.pdf", "1,858,225", 0.625
+            ],
+            [
+                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main",
+                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf", "N/A", 0.620
             ],
             [
                 "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
@@ -1952,6 +2115,10 @@ _LEADERBOARDS = {
         ],
         [
             [
+                0.783,
+                0.039
+            ],
+            [
                 0.630,
                 0.010
             ],
@@ -1966,6 +2133,10 @@ _LEADERBOARDS = {
             [
                 0.625,
                 0.002
+            ],
+            [            
+                0.620,
+                0.007
             ],
             [
                 0.611,
@@ -2005,12 +2176,21 @@ _LEADERBOARDS = {
         "incr",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.210
+            ],
+            [
                 "ChemFM", "Feiyang Cai", "feiyang@clemson.edu", "https://github.com/TheLuoFengLab/ChemFM/tree/master/finetuning/property_prediction",
                 "https://arxiv.org/abs/2410.21422", "13.0M", 0.541
             ],
             [
                 "BaseBoosting KyQVZ6b2", "David Huang", "david@oloren.ai", "https://github.com/Oloren-AI/OCE-TDC/tree/main",
                 "https://chemrxiv.org/engage/chemrxiv/article-details/6350b9d186473a47d31a8492", "N/A", 0.552
+            ],
+            [
+                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main",
+                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf", "N/A", 0.588
             ],
             [
                 "MACCS keys + autoML", "Alexander Scarlat", "ascarlat@mitre.org", "https://github.com/scarlat1/AcuteToxicityLD50",
@@ -2059,12 +2239,20 @@ _LEADERBOARDS = {
         ],
         [
             [
+                0.210,
+                0.017
+            ],
+            [
                 0.541,
                 0.015
             ],
             [
                 0.552,
                 0.009
+            ],
+            [
+                0.588,
+                0.000
             ],
             [
                 0.588,
@@ -2120,6 +2308,11 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.963
+            ],
+            [
                 "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.880
             ],
@@ -2169,6 +2362,10 @@ _LEADERBOARDS = {
             ]
         ],
         [
+            [
+                0.963,
+                0.013
+            ],
             [
                 0.880,
                 0.002
@@ -2227,6 +2424,11 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.983
+            ],
+            [
                 "ZairaChem", "Gemma Turon", "gemma@ersilia.io", "https://github.com/ersilia-os/zaira-chem-tdc-benchmark",
                 "https://www.biorxiv.org/content/10.1101/2022.12.13.520154v1", "N/A", 0.871
             ],
@@ -2280,6 +2482,10 @@ _LEADERBOARDS = {
             ]
         ],
         [
+            [
+                0.983,
+                0.004
+            ],
             [
                 0.871,
                 0.002
@@ -2342,6 +2548,11 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "Innoplexus ABDNN-ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/",
+                "https://github.com/Innoplexus-opensource/ics-admet-prediction-tdc/tree/main/report/Innoplexus ADME-NN Model Evaluation on TDC Benchmark ADMET Group Binary Datasets.pdf", "305,794", 0.998
+            ],
+            [
                 "ZairaChem", "Gemma Turon", "gemma@ersilia.io", "https://github.com/ersilia-os/zaira-chem-tdc-benchmark", 
                 "https://www.biorxiv.org/content/10.1101/2022.12.13.520154v1", "N/A", 0.925
             ],
@@ -2391,6 +2602,10 @@ _LEADERBOARDS = {
             ]
         ],
         [
+            [
+                0.998,
+                0.002
+            ],
             [
                 0.925,
                 0.005
