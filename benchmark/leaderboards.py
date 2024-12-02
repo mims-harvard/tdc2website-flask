@@ -259,12 +259,6 @@ _LEADERBOARDS = {
                 "https://chemrxiv.org/engage/chemrxiv/article-details/6350b9d186473a47d31a8492", "N/A", 0.479
             ],
             [
-                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf",
-                "N/A", 0.499
-            ],
-            [
                 "CMPNN", "Devansh Amin", "devanshamin97@gmail.com", "https://github.com/devanshamin/LitGNN", 
                 "https://www.ijcai.org/Proceedings/2020/392", "3.0 M", 0.515
             ],
@@ -325,10 +319,6 @@ _LEADERBOARDS = {
                 0.007
             ],
             [
-                0.499,
-                0.003
-            ],
-            [
                 0.515,
                 0.038
             ],
@@ -382,11 +372,6 @@ _LEADERBOARDS = {
                 "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 0.761
             ],
             [
-                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", "https://github.com/Innoplexus-opensource/\
-                    ics-therapeutics-data-commons/tree/main", "https://github.com/Innoplexus-opensource/ics-therapeutics-data\
-                        -commons/blob/main/Innoplexus_ADME_Model_report.pdf", "N/A", 0.771
-            ],
-            [
                 "DeepMol (AutoML) ", "DeepMol Team", "jcapels96@gmail.com", "https://github.com/BioSystemsUM/deepmol_case_studies",
                 "https://doi.org/10.1101/2024.05.27.595849", "N/A", 0.775
             ],
@@ -429,10 +414,6 @@ _LEADERBOARDS = {
             [
                 0.761,
                 0.025
-            ],
-            [
-                0.771,
-                0.005
             ],
             [
                 0.775,
@@ -815,12 +796,6 @@ _LEADERBOARDS = {
                 "https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237", "N/A", 8.288
             ],
             [
-                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf",
-                "N/A", 8.582
-            ],
-            [
                 "CFA", "Nan Jiang", "njiang3@fordham.edu", "https://github.com/F-LIDM/CFA4DD", 
                 "https://chemrxiv.org/engage/chemrxiv/article-details/6563ec17cf8b3c3cd73212b3", "N/A", 8.680
             ],
@@ -873,10 +848,6 @@ _LEADERBOARDS = {
                 0.173
             ],
             [
-                8.582,
-                0.036
-            ],
-            [
                 8.680,
                 0.262
             ],
@@ -908,12 +879,6 @@ _LEADERBOARDS = {
             [
                 "MapLight + GNN", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC",
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.713
-            ],
-            [
-                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf",
-                "N/A", 0.707
             ],
             [
                 "MapLight", "Jim Notwell", "jnotwell@maplightrx.com", "https://github.com/maplightrx/MapLight-TDC", 
@@ -966,10 +931,6 @@ _LEADERBOARDS = {
             [
                 0.713,
                 0.007
-            ],
-            [
-                0.707,
-                0.006
             ],
             [
                 0.707,
@@ -1697,11 +1658,6 @@ _LEADERBOARDS = {
                 "https://tdcommons.ai/benchmark/admet_group/16halflife/", "5", 0.544
             ],
             [
-                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main",
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf",
-                "N/A", 0.511
-            ],
-            [
                 "DeepMol (AutoML)", "DeepMol Team", "jcapels96@gmail.com", "https://github.com/BioSystemsUM/deepmol_case_studies",
                 "https://doi.org/10.1101/2024.05.27.595849", "N/A", 0.485
             ],
@@ -1750,10 +1706,6 @@ _LEADERBOARDS = {
             [
                 0.544,
                 0.034
-            ],
-            [
-                0.511,
-                0.000
             ],
             [
                 0.485,
@@ -1805,12 +1757,6 @@ _LEADERBOARDS = {
                 "https://arxiv.org/abs/2310.00174", "N/A", 0.466
             ],
             [
-                "Innoplexus ADME", "Rohit Yadav", "rohit.yadav@ics.innoplexus.com", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/tree/main", 
-                "https://github.com/Innoplexus-opensource/ics-therapeutics-data-commons/blob/main/Innoplexus_ADME_Model_report.pdf",
-                "N/A", 0.457
-            ],
-            [
                 "Basic ML", "Nilavo Boral", "nilavoboral@gmail.com", "https://github.com/NilavoBoral/Therapeutics-Data-Commons",
                 "https://www.biorxiv.org/content/10.1101/2022.06.29.115436v1", "N/A", 0.440
             ],
@@ -1859,10 +1805,6 @@ _LEADERBOARDS = {
             [
                 0.466,
                 0.012
-            ],
-            [
-                0.457,
-                0.013
             ],
             [
                 0.440,
