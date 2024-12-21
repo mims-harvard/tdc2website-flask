@@ -32,7 +32,7 @@ _PUBLICATIONS = [
         }
     ),
     HomepagePublication(
-        "Zero-shot Prediction of Therapeutic Use with Geometric Deep Learning and Clinician Centered Design",
+        "A Foundation Model for Clinician-centered Drug Repurposing",
         "Nature Medicine, 2024",
         2024,
         3,
