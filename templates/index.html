@@ -275,7 +275,10 @@
                     <div class="column is-12 is-size-5">
                         <div class="box has-background-white">
                             <ul>
-                                <li><b>TDC-2: Multimodal Foundation for Therapeutic Science</b> bioRxiv, 2024 <a href="https://www.biorxiv.org/content/10.1101/2024.06.12.598655v2">[Paper]</a></li>
+                                {% for pub in publications %}
+                                <li><b>{{ pub.name }}</b> {{ pub.venue }} {% for key, url in pub.links.items() %} <a href="{{ url }}">[{{ key }}] </a> {% endfor %}</li>
+                                {% endfor %}
+                                <!-- <li><b>TDC-2: Multimodal Foundation for Therapeutic Science</b> bioRxiv, 2024 <a href="https://www.biorxiv.org/content/10.1101/2024.06.12.598655v2">[Paper]</a></li>
                                 <li><b>Zero-shot Prediction of Therapeutic Use with Geometric Deep Learning and Clinician Centered Design,</b> MedRxiv, 2023 <a href="https://www.medrxiv.org/content/10.1101/2023.03.19.23287458">[Paper]</a> <a href="http://txgnn.org/">[TxGNN Explorer]</a></li>
 
                                 <li><b>Artificial Intelligence Foundation for Therapeutic Science,</b> Nature Chemical Biology, 2022 <a href="https://www.nature.com/articles/s41589-022-01131-2">[Paper]</a> </li>
@@ -298,7 +301,7 @@
 
                                 <li><b>Graph Neural Networks for Biomedical Data</b>, <a href="https://sites.google.com/cs.washington.edu/mlcb2020/schedule?authuser=0">Machine Learning in Computational Biology</a>, 2020</li>
 
-                                <li><b>Graph Neural Networks for Identifying COVID-19 Drug Repurposing Opportunities</b>, <a href="https://www.aicures.mit.edu/drugdiscoveryconference">MIT AI Cures</a>, 2020</li>
+                                <li><b>Graph Neural Networks for Identifying COVID-19 Drug Repurposing Opportunities</b>, <a href="https://www.aicures.mit.edu/drugdiscoveryconference">MIT AI Cures</a>, 2020</li> -->
                             </ul>
                         </div>
                     </div>
