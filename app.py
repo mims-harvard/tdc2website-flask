@@ -1,5 +1,6 @@
 # from data.single_pred_tasks.tasks import _TASKS
-import task_datasets as data
+import backend.task_datasets as data
+from backend.metadata.publications import _PUBLICATIONS as publications
 import benchmark.groups as benchmark_groups
 import benchmark.leaderboards as benchmark_leaderboards
 
@@ -9,7 +10,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    publications.sort(key=lambda x: (-x["year"], -x["month"]))
+    args = {
+        "publications": publications
+    }
+    return render_template('index.html', **args)
 
 @app.route('/start', strict_slashes=False)
 def start():
