@@ -4,9 +4,11 @@ from backend.metadata.publications import _PUBLICATIONS as publications
 import benchmark.groups as benchmark_groups
 import benchmark.leaderboards as benchmark_leaderboards
 
-from flask import Flask, flash, redirect, render_template, request, session, url_for
+from flask import Flask, flash, redirect, render_template, request, session, url_for, make_response
+from flask_restful import Api, Resource
 
 app = Flask(__name__)
+api = Api(app)
 
 @app.route('/')
 def index():
@@ -142,9 +144,9 @@ def generation_tasks_data(task):
     else:
         return redirect("/generation_tasks/overview")
 
-@app.route("/fct_overview", strict_slashes=False)
-def fct_overview():
-    return render_template("/fct_overview.html")
+# @app.route("/fct_overview", strict_slashes=False)
+# def fct_overview():
+#     return render_template("/fct_overview.html")
 
 @app.route("/functions/<section>", strict_slashes=False)
 def function_page(section):
@@ -208,6 +210,22 @@ def benchmark_leaderboard_overview(group, leaderboard):
         }
         return render_template("/benchmark/leaderboard.html", **args)
 
+
+### Resources
+
+class FctOverview(Resource):
+
+    def get(self):
+        return make_response(render_template("/fct_overview.html"), 200, {'Content-Type': 'text/html'})
+
+
+class FeedbackForm(Resource):
+
+    def get(self):
+        return make_response(render_template("/index-js.html"), 200, {'Content-Type': 'text/html'})
+    
+api.add_resource(FctOverview, "/fct_overview")
+api.add_resource(FeedbackForm, "/feedback")
     
 
 if __name__ == '__main__':
