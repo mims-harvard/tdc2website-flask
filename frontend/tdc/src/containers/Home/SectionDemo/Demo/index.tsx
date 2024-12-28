@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 interface DemoProps {
@@ -11,7 +12,7 @@ const Demo: React.FC<DemoProps> = ({ img, path }) => {
       <div className="demo-item">
         <Link href={path} passHref>
           <a>
-            <img src={img} alt="demo" className="img-responsive" />
+            <Image src={img} alt="demo" className="img-responsive" />
           </a>
         </Link>
         <div className="preview-btn-wrapper text-center">

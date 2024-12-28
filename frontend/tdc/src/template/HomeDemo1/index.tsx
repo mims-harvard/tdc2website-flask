@@ -10,7 +10,8 @@ import {
   DocElementTitle,
   TokenText,
   TeamMember,
-  PartnersData
+  PartnersData,
+  SingleCoolFact
 } from '../../data/data-containers/data-HomeDemo1';
 import { handelTitle } from '../../utils';
 
@@ -32,7 +33,6 @@ import SecTeam from './SecTeam';
 import SecTrust from './SecTrust';
 import SecWelcomeArea from './SecWelcomeArea';
 import SecVerticalSocial from './SecVerticalSocial';
-import SingleCoolFact from './SecTrust/SecSingleCoolFact/SingleCoolFact';
 
 import { 
   HomeDemo1About1,
@@ -70,18 +70,18 @@ const HomeDemo1: React.FC = () => {
         <SecWelcomeArea />
         <SecVerticalSocial data={VerticalSocial} />
         <SecTrust data={SingleCoolFact} />
-        <SecAboutUsClient img={HomeDemo1About1} />
-        <SecAboutUs img={HomeDemo1Solution} />
-        <SecAboutUsClientPeople img={HomeDemo1About1People} />
+        <SecAboutUsClient img={HomeDemo1About1.src} />
+        <SecAboutUs img={HomeDemo1Solution.src} />
+        <SecAboutUsClientPeople img={HomeDemo1About1People.src} />
         <div className="clearfix" />
-        <SecDemoVideo img={HomeDemo1VideoBg4} />
+        <SecDemoVideo img={HomeDemo1VideoBg4.src} />
         <div className="clearfix" />
         <SecOurServices data={service_single_content} />
         <SecSubscribe data={SocialListIco} />
         <SecOurRoadmap data={timelineInfo} />
-        <SecOurFeatures data={ServiceBlock} imgPhone={HomeDemo1ImgPhone} Rings={HomeDemo1RingsBg} />
+        <SecOurFeatures data={ServiceBlock} imgPhone={HomeDemo1ImgPhone.src} Rings={HomeDemo1RingsBg.src} />
         <SecFAQ_Timeline FQAInfo={FQAInfo} DocElementTitle={DocElementTitle} />
-        <SecDistribution img={HomeDemo1Allocation} data={TokenText} />
+        <SecDistribution img={HomeDemo1Allocation.src} data={TokenText} />
         <SecTeam data={TeamMember} />
         <SecPartners data={PartnersData} />
       </div>

@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import data from '../../data/data-containers/data-Home';
 import { handelTitle } from '../../utils';
 
-import styles from './demo.module.css'; // Convert demo.css to a CSS module
 import Footer from '../../layouts/Footer';
 import SectionHeading from './SectionHeading';
 import SectionDemo from './SectionDemo';
@@ -10,14 +9,14 @@ import SectionDemo from './SectionDemo';
 const HomeContainer: React.FC = () => {
   useEffect(() => {
     // Update the document title client-side
-    handelTitle('Home Template');
+    handelTitle('TDC2: Multimodal ML Platform for Foundation Models in Therapeutics');
   }, []);
 
   useEffect(() => {
     // Update body background style client-side
     if (typeof document !== 'undefined') {
       const body = document.getElementsByTagName('body')[0];
-      if (document.title === 'Home Template') {
+      if (document.title === 'TDC2: Multimodal ML Platform for Foundation Models in Therapeutics') {
         body.style.backgroundImage =
           'linear-gradient(180deg,#240044 0,#0f0240 25%,#400959 40%,#0f0240 65%,#0f0240)';
       } else {
@@ -29,7 +28,7 @@ const HomeContainer: React.FC = () => {
 
   return (
     <>
-      <section className={`${styles.demo} section-padding-100-0`} id="demo">
+      <section className={`demo section-padding-100-0`} id="demo">
         <div className="container">
           <SectionHeading />
           <SectionDemo data={data} />
