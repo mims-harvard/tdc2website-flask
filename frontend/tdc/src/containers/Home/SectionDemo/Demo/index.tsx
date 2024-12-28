@@ -12,7 +12,7 @@ const Demo: React.FC<DemoProps> = ({ img, path }) => {
       <div className="demo-item">
         <Link href={path} passHref>
           <a>
-            <Image src={img} alt="demo" className="img-responsive" />
+            <Image src={img} alt="demo" className="img-responsive" layout="fill" />
           </a>
         </Link>
         <div className="preview-btn-wrapper text-center">

@@ -5,10 +5,6 @@ import FooterPattern from "../../assets/img/core-img/pattern.png"
 import FooterBg1 from "../../assets/img/core-img/footer-bg1.png"
 
 import HomeDemo1 from "../../assets/img/demos/demo-1.png"
-// import HomeDemo2 from "../../assets/img/demos/demo-2.png"
-// import HomeDemo3 from "../../assets/img/demos/demo-3.png"
-
-/////////////////  Imgs for HomeDemo1  /////////////////
 
 import HomeDemo1Dollar from "../../assets/img/svg/img-dollar.svg"
 
