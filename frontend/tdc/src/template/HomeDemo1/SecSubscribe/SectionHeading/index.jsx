@@ -1,4 +1,3 @@
-import './SectionHeading.css'
 
 const SectionHeading = () => {
 

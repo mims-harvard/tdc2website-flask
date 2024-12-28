@@ -2,10 +2,7 @@ import React , {useEffect} from "react";
 import {Helmet} from "react-helmet";
 import Aos from 'aos'
 
-// import Home from './pages/Home'
 import HomeDemo1 from './template/HomeDemo1'
-// import HomeDemo2 from './template/HomeDemo2'
-// import HomeDemo3 from './template/HomeDemo3'
 
 import 'aos/dist/aos.css';
 

@@ -1,28 +1,59 @@
 import { useEffect } from 'react';
 
-// Import data and utilities
-import { VerticalSocial } from '../../data/data-containers/data-HomeDemo1';
+import { 
+  VerticalSocial,
+  service_single_content,
+  SocialListIco,
+  timelineInfo,
+  ServiceBlock,
+  FQAInfo,
+  DocElementTitle,
+  TokenText,
+  TeamMember,
+  PartnersData
+} from '../../data/data-containers/data-HomeDemo1';
 import { handelTitle } from '../../utils';
 
-// Import layout components
 import Header from '../../layouts/Header';
 import Footer from '../../layouts/FooterPages';
 
-// Import section components
+import SecAboutUs from './SecAboutUs';
+import SecAboutUsClient from './SecAboutUsClient';
+import SecAboutUsClientPeople from './SecAboutUsClientPeople';
+import SecDemoVideo from './SecDemoVideo';
+import SecDistribution from './SecDistribution';
+import SecFAQ_Timeline from './SecWelcomeArea/SecWelcomeContent/SecFAQ_Timeline'
+import SecOurFeatures from './SecOurFeatures';
+import SecOurRoadmap from './SecOurRoadmap';
+import SecOurServices from './SecOurServices';
+import SecPartners from './SecPartners';
+import SecSubscribe from './SecSubscribe';
+import SecTeam from './SecTeam';
+import SecTrust from './SecTrust';
 import SecWelcomeArea from './SecWelcomeArea';
 import SecVerticalSocial from './SecVerticalSocial';
+import SingleCoolFact from './SecTrust/SecSingleCoolFact/SingleCoolFact';
+
+import { 
+  HomeDemo1About1,
+  HomeDemo1Solution,
+  HomeDemo1About1People,
+  HomeDemo1VideoBg4,
+  HomeDemo1ImgPhone,
+  HomeDemo1RingsBg,
+  HomeDemo1Allocation
+} from '@/utils/allImgs';
 
 const HomeDemo1: React.FC = () => {
   useEffect(() => {
-    // Set the document title
-    handelTitle('Alphunt - The foremost talent network');
+    handelTitle('TDC2: Multimodal ML Platform for Foundation Models in Therapeutics');
   }, []);
 
   useEffect(() => {
     // Set the body background image client-side
     if (typeof document !== 'undefined') {
       const body = document.getElementsByTagName('body')[0];
-      if (document.title === 'Alphunt - The foremost talent network') {
+      if (document.title === 'TDC2: Multimodal ML Platform for Foundation Models in Therapeutics') {
         body.style.backgroundImage =
           'linear-gradient(180deg,#240044 0,#0f0240 25%,#400959 40%,#0f0240 65%,#0f0240)';
       } else {
@@ -38,22 +69,21 @@ const HomeDemo1: React.FC = () => {
       <div className="HomeDemo1">
         <SecWelcomeArea />
         <SecVerticalSocial data={VerticalSocial} />
-        {/* Uncomment and use other sections as needed */}
-        {/* <SecTrust data={SingleCoolFact} /> */}
-        {/* <SecAboutUsClient img={HomeDemo1About1} /> */}
-        {/* <SecAboutUs img={HomeDemo1Solution} /> */}
-        {/* <SecAboutUsClientPeople img={HomeDemo1About1People} /> */}
+        <SecTrust data={SingleCoolFact} />
+        <SecAboutUsClient img={HomeDemo1About1} />
+        <SecAboutUs img={HomeDemo1Solution} />
+        <SecAboutUsClientPeople img={HomeDemo1About1People} />
         <div className="clearfix" />
-        {/* <SecDemoVideo img={HomeDemo1VideoBg4} /> */}
+        <SecDemoVideo img={HomeDemo1VideoBg4} />
         <div className="clearfix" />
-        {/* <SecOurServices data={service_single_content} /> */}
-        {/* <SecSubscribe data={SocialListIco} /> */}
-        {/* <SecOurRoadmap data={timelineInfo} /> */}
-        {/* <SecOurFeatures data={ServiceBlock} imgPhone={HomeDemo1ImgPhone} Rings={HomeDemo1RingsBg} /> */}
-        {/* <SecFAQ_Timeline FQAInfo={FQAInfo} DocElementTitle={DocElementTitle} /> */}
-        {/* <SecDistribution img={HomeDemo1Allocation} data={TokenText} /> */}
-        {/* <SecTeam data={TeamMember} /> */}
-        {/* <SecPartners data={PartnersData} /> */}
+        <SecOurServices data={service_single_content} />
+        <SecSubscribe data={SocialListIco} />
+        <SecOurRoadmap data={timelineInfo} />
+        <SecOurFeatures data={ServiceBlock} imgPhone={HomeDemo1ImgPhone} Rings={HomeDemo1RingsBg} />
+        <SecFAQ_Timeline FQAInfo={FQAInfo} DocElementTitle={DocElementTitle} />
+        <SecDistribution img={HomeDemo1Allocation} data={TokenText} />
+        <SecTeam data={TeamMember} />
+        <SecPartners data={PartnersData} />
       </div>
       <Footer />
     </>

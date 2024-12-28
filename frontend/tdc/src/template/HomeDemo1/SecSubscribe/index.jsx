@@ -13,11 +13,9 @@ const SecSubscribe = ({data}) => {
                     <div className="subscribe-wrapper">
                         <SectionHeading />
                         <div className="service-text">
-                            
-                            {/* <SecGroup /> */}
+                            <SecGroup />
                             <SecTelegramText />
-                            {/* <SecSocialList data={data} /> */}
-                            
+                            <SecSocialList data={data} />
                         </div>
                     </div>
                 </div>
