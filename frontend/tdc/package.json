@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "formik": "^2.4.6",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
     "next": "15.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "yup": "^1.6.1"
+    "react-helmet": "^6.1.0",
+    "sass": "^1.83.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
