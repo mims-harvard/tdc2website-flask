@@ -40,15 +40,13 @@ import {
 } from '../../utils/allImgs'
 
 export const VerticalSocial = [
-    // {nameIco:'fa fa-telegram'},
-    // {nameIco:'fa fa-medium'},
-    // {nameIco:'fa fa-facebook'},
-    // {nameIco:'fa fa-twitter', link:'https://twitter.com/Alphunt_'},
-    // {nameIco:'fa fa-github'},
-    {nameIco:'fa fa-instagram', link:'https://www.instagram.com/apliko_io/'},
-    {nameIco:'fa fa-linkedin', link:'https://www.linkedin.com/company/apliko-io'},
-    // {nameIco:'fa fa-server', link:'https://discord.gg/ZJ67MtXag4'},
-    {nameIco:'fa fa-hacker-news', link:'https://www.crunchbase.com/organization/apliko-io'} 
+    {nameIco:'fa-brands fa-x-twitter', link:'https://x.com/ProjectTDC'},
+    {nameIco:'fa-brands fa-github', link:'https://github.com/mims-harvard/TDC'},
+    {nameIco:'fa-brands fa-discord', link:'https://discord.gg/6zdHZ3tT'},
+    {nameIco:'fa-solid fa-newspaper', link:'https://tdcommons.ai/news'},
+    {nameIco:'fa-brands fa-slack', link:'https://join.slack.com/t/pytdc/shared_invite/zt-x0ujg5v6-zwtQZt83fhRdgrYjXRFz5g'},
+    {nameIco:'fa-brands fa-youtube', link:'https://www.youtube.com/watch?v=ZuCOhEZtaOw&pp=ygUfeml0bmlrIHRoZXJhcGV1dGljIGRhdGEgY29tbW9ucw%3D%3D'},
+    {nameIco:'fa-solid fa-file-pdf', link:'https://www.biorxiv.org/content/10.1101/2024.06.12.598655v2'} 
 ]
 
 export const SingleCoolFact = [
@@ -193,20 +191,22 @@ export const FQAInfo = [
 ]
 
 export const DocElementTitle = [
-    // {
-    //     title:'WhitePaper'
-    // },
     {
-        title:'Alphunt One Pager',
-        link:'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/23963367906679302864893822046671067385534276026416763800497373768214537830410/'
+        title:'NeurIPS\'24 AIDrugX Spotlight Paper',
+        link:'https://openreview.net/pdf?id=kL8dlYp6IM'
     },
     {
-        title:'NFTCalendar Interview',
-        link:'https://nftcalendar.io/news/apliko-emblem-interview/'
+        title:'NeurIPS\'24 AIDrugX Poster',
+        link:'https://drive.google.com/file/d/1plypydZCaegbgxyCl-xehFxSgwX6e8So/view?usp=sharing'
     },
-    // {
-    //     title:'Marketing Plan'
-    // },
+    {
+        title:'Western Bioinformatics Seminar',
+        link:'https://www.events.westernu.ca/events/schulich-medicine-dentistry/2024-11/western-bioinformatics-nov14.html'
+    },
+    {
+        title:'MoML\'24 Conference @ Mila',
+        link:'https://x.com/ProjectTDC/status/1803581129376629234'
+    },
 ]
 
 export const TokenText = [

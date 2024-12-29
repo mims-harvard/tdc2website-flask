@@ -120,7 +120,4 @@ export {
 	HomeDemo1BlogImg1,
 	HomeDemo1BlogImg2,
 	HomeDemo1BlogImg3,
-
-
-	
 }

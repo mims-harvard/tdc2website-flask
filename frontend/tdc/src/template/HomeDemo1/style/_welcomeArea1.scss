@@ -44,8 +44,8 @@
     color: #fff !important;
     box-shadow: 0 3ox 20px rgba(0, 0, 0, 0.1) !important;
     border-radius: 100px !important;
-    background-image: -webkit-linear-gradient(left, #21d397 0%, #7450fe 51%, #21d397 100%);
-    background-image: linear-gradient(to right, #21d397 0%, #7450fe 51%, #21d397 100%);
+    background-image: -webkit-linear-gradient(left, #FFB300 0%, #3A9C94 51%, #FFB300 100%);
+    background-image: linear-gradient(to right, #FFB300 0%, #3A9C94 51%, #FFB300 100%);
     -webkit-transition: all 500ms !important;
     transition: all 500ms !important;
 }
@@ -63,6 +63,10 @@
 }
 .HomeDemo1 .hero-content.dark-blue{
     background: rgb(33, 0, 67, 0.9);
+}
+
+.HomeDemo1 .hero-content.tdc-black{
+    background: #252626;
 }
 .HomeDemo1 .hero-content .ico-counter{
     margin: 100px 7% 0;
@@ -115,7 +119,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(to bottom right,#766ee6 0,#3540b0);
+    background-image: linear-gradient(to bottom right,#FFDF00 0,#FFB300);
     border-radius: 100px;
     opacity: .5;
 }

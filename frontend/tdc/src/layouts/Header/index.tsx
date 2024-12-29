@@ -52,7 +52,7 @@ const Header = () => {
                     <li><a onClick={moveSmooth} href="#team">Team</a></li>
                     <li><a onClick={moveSmooth} href="#contact">Contact</a></li>
                   </ul>
-                  <a href="https://app.alphunt.com" className="btn login-btn ml-50">NFT App</a>
+                  <a href="https://tdcommons.ai" className="btn login-btn ml-50" style={{borderColor:'#FFDF00'}}>Homepage</a>
                 </div>
               </div>
             </nav>

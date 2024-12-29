@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import { HomeDemo1Dollar } from '../../../utils/allImgs';
-import { DocElementTitle, FQAInfo } from '../../../data/data-containers/data-HomeDemo1';
-import SECFAQ_TIMELINE from './SecWelcomeContent/SecFAQ_Timeline';
+import { DocElementTitle } from '../../../data/data-containers/data-HomeDemo1';
 import SecWelcomeContent from './SecWelcomeContent';
+import IcoDocs from './SecWelcomeContent/SecFAQ_Timeline/IcoDocs';
 
 const DIV: React.FC = () => <div className="dream-blip blip1"></div>;
 
@@ -16,7 +15,7 @@ const SecWelcomeArea: React.FC = () => {
     >
       <div className="divimage dzsparallaxer--target Home1WelcomeAreaIMG"></div>
 
-      <div className="hero-content dark-blue">
+      <div className="hero-content tdc-black">
         {Array(4)
           .fill(null)
           .map((_, key) => (
@@ -28,13 +27,12 @@ const SecWelcomeArea: React.FC = () => {
         <div className="container h-100">
           <div className="row h-100 align-items-center">
             <div className="col-12 col-lg-12 col-md-12" style={{ textAlign: 'center' }}>
-              <SecWelcomeContent img={HomeDemo1Dollar} />
+              <SecWelcomeContent img='/tdc just letters.png' />
             </div>
             <div className="col-12 col-lg-6 col-md-12">
               <div className="main-ilustration"></div>
             </div>
           </div>
-          <SECFAQ_TIMELINE FQAInfo={FQAInfo} DocElementTitle={DocElementTitle} />
         </div>
       </div>
     </section>
