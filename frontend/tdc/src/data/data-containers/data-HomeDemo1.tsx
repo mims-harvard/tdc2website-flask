@@ -43,37 +43,23 @@ export const VerticalSocial = [
     {nameIco:'fa-brands fa-x-twitter', link:'https://x.com/ProjectTDC'},
     {nameIco:'fa-brands fa-github', link:'https://github.com/mims-harvard/TDC'},
     {nameIco:'fa-brands fa-discord', link:'https://discord.gg/6zdHZ3tT'},
-    {nameIco:'fa-solid fa-newspaper', link:'https://tdcommons.ai/news'},
     {nameIco:'fa-brands fa-slack', link:'https://join.slack.com/t/pytdc/shared_invite/zt-x0ujg5v6-zwtQZt83fhRdgrYjXRFz5g'},
     {nameIco:'fa-brands fa-youtube', link:'https://www.youtube.com/watch?v=ZuCOhEZtaOw&pp=ygUfeml0bmlrIHRoZXJhcGV1dGljIGRhdGEgY29tbW9ucw%3D%3D'},
+    {nameIco:'fa-solid fa-face-smile', link:'https://huggingface.co/tdc'},
     {nameIco:'fa-solid fa-file-pdf', link:'https://www.biorxiv.org/content/10.1101/2024.06.12.598655v2'} 
 ]
 
 export const SingleCoolFact = [
     {
         img:HomeDemo1IcoPlatforms1,
-        ico_check:true
+        link:'https://www.events.westernu.ca/events/schulich-medicine-dentistry/2024-11/western-bioinformatics-nov14.html',
+        title:'Western Bioinformatics Conference'
     },
     {
-        img:HomeDemo1IcoPlatforms2,
-        ico_check:false
+        img:HomeDemo1IcoPlatforms1,
+        link:'https://western-bioinfo.github.io/seminars/alejandro-velez-arce',
+        title:'Medical Bioinformatics@Western'
     },
-    {
-        img:HomeDemo1IcoPlatforms3,
-        ico_check:true
-    },
-    {
-        img:HomeDemo1IcoPlatforms4,
-        ico_check:true
-    },
-    {
-        img:HomeDemo1IcoPlatforms5,
-        ico_check:false
-    },
-    {
-        img:HomeDemo1IcoPlatforms6,
-        ico_check:true
-    }
 ]
 
 export const service_single_content = [

@@ -1,10 +1,11 @@
 import React from 'react';
-import SingleCoolFact from './SingleCoolFact';
 import { StaticImageData } from 'next/image';
+import EmbeddedPage from '../../../../components/EmbeddedPage';
 
 type CoolFactData = {
   img: StaticImageData;
-  ico_check: boolean;
+  link: string;
+  title: string;
 };
 
 type SecSingleCoolFactProps = {
@@ -13,12 +14,28 @@ type SecSingleCoolFactProps = {
 
 const SecSingleCoolFact: React.FC<SecSingleCoolFactProps> = ({data}) => {
   return (
-    <>
+    <div
+      style={{
+        display: 'flex', 
+        gap: '20px', 
+        justifyContent: 'center', 
+        flexWrap: 'wrap', 
+        padding: '20px', 
+      }}
+    >
       {data &&
         data.map((item, key) => (
-          <SingleCoolFact key={key} img={item.img.src} ico_check={item.ico_check} />
+          <div
+            key={key}
+            style={{
+              flex: '0 1 auto', 
+              width: '300px', 
+            }}
+          >
+            <EmbeddedPage src={item.link} title={item.title} />
+          </div>
         ))}
-    </>
+    </div>
   );
 };
 

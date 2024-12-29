@@ -77,15 +77,15 @@ const HomeDemo1: React.FC = () => {
         <SecDemoVideo img={HomeDemo1VideoBg4.src} />
         <div className="clearfix" />
         <SecOurServices data={service_single_content} />
-        <SecSubscribe data={SocialListIco} />
+        {/* <SecSubscribe data={SocialListIco} /> */}
         <SecOurRoadmap data={timelineInfo} />
-        <SecOurFeatures data={ServiceBlock} imgPhone={HomeDemo1ImgPhone.src} Rings={HomeDemo1RingsBg.src} />
-        <SecFAQ_Timeline FQAInfo={FQAInfo} DocElementTitle={DocElementTitle} />
-        <SecDistribution img={HomeDemo1Allocation.src} data={TokenText} />
+        {/* <SecOurFeatures data={ServiceBlock} imgPhone={HomeDemo1ImgPhone.src} Rings={HomeDemo1RingsBg.src} /> */}
+        {/* <SecFAQ_Timeline FQAInfo={FQAInfo} DocElementTitle={DocElementTitle} /> */}
+        {/* <SecDistribution img={HomeDemo1Allocation.src} data={TokenText} /> */}
         <SecTeam data={TeamMember} />
         <SecPartners data={PartnersData} />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

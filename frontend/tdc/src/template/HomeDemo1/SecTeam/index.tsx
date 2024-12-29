@@ -20,15 +20,15 @@ const SecTeam: React.FC<SecTeamProps> = ({ data }) => {
         <div className="row">
           <div className="col-12">
             <SectionHeading
-              title="The Founder"
-              text="MIT Computer Science graduate and software engineer with years of experience in the industry. Have additionally contributed to public and private partnerships for jobs and recruiting through the World Bank and Pinterest."
+              title="TDC-2 Team"
+              text="To be disclosed"
               color1="white"
               color2="white"
             />
           </div>
         </div>
 
-        <div className="row">
+        {/* <div className="row">
           {data &&
             data.map((item, key) => (
               <div className="col-sm-12" data-aos="fade-up" key={key}>
@@ -60,7 +60,7 @@ const SecTeam: React.FC<SecTeamProps> = ({ data }) => {
                 </div>
               </div>
             ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

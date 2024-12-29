@@ -5,7 +5,8 @@ import { StaticImageData } from 'next/image';
 
 type CoolFactData = {
   img: StaticImageData;
-  ico_check: boolean;
+  link: string;
+  title: string;
 };
 
 type SecTrustProps = {
@@ -16,8 +17,8 @@ const SecTrust: React.FC<SecTrustProps> = ({ data }) => {
   return (
     <section className="trust-section section-padding-100">
       <SectionHeading
-        title="We are trusted"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo."
+        title="TDC-2 Talks"
+        text="Seminars and presentations sharing the new tasks and architecture of TDC-2."
       />
 
       <div className="container">

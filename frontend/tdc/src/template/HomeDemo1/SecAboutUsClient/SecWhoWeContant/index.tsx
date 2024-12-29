@@ -15,10 +15,9 @@ const SecWhoWeContant = () => {
             <Span /> 
             <Span /> 
             </div>
-            <h4 data-aos="fade-up">For Creators</h4>
-            <p data-aos="fade-up">Whether you&apos;re an aspiring influencer, artist, media creator, or entrepreneur,
-            We provide the perfect platform to kick off your projects through innovative tokenomics.</p>
-            <a data-aos="fade-up" className="btn dream-btn mt-30"  >Read More</a>
+            <h4 data-aos="fade-up">TDC Model Server</h4>
+            <p data-aos="fade-up">TDC-2 has released open source inference serving software that streamlines AI inferencing for single-cell foundation models across modalities.</p>
+            <a data-aos="fade-up" className="btn dream-btn mt-30" href="https://huggingface.co/tdc" style={{borderColor: '#FFDF00'}}>HF Model Hub</a>
         </div>
     </div>
   );

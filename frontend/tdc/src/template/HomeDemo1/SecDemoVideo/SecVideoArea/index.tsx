@@ -17,7 +17,7 @@ const SecVideoArea: React.FC<SecVideoAreaProps> = ({ img }) => {
         </div>
         <div className="video-icon">
           <a
-            href="https://www.youtube.com/watch?v=gbXEPHsTkgU"
+            href="https://youtu.be/ZuCOhEZtaOw?si=Kh5DiaUNdkvznYSh"
             className="btn dream-btn video-btn"
             id="videobtn"
           >

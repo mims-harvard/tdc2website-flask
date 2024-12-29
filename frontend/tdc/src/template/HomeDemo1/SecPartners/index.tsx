@@ -16,11 +16,11 @@ const SecPartners: React.FC<SecPartnersProps> = ({ data }) => {
   return (
     <section className="partners">
       <SectionHeading
-        title="Our Early Collaborators"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo."
+        title="Our Collaborators"
+        text="To be disclosed"
       />
 
-      <div className="container">
+      {/* <div className="container">
         {data &&
           data.map((item, key) => (
             <div className="row" key={key}>
@@ -35,7 +35,7 @@ const SecPartners: React.FC<SecPartnersProps> = ({ data }) => {
               <div className="col-sm-4"></div>
             </div>
           ))}
-      </div>
+      </div> */}
     </section>
   );
 };
