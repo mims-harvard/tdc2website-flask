@@ -45,12 +45,12 @@ const Header = () => {
                 </div>
                 <div className="classynav">
                   <ul id="nav">
-                    <li><a onClick={moveSmooth} href="#home">Home</a></li>
-                    <li><a onClick={moveSmooth} href="#about">About</a></li>
-                    <li><a onClick={moveSmooth} href="#services">Services</a></li>
-                    <li><a onClick={moveSmooth} href="#roadmap">Roadmap</a></li>
-                    <li><a onClick={moveSmooth} href="#team">Team</a></li>
-                    <li><a onClick={moveSmooth} href="#contact">Contact</a></li>
+                    <li><a onClick={moveSmooth} href="#home" className="login-btn" style={{borderColor:'#FFEFC2', textAlign:'center', alignItems:'center'}}>Home</a></li>
+                    <li><a onClick={moveSmooth} href="#about" className="login-btn" style={{borderColor:'#FFEFC2', textAlign:'center', alignItems:'center'}}>About</a></li>
+                    <li><a onClick={moveSmooth} href="#services" className="login-btn" style={{borderColor:'#FFEFC2', textAlign:'center', alignItems:'center'}}>Services</a></li>
+                    <li><a onClick={moveSmooth} href="#roadmap" className="login-btn" style={{borderColor:'#FFEFC2', textAlign:'center', alignItems:'center'}}>Roadmap</a></li>
+                    <li><a onClick={moveSmooth} href="#team" className="login-btn" style={{borderColor:'#FFEFC2', textAlign:'center', alignItems:'center'}}>Team</a></li>
+                    <li><a onClick={moveSmooth} href="#contact" className="login-btn" style={{borderColor:'#FFEFC2', textAlign:'center', alignItems:'center'}}>Contact</a></li>
                   </ul>
                   <a href="https://tdcommons.ai" className="btn login-btn ml-50" style={{borderColor:'#FFDF00'}}>Homepage</a>
                 </div>

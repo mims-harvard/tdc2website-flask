@@ -200,12 +200,12 @@ export const DocElementTitle = [
         link:'https://drive.google.com/file/d/1plypydZCaegbgxyCl-xehFxSgwX6e8So/view?usp=sharing'
     },
     {
-        title:'Western Bioinformatics Seminar',
-        link:'https://www.events.westernu.ca/events/schulich-medicine-dentistry/2024-11/western-bioinformatics-nov14.html'
+        title:'Western Bioinformatics Seminar Slides',
+        link:'https://drive.google.com/file/d/197Zay3tu0F-MJw_orf0QRWyyhkwN6lqC/view?usp=sharing'
     },
     {
-        title:'MoML\'24 Conference @ Mila',
-        link:'https://x.com/ProjectTDC/status/1803581129376629234'
+        title:'MoML\'24 Conference @ Mila Poster',
+        link:'https://drive.google.com/file/d/1LYdITeFY5iX07zyXPGVEjMpYjuHMrneS/view?usp=sharing'
     },
 ]
 
