@@ -17,9 +17,17 @@ const SecOurServices: React.FC<SecOurServicesProps> = ({ data }) => {
     <section className="our_services_area section-padding-100-70 clearfix" id="services">
       <div className="container">
         <SectionHeading
-          title="Our Core Features"
-          text=""
-          // text="We power everyone's favorite place to connect and find their dream opportunities through democratic tokenomics, privacy-preserving data and machine learning blockchain infrastructure, and optimized cost structures"
+          title="TDC-2 ML Tasks"
+          text="We introduce therapeutics ML tasks, datasets, and benchmarks spanning an unprecedented number of modalities.
+          Modalities in TDC-2 include but are not limited to: single-cell gene expression atlases,
+single-cell chemical and genetic perturbations, clinical trial outcome data, peptide sequence data,
+peptidomimetics protein-peptide interaction data from AS-MS spectroscopy, novel 3D
+structural protein data, and cell-type-specific protein-protein interaction networks
+at single-cell resolution. TDC-2 introduces ML tasks taking on open challenges, including the
+inferential gap in precision medicine and evaluation on longitudinal data,
+model generalization across cell lines and single-cell perturbations that were not encountered during 
+model training, and evaluation of models across a broad range of diverse biological
+contexts."
         />
 
         <div className="row">

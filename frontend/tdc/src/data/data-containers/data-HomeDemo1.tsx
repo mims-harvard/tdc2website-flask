@@ -65,72 +65,134 @@ export const SingleCoolFact = [
 export const service_single_content = [
     {
         img:HomeDemo1Services6,
-        title:'Angel investment network powered by tokenomics.',
-        content: ''
+        title:'TDC.scDTI',
+        content: 'Single-cell drug-target nomination (identification). The goal is to train a model for predicting the probability that a protein is a candidate therapeutic target in a specific cell type.',
+        link:'https://tdcommons.ai/multi_pred_tasks/scdti'
     },
     {
         img:HomeDemo1Services3,
-        title:'Security, privacy, untraceability',
-        content:''
+        title:'TDC.PerturbOutcome',
+        content:'We define a task for predicting responses in gene expression of single cells to chemical and genetic perturbations, aiming to measure model generalization across cell lines and perturbation types.',
+        link:'https://tdcommons.ai/multi_pred_tasks/counterfactual'
     },
     {
         img:HomeDemo1Services4,
-        title:'Supporting our creators through Tokenomics. Launch your project through NFTs.',
-        content:""
+        title:'TDC.ProteinPeptide',
+        content:"Capturing the dynamic nature of protein-peptide interactions requires advanced sampling techniques and computational resources, making the prediction of binding affinities more complex (Antes et al., 2014). TDC-2 provides benchmarks integrating newly discovered peptides to test ML models on their ability to generalize to cutting-edge peptidomimetics.",
+        link:'https://tdcommons.ai/multi_pred_tasks/proteinpeptide'
     },
     {
         img:HomeDemo1Services2,
-        title:'Get rewarded for time taken to interview and prepare for jobs',
-        content:""
+        title:'TDC.TCREpitope',
+        content:" T-cells are an integral part of the adaptive immune system, whose survival, proliferation, activation and function are all governed by the interaction of their T-cell receptor (TCR) with immunogenic peptides (epitopes). This new task aims to predict the binding affinity given a pair of TCR sequence and epitope sequence. The models are, at very least, expected to generalize to unseen TCRs. But the main challenge of this dataset is to generalize to samples where both epitope and TCR are unseen.",
+        link: 'https://tdcommons.ai/multi_pred_tasks/tcrepitope'
     },
     {
         img:HomeDemo1Services1,
-        title: "Scalable and reliable blockchain infrastructure",
-        content: ""
+        title: "TDC.TrialOutcome",
+        content: "Clinical trial outcome prediction is a machine learning task that aims to forecast the outcome of clinical trials, such as the approval rate of a drug or treatment. It utilizes various clinical trial features, including the drug's molecular structure, disease code representing the medical condition, and eligibility criteria that specify participant selection criteria. Machine learning models for clinical trial outcome prediction are expected to demonstrate robust generalization to novel drug molecular structures and rare diseases. The ability to generalize well to diverse and evolving conditions is crucial for the models to be adaptable and effectively contribute to the field of clinical trials.",
+        link: 'https://tdcommons.ai/multi_pred_tasks/trialoutcome'
     },
     {
         img:HomeDemo1Services5,
-        title:'Find your dream opportunity. Get paid in crypto.',
-        content:''
+        title:'TDC.SBDD',
+        content:'Structure-based Drug Design is to generate diverse, novel molecules that have high binding affinity to protein pockets (3D structures) and desirable chemical properties. These properties are measured by oracle functions. A machine learning task first learns the molecular characteristics given specific protein pockets from a large set of protein-ligand pair data. Then, from the learned conditional distribution, we can sample novel candidates.',
+        link:'https://tdcommons.ai/multi_pred_tasks/sbdd'
     }
 
 ]
 
 export const timelineInfo = [
     {
+        timelineClass:"block block-right mt-30",
+        title:'TDC.TCREpitope Introduced',
+        date_from:'Feb 19th, 2022',
+        date_to:'June 19th, 2024',
+        content:'TDC has a new task on TCR-Epitope Binding prediction (Thanks to Anna and Jannis)! We enhanced the task by consolidating TCHard and PanPep datasets and further ran benchmarks for numerous SoTA models in our publications.'
+    },
+    {
         timelineClass:"block block-left",
-        title:'Traction testing',
-        date_from:'April 24,2022',
-        date_to:'May 5th, 2022',
-        content:'Ran fake successful Fake Door traction test'
+        title:'Introduction of TDC-2 Resource model and TDC.PrimeKG',
+        date_from:'July 27,2022',
+        date_to:'Sep 24th, 2024',
+        content:'Piloted by the introduction of the PrimeKG API to TDC, the TDC Resource module became the data model for the later introduction of TDC\'s API-first architecture. Enhancements have been implemented for the PrimeKG API since.'
     },
     {
         timelineClass:"block block-right mt-30",
-        title:'Groundwork Preparation for ICO, Community Groundwork, Product Roadmapping and Development',
-        date_from:'May 6th, 2022',
-        date_to:'June 30th, 2022',
-        content:'Research and whitepaper developed. Communities on Discord, Telegram, Twitter, and LinkedIn started. Beta development started.'
+        title:'TDC.SBDD introduced',
+        date_from:'November 3rd, 2022',
+        date_to:'June 19th, 2024',
+        content:'TDC has a new task on structure-based drug design SBDD with four datasets PDBBind, DUD-E, scPDB. To support evaluation of SBDD tasks, we also include two evaluation metrics (RMSD, Kabsch-RMSD) that compare distances between two structures.'
     },
     {
         timelineClass:"block block-left mt-30",
-        title:'First AMA',
-        date_from:'July 1st, 2022',
-        date_to:'July 1st, 2022',
-        content:''
+        title:'TDC Huggingface Model Hub released using DeepPurpose framework',
+        date_from:'April 17th, 2023',
+        date_to:'June 19th, 2024',
+        content:'We\'re excited to announce the release of a new interface tdc_hf_interface that allows users to easily access and leverage pre-trained models hosted at HuggingFace on TDC datasets and tasks. In this first batch, we\'ve released nine pre-trained models from DeepPurpose that cover three popular ADMET datasets in the Commons.'
     },
     {
         timelineClass:"block block-right mt-30",
-        title:'Beta Released along with whitepaper one pager',
-        date_from:'August 13, 2022',
-        date_to:'August 13, 2022',
-        content:''
+        title:'TDC.TrialOutcome introduced',
+        date_from:'July 10th, 2023',
+        date_to:'June 19th 2024',
+        content:'TDC has a new exciting task on clinical trial outcome prediction (Thanks to Tianfan)! The release features the TOP dataset. TOP consists of 17,538 clinical trials with 13,880 small-molecule drugs and 5,335 diseases.'
     },
     {
         timelineClass:"block block-left mt-30",
-        title:'Yet to be disclosed',
+        title:'TDC.ProteinPeptide and API-first architecture introduced',
+        date_from:'March 22nd, 2024',
+        date_to:'June 19th 2024',
+        content:'TDC introduced the new protein-peptide binding affinity task along with the Ye X et al. dataset (thanks to Joseph Brown!). Affinity selection-mass spectrometry data of discovered ligands against single biomolecular targets (MDM2, ACE2, 12ca5) from the Pentelute Lab of MIT This dataset contains affinity selection-mass spectrometry data of discovered ligands against single biomolecular targets. Furthermore, the architecture of TDC was redesigned using the model-view-controller design pattern to enable multimodal dataviews, with this dataset serving as the pilot API-first dataset.'
+    },
+    {
+        timelineClass:"block block-right mt-30",
+        title:'TDC.PerturbOutcome introduced',
+        date_from:'April 5th, 2024',
+        date_to:'June 19th 2024',
+        content:'TDC introduced the new single-cell genetic and chemical perturbation response prediction tasks along with the scPerturb datasets.'
+    },
+    {
+        timelineClass:"block block-left mt-30",
+        title:'TDC-2 Multimodal Single-cell Retrieval API introduced',
+        date_from:'April 18th, 2024',
+        date_to:'June 19th 2024',
+        content:'TDC-2 introduces over 1,000 multimodal datasets, spanning approximately 85 million cells and pre-calculated foundation model embeddings from 5 state-of-the-art single-cell models via CZ CELLxGENE Census. The resource is integrated into the TDC API-first dataset model to enable retrieval of multimodal dataviews for diverse single-cell therapeutic AI tasks.'
+    },
+    {
+        timelineClass:"block block-right mt-30",
+        title:'TDC.scDTI introduced',
+        date_from:'April 26th, 2024',
+        date_to:'June 19th 2024',
+        content:'TDC-2 introduced the first-of-its-kind single-cell drug target nomination task. The release features a high-quality curated dataset from OpenTargets (thanks Michelle Li!).'
+    },
+    {
+        timelineClass:"block block-left mt-30",
+        title:'Alpha release of TDC-2, along with single-cell therapeutics AI benchmarks, is presented to MoML2024 at Mila',
+        date_from:'June 19th, 2024',
+        date_to:'June 22nd 2024',
+        content:'TDC-2 was released along with its pre-print in biorxiv and spotlight accepted to the Molecular Machine Learning Conference at Mila. Our poster featured single-cell therapeutics AI tasks and benchmarks, the API-first dataset, and the multimodal single-cell retrieval API.'
+    },
+    {
+        timelineClass:"block block-right mt-30",
+        title:'TDC-2 Model Server is alpha released',
+        date_from:'October 19th, 2024',
+        date_to:'November 11th 2024',
+        content:'TDC-2 released the alpha version of the Model Server, open source inference serving software that streamlines AI inferencing for single-cell foundation models across modalities, piloted by an inference pipeline for Geneformer. It is a first-of-its-kind release.'
+    },
+    {
+        timelineClass:"block block-left mt-30",
+        title:'TDC-2 is published and presented at NeurIPS and other venues',
+        date_from:'November 14th, 2024',
+        date_to:'December 15th 2024',
+        content:'The TDC-2 manuscript, "Signals in the Cells: Multimodal and Contextualized Machine Learning Foundations for Therapeutics.", was spotlight at NeurIPS AIDrugX 2024. TDC-2 was presented at the Western Bioinformatics Seminar Series and a new poster was presented at AIDrugX. The new poster introduced the TDC-2 model server for the first time.'
+    },
+    {
+        timelineClass:"block block-right mt-30",
+        title:'TDC-2 beta release',
         date_from:'TBD',
         date_to:'TBD',
-        content:''
+        content:'COMING SOON'
     },
 ]
 
