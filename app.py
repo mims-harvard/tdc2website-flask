@@ -4,7 +4,7 @@ from backend.metadata.publications import _PUBLICATIONS as publications
 import benchmark.groups as benchmark_groups
 import benchmark.leaderboards as benchmark_leaderboards
 
-from flask import Flask, flash, redirect, render_template, request, session, url_for, make_response
+from flask import Flask, flash, send_from_directory, redirect, render_template, request, session, url_for, make_response
 from flask_restful import Api, Resource
 
 app = Flask(__name__)
@@ -212,6 +212,15 @@ def benchmark_leaderboard_overview(group, leaderboard):
 
 
 ### Resources
+
+@app.route("/favicon.ico")
+def favicon():
+    return send_from_directory("static", "favicon-32x32.png", mimetype="image/png")
+
+# Serve _next/static files
+@app.route("/_next/static/<path:filename>")
+def next_static_files(filename):
+    return send_from_directory("_next/static", filename)
 
 class FctOverview(Resource):
 
