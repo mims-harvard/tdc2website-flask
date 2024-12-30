@@ -223,9 +223,17 @@ class FeedbackForm(Resource):
 
     def get(self):
         return make_response(render_template("/index-js.html"), 200, {'Content-Type': 'text/html'})
+
+
+class TDC2Homepage(Resource):
+
+    def get(self):
+        return make_response(render_template("/MyApp.html"), 200, {'Content-Type': 'text/html'})
+    
     
 api.add_resource(FctOverview, "/fct_overview")
 api.add_resource(FeedbackForm, "/feedback")
+api.add_resource(TDC2Homepage, "/tdc2")
     
 
 if __name__ == '__main__':

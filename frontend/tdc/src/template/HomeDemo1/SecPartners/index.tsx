@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 import SectionHeading from '../../../components/SectionHeading';
 import { StaticImageData } from 'next/image';
@@ -12,7 +11,7 @@ type SecPartnersProps = {
   data: PartnerData[];
 };
 
-const SecPartners: React.FC<SecPartnersProps> = ({ data }) => {
+const SecPartners: React.FC<SecPartnersProps> = () => {
   return (
     <section className="partners">
       <SectionHeading

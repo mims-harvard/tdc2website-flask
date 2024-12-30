@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 import SectionHeading from '../../../components/SectionHeading';
 import { StaticImageData } from 'next/image';
@@ -13,7 +12,7 @@ type SecTeamProps = {
   data: TeamMember[];
 };
 
-const SecTeam: React.FC<SecTeamProps> = ({ data }) => {
+const SecTeam: React.FC<SecTeamProps> = () => {
   return (
     <section className="our_team_area section-padding-0-0 clearfix" id="team">
       <div className="container">

@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { DocElementTitle } from '../../../data/data-containers/data-HomeDemo1';
 import SecWelcomeContent from './SecWelcomeContent';
-import IcoDocs from './SecWelcomeContent/SecFAQ_Timeline/IcoDocs';
 
 const DIV: React.FC = () => <div className="dream-blip blip1"></div>;
 

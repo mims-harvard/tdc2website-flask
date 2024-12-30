@@ -1,11 +1,4 @@
 import {
-    HomeDemo1IcoPlatforms1,
-    HomeDemo1IcoPlatforms2,
-    HomeDemo1IcoPlatforms3,
-    HomeDemo1IcoPlatforms4,
-    HomeDemo1IcoPlatforms5,
-    HomeDemo1IcoPlatforms6,
-
     HomeDemo1Services1,
     HomeDemo1Services2,
     HomeDemo1Services3,
@@ -51,12 +44,12 @@ export const VerticalSocial = [
 
 export const SingleCoolFact = [
     {
-        img:HomeDemo1IcoPlatforms1,
+        img:HomeDemo1BlogImg1,
         link:'https://www.events.westernu.ca/events/schulich-medicine-dentistry/2024-11/western-bioinformatics-nov14.html',
         title:'Western Bioinformatics Conference'
     },
     {
-        img:HomeDemo1IcoPlatforms1,
+        img:HomeDemo1BlogImg1,
         link:'https://western-bioinfo.github.io/seminars/alejandro-velez-arce',
         title:'Medical Bioinformatics@Western'
     },

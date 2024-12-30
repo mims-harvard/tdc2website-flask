@@ -3,12 +3,7 @@ import { useEffect } from 'react';
 import { 
   VerticalSocial,
   service_single_content,
-  SocialListIco,
   timelineInfo,
-  ServiceBlock,
-  FQAInfo,
-  DocElementTitle,
-  TokenText,
   TeamMember,
   PartnersData,
   SingleCoolFact
@@ -16,19 +11,14 @@ import {
 import { handelTitle } from '../../utils';
 
 import Header from '../../layouts/Header';
-import Footer from '../../layouts/FooterPages';
 
 import SecAboutUs from './SecAboutUs';
 import SecAboutUsClient from './SecAboutUsClient';
 import SecAboutUsClientPeople from './SecAboutUsClientPeople';
 import SecDemoVideo from './SecDemoVideo';
-import SecDistribution from './SecDistribution';
-import SecFAQ_Timeline from './SecWelcomeArea/SecWelcomeContent/SecFAQ_Timeline'
-import SecOurFeatures from './SecOurFeatures';
 import SecOurRoadmap from './SecOurRoadmap';
 import SecOurServices from './SecOurServices';
 import SecPartners from './SecPartners';
-import SecSubscribe from './SecSubscribe';
 import SecTeam from './SecTeam';
 import SecTrust from './SecTrust';
 import SecWelcomeArea from './SecWelcomeArea';
@@ -39,9 +29,6 @@ import {
   HomeDemo1Solution,
   HomeDemo1About1People,
   HomeDemo1VideoBg4,
-  HomeDemo1ImgPhone,
-  HomeDemo1RingsBg,
-  HomeDemo1Allocation
 } from '@/utils/allImgs';
 
 const HomeDemo1: React.FC = () => {
