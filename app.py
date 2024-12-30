@@ -220,7 +220,7 @@ def favicon():
 # Serve _next/static files
 @app.route("/_next/static/<path:filename>")
 def next_static_files(filename):
-    return send_from_directory("_next/static", filename)
+    return send_from_directory("static/_next/static", filename)
 
 class FctOverview(Resource):
 
