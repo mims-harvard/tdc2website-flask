@@ -6,6 +6,7 @@ type ServiceData = {
   img: string;
   title: string;
   content: string;
+  link: string
 };
 
 type SecOurServicesProps = {
@@ -33,7 +34,7 @@ contexts."
         <div className="row">
           {data &&
             data.map((item, key) => (
-              <Content key={key} img={item.img} title={item.title} content={item.content} />
+              <Content key={key} img={item.img} title={item.title} content={item.content} link={item.link}/>
             ))}
         </div>
       </div>

@@ -13,7 +13,6 @@ const SecVideoArea: React.FC<SecVideoAreaProps> = ({ img }) => {
     >
       <div className="welcome-video-area">
         <div className="welcome-thumb">
-        <Image src={img} alt="Welcome Thumbnail" layout="fill" />
         </div>
         <div className="video-icon">
           <a

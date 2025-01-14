@@ -248,6 +248,14 @@ export const DocElementTitle = [
         title:'MoML\'24 Conference @ Mila Poster',
         link:'https://drive.google.com/file/d/1LYdITeFY5iX07zyXPGVEjMpYjuHMrneS/view?usp=sharing'
     },
+    {
+        title:'Nature Chemical Biology 2022',
+        link:'https://www.nature.com/articles/s41589-022-01131-2'
+    },
+    {
+        title:'NeurIPS 2021',
+        link:'https://openreview.net/pdf?id=8nvgnORnoWr'
+    }
 ]
 
 export const TokenText = [

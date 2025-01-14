@@ -8,25 +8,23 @@ type SecWelcomeContentProps = {
 };
 
 const SecWelcomeContent: React.FC<SecWelcomeContentProps> = ({ img }) => {
+  const handleClick = () => {
+    window.location.href = 'https://tdcommons.ai';
+  };
   return (
     <div className="welcome-content">
-      <div className="promo-section">
-        <div className="integration-link">
-          <span className="integration-icon">
-            <Image src={img} width="24" height="24" alt="X" />
-          </span>
-          <span className="integration-text">Introducing TDC-2</span>
-        </div>
-      </div>
-      <h1 style={{ color: '#3A9C94', fontFamily: 'sans-serif'}}>The Commons (TDC-2)</h1>
+      <h1 style={{ color: '#3A9C94', fontFamily: 'sans-serif'}}>PyTDC: Therapeutics Commons</h1>
       <h1 style={{ color: '#FFB300', fontFamily: 'sans-serif' }}>A multimodal ML platform for biomedical foundation models</h1>
       <h3 style={{ color: '#FFDF00', fontFamily: 'sans-serif' }}>COMING SOON</h3>
       <p></p>
       <h3 style={{ color: '#FFEFC2', fontFamily: 'sans-serif' }}>
-        Learn more about our alpha release below! (TODO: change this)
+        Learn more about our alpha release of TDC-2 below! 
       </h3>
       <p>
-        TDC-2 is fantastic. Absolutely the best. (TODO: change this)
+      We present PyTDC, a first-of-its-kind machine-learning platform for biomedical foundation models across multiple modalities.
+      PyTDC is open-source software providing infrastructure to streamline biomedical AI training, benchmarking, and inferencing. It 
+      integrates multimodal biological data, single-cell analysis biomarkers, and a broad range of machine learning tasks in 
+      therapeutics. 
       </p>
       <div className='row'>
         <div className="col-md-2"></div>
