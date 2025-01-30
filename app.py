@@ -242,7 +242,7 @@ class TDC2Homepage(Resource):
     
 api.add_resource(FctOverview, "/fct_overview")
 api.add_resource(FeedbackForm, "/feedback")
-api.add_resource(TDC2Homepage, "/tdc2")
+api.add_resource(TDC2Homepage, "/pytdc")
     
 
 if __name__ == '__main__':
