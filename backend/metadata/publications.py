@@ -7,7 +7,7 @@ _PUBLICATIONS = [
         2024,
         12,
         {
-            "Paper": "https://openreview.net/pdf?id=kL8dlYp6IM",
+            "Paper": "https://zitniklab.hms.harvard.edu/publications/papers/TDC-neurips21-main.pdf",
             "Poster": "https://drive.google.com/file/d/1plypydZCaegbgxyCl-xehFxSgwX6e8So/view?usp=sharing"
         }
     ),
@@ -26,7 +26,7 @@ _PUBLICATIONS = [
         2024,
         6,
         {
-            "Paper": "https://www.biorxiv.org/content/10.1101/2024.06.12.598655v2",
+            "Paper": "https://zitniklab.hms.harvard.edu/publications/papers/TDC-neurips21-main.pdf",
             "Conference": "https://portal.ml4dd.com/moml-2024",
             "Poster and Tweet": "https://x.com/ProjectTDC/status/1803581129376629234"
         }

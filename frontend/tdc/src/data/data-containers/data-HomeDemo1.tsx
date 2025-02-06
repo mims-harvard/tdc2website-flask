@@ -39,7 +39,7 @@ export const VerticalSocial = [
     {nameIco:'fa-brands fa-slack', link:'https://join.slack.com/t/pytdc/shared_invite/zt-x0ujg5v6-zwtQZt83fhRdgrYjXRFz5g'},
     {nameIco:'fa-brands fa-youtube', link:'https://www.youtube.com/watch?v=ZuCOhEZtaOw&pp=ygUfeml0bmlrIHRoZXJhcGV1dGljIGRhdGEgY29tbW9ucw%3D%3D'},
     {nameIco:'fa-solid fa-face-smile', link:'https://huggingface.co/tdc'},
-    {nameIco:'fa-solid fa-file-pdf', link:'https://www.biorxiv.org/content/10.1101/2024.06.12.598655v2'} 
+    {nameIco:'fa-solid fa-file-pdf', link:'https://zitniklab.hms.harvard.edu/publications/papers/TDC-neurips21-main.pdf'} 
 ]
 
 export const SingleCoolFact = [
@@ -234,7 +234,7 @@ export const FQAInfo = [
 export const DocElementTitle = [
     {
         title:'NeurIPS\'24 AIDrugX Spotlight Paper',
-        link:'https://openreview.net/pdf?id=kL8dlYp6IM'
+        link:'https://zitniklab.hms.harvard.edu/publications/papers/TDC-neurips21-main.pdf'
     },
     {
         title:'NeurIPS\'24 AIDrugX Poster',
