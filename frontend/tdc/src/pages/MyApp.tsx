@@ -16,7 +16,7 @@ const Home: React.FC = () => {
     <>
       {/* Head component for metadata */}
       <Head>
-        <meta property="og:title" content="The Commons TDC-2" />
+        <meta property="og:title" content="The Commons PyTDC" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tdcommons.ai" />
         {/* Uncomment and provide a valid image URL if needed */}

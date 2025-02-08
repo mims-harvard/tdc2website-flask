@@ -238,11 +238,20 @@ class TDC2Homepage(Resource):
 
     def get(self):
         return make_response(render_template("/MyApp.html"), 200, {'Content-Type': 'text/html'})
+
+class LegacyHome(Resource):
+    def get(self):
+        publications.sort(key=lambda x: (-x["year"], -x["month"]))
+        args = {
+            "publications": publications
+        }
+        return make_response(render_template("/index.html", **args), 200, {'Content-Type': 'text/html'})
     
     
 api.add_resource(FctOverview, "/fct_overview")
 api.add_resource(FeedbackForm, "/feedback")
 api.add_resource(TDC2Homepage, "/pytdc")
+api.add_resource(LegacyHome, "/home")
     
 
 if __name__ == '__main__':

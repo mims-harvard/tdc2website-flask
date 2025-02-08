@@ -25,7 +25,7 @@ const SecWelcomeArea: React.FC = () => {
         <div className="container h-100">
           <div className="row h-100 align-items-center">
             <div className="col-12 col-lg-12 col-md-12" style={{ textAlign: 'center' }}>
-              <SecWelcomeContent img='/tdc just letters.png' />
+              <SecWelcomeContent />
             </div>
             <div className="col-12 col-lg-6 col-md-12">
               <div className="main-ilustration"></div>

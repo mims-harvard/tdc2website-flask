@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import { 
   VerticalSocial,
   service_single_content,
-  timelineInfo,
   TeamMember,
   PartnersData,
   SingleCoolFact
@@ -16,7 +15,6 @@ import SecAboutUs from './SecAboutUs';
 import SecAboutUsClient from './SecAboutUsClient';
 import SecAboutUsClientPeople from './SecAboutUsClientPeople';
 import SecDemoVideo from './SecDemoVideo';
-import SecOurRoadmap from './SecOurRoadmap';
 import SecOurServices from './SecOurServices';
 import SecPartners from './SecPartners';
 import SecTeam from './SecTeam';
@@ -28,19 +26,18 @@ import {
   HomeDemo1About1,
   HomeDemo1Solution,
   HomeDemo1About1People,
-  HomeDemo1VideoBg4,
 } from '@/utils/allImgs';
 
 const HomeDemo1: React.FC = () => {
   useEffect(() => {
-    handelTitle('TDC2: Multimodal ML Platform for Foundation Models in Therapeutics');
+    handelTitle('PyTDC: A multimodal machine learning training, evaluation, and inference platform for biomedical foundation models');
   }, []);
 
   useEffect(() => {
     // Set the body background image client-side
     if (typeof document !== 'undefined') {
       const body = document.getElementsByTagName('body')[0];
-      if (document.title === 'TDC2: Multimodal ML Platform for Foundation Models in Therapeutics') {
+      if (document.title === 'PyTDC: A multimodal machine learning training, evaluation, and inference platform for biomedical foundation models') {
         body.style.backgroundImage =
           'linear-gradient(180deg,#240044 0,#0f0240 25%,#400959 40%,#0f0240 65%,#0f0240)';
       } else {
@@ -61,18 +58,12 @@ const HomeDemo1: React.FC = () => {
         <SecAboutUs img={HomeDemo1Solution.src} />
         <SecAboutUsClientPeople img={HomeDemo1About1People.src} />
         <div className="clearfix" />
-        <SecDemoVideo img={HomeDemo1VideoBg4.src} />
+        <SecDemoVideo />
         <div className="clearfix" />
         <SecOurServices data={service_single_content} />
-        {/* <SecSubscribe data={SocialListIco} /> */}
-        <SecOurRoadmap data={timelineInfo} />
-        {/* <SecOurFeatures data={ServiceBlock} imgPhone={HomeDemo1ImgPhone.src} Rings={HomeDemo1RingsBg.src} /> */}
-        {/* <SecFAQ_Timeline FQAInfo={FQAInfo} DocElementTitle={DocElementTitle} /> */}
-        {/* <SecDistribution img={HomeDemo1Allocation.src} data={TokenText} /> */}
         <SecTeam data={TeamMember} />
         <SecPartners data={PartnersData} />
       </div>
-      {/* <Footer /> */}
     </>
   );
 };
