@@ -250,7 +250,7 @@ class LegacyHome(Resource):
     
 api.add_resource(FctOverview, "/fct_overview")
 api.add_resource(FeedbackForm, "/feedback")
-api.add_resource(TDC2Homepage, "/tdc2")
+api.add_resource(TDC2Homepage, "/pytdc")
 api.add_resource(LegacyHome, "/home")
     
 
