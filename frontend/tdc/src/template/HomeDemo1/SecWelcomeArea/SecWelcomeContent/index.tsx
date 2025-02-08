@@ -1,16 +1,9 @@
-import Image from 'next/image';
 import React from 'react';
 import { DocElementTitle } from '../../../../data/data-containers/data-HomeDemo1';
 import IcoDocs from './SecFAQ_Timeline/IcoDocs';
 
-type SecWelcomeContentProps = {
-  img: string;
-};
 
-const SecWelcomeContent: React.FC<SecWelcomeContentProps> = ({ img }) => {
-  const handleClick = () => {
-    window.location.href = 'https://tdcommons.ai';
-  };
+const SecWelcomeContent: React.FC = () => {
   return (
     <div className="welcome-content">
       <h1 style={{ color: '#3A9C94', fontFamily: 'sans-serif'}}>PyTDC: Therapeutics Commons</h1>

@@ -5,8 +5,6 @@ import {Logo} from '../../data/data-layout/data-Header';
 
 import {Addshrink , addActiveClass , OpenMenu , moveSmooth} from "../../utils/index"
 
-import Preloader from '../../components/Preloader/index'
-
 const Header = () => {
 
   useEffect(() => {

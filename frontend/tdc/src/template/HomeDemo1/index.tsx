@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import { 
   VerticalSocial,
   service_single_content,
-  timelineInfo,
   TeamMember,
   PartnersData,
   SingleCoolFact
@@ -16,7 +15,6 @@ import SecAboutUs from './SecAboutUs';
 import SecAboutUsClient from './SecAboutUsClient';
 import SecAboutUsClientPeople from './SecAboutUsClientPeople';
 import SecDemoVideo from './SecDemoVideo';
-import SecOurRoadmap from './SecOurRoadmap';
 import SecOurServices from './SecOurServices';
 import SecPartners from './SecPartners';
 import SecTeam from './SecTeam';
@@ -28,7 +26,6 @@ import {
   HomeDemo1About1,
   HomeDemo1Solution,
   HomeDemo1About1People,
-  HomeDemo1VideoBg4,
 } from '@/utils/allImgs';
 
 const HomeDemo1: React.FC = () => {
@@ -61,7 +58,7 @@ const HomeDemo1: React.FC = () => {
         <SecAboutUs img={HomeDemo1Solution.src} />
         <SecAboutUsClientPeople img={HomeDemo1About1People.src} />
         <div className="clearfix" />
-        <SecDemoVideo img={HomeDemo1VideoBg4.src} />
+        <SecDemoVideo />
         <div className="clearfix" />
         <SecOurServices data={service_single_content} />
         <SecTeam data={TeamMember} />

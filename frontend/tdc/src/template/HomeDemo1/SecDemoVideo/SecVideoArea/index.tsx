@@ -1,11 +1,7 @@
-import Image from 'next/image';
 import React from 'react';
 
-type SecVideoAreaProps = {
-  img: string;
-};
 
-const SecVideoArea: React.FC<SecVideoAreaProps> = ({ img }) => {
+const SecVideoArea: React.FC = () => {
   return (
     <div
       className="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12"
