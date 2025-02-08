@@ -62,7 +62,7 @@ export const service_single_content = [
     },
     {
         title:'TDC.ProteinPeptide',
-        content:"Capturing the dynamic nature of protein-peptide interactions requires advanced sampling techniques and computational resources, making the prediction of binding affinities more complex (Antes et al., 2014). TDC-2 provides benchmarks integrating newly discovered peptides to test ML models on their ability to generalize to cutting-edge peptidomimetics.",
+        content:"Capturing the dynamic nature of protein-peptide interactions requires advanced sampling techniques and computational resources, making the prediction of binding affinities more complex (Antes et al., 2014). We provide benchmarks integrating newly discovered peptides to test ML models on their ability to generalize to cutting-edge peptidomimetics.",
         link:'https://tdcommons.ai/multi_pred_tasks/proteinpeptide'
     },
     {

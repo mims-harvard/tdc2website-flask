@@ -30,14 +30,14 @@ import {
 
 const HomeDemo1: React.FC = () => {
   useEffect(() => {
-    handelTitle('TDC2: Multimodal ML Platform for Foundation Models in Therapeutics');
+    handelTitle('PyTDC: A multimodal machine learning training, evaluation, and inference platform for biomedical foundation models');
   }, []);
 
   useEffect(() => {
     // Set the body background image client-side
     if (typeof document !== 'undefined') {
       const body = document.getElementsByTagName('body')[0];
-      if (document.title === 'TDC2: Multimodal ML Platform for Foundation Models in Therapeutics') {
+      if (document.title === 'PyTDC: A multimodal machine learning training, evaluation, and inference platform for biomedical foundation models') {
         body.style.backgroundImage =
           'linear-gradient(180deg,#240044 0,#0f0240 25%,#400959 40%,#0f0240 65%,#0f0240)';
       } else {

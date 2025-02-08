@@ -19,7 +19,7 @@ const SecTeam: React.FC<SecTeamProps> = () => {
         <div className="row">
           <div className="col-12">
             <SectionHeading
-              title="TDC-2 Team"
+              title="PyTDC Team"
               text="To be disclosed"
               color1="white"
               color2="white"
