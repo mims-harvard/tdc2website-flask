@@ -549,7 +549,7 @@ _LEADERBOARDS = {
             ]
         ],
         ["Dataset", "Unit", "Size", "Task", "Metric", "Dataset Split"],
-        ["TDC.HIA_Hou ", "%", "578", "Regression", "AUROC", "Scaffold"]
+        ["TDC.HIA_Hou ", "%", "578", "Binary", "AUROC", "Scaffold"]
     ],
     "Pgp_Broccatelli": [
         "old",
