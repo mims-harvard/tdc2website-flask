@@ -2468,6 +2468,10 @@ _LEADERBOARDS = {
         "desc",
         [
             [
+                "IM-DTI", "Shasha Tao", " taoshasha@wust.edu.cn", "https://github.com/kuku-tss/IM-DTI-", 
+                "https://github.com/kuku-tss/IM-dti/blob/master/Integrated%20Model%20for%20Drug%E2%80%93Target%20Interaction%20Prediction%20Using%20Multiple%20Protein%20Language%20Embeddings.pdf", 0.596
+            ],
+            [
                 "Otter-Knowledge-Ensemble", "Hoang Thanh Lam", "t.l.hoang@ie.ibm.com", "https://github.com/IBM/otter-knowledge", 
                 "https://arxiv.org/abs/2306.12802", 0.588
             ],
@@ -2505,6 +2509,10 @@ _LEADERBOARDS = {
             ],
         ],
         [
+            [
+                0.596,
+                0.000
+            ],
             [
                 0.588,
                 0.002
