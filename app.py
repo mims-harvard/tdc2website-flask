@@ -1,6 +1,8 @@
 # from data.single_pred_tasks.tasks import _TASKS
 import backend.task_datasets as data
 from backend.metadata.publications import _PUBLICATIONS as publications
+from backend.data.loader.navigation import get_navigation_data
+from backend.data.loader.text import get_callouts_data
 import benchmark.groups as benchmark_groups
 import benchmark.leaderboards as benchmark_leaderboards
 
@@ -8,15 +10,22 @@ from flask import Flask, flash, send_from_directory, redirect, render_template, 
 from flask_restful import Api, Resource
 
 app = Flask(__name__)
+app.url_map.strict_slashes = False
 api = Api(app)
+
+navigation_data = get_navigation_data()
+callouts_data = get_callouts_data()
 
 @app.route('/')
 def index():
     publications.sort(key=lambda x: (-x["year"], -x["month"]))
     args = {
-        "publications": publications
+        "publications": publications,
+        "navbar": navigation_data,
+        "current_url": request.path,
+        "callouts": callouts_data
     }
-    return render_template('index.html', **args)
+    return render_template('index_template.html', **args)
 
 @app.route('/start', strict_slashes=False)
 def start():
@@ -144,9 +153,9 @@ def generation_tasks_data(task):
     else:
         return redirect("/generation_tasks/overview")
 
-# @app.route("/fct_overview", strict_slashes=False)
-# def fct_overview():
-#     return render_template("/fct_overview.html")
+@app.route("/fct_overview", strict_slashes=False)
+def fct_overview():
+    return render_template("/fct_overview.html")
 
 @app.route("/functions/<section>", strict_slashes=False)
 def function_page(section):
@@ -248,7 +257,6 @@ class LegacyHome(Resource):
         return make_response(render_template("/index.html", **args), 200, {'Content-Type': 'text/html'})
     
     
-api.add_resource(FctOverview, "/fct_overview")
 api.add_resource(FeedbackForm, "/feedback")
 api.add_resource(TDC2Homepage, "/pytdc")
 api.add_resource(LegacyHome, "/home")
