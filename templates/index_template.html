@@ -5,24 +5,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Therapeutics Data Commons - TDC</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
     <link rel="shortcut icon" type="image/png"
            href="{{ url_for('static', filename='images/favicon.png') }}" 
     />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Therapeutics Data Commons | TDC</title>
-<meta property="og:title" content="Therapeutics Data Commons" />
+<title>{{ title }}</title>
+<meta property="og:title" content="{{ title }}" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Artificial intelligence foundation for therapeutic science" />
-<meta property="og:description" content="Artificial intelligence foundation for therapeutic science" />
+<meta name="description" content="{{ title }}" />
+<meta property="og:description" content="{{ title }}" />
 <meta property="og:site_name" content="TDC" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Therapeutics Data Commons" />
+<meta property="twitter:title" content="{{ title }}" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Artificial intelligence foundation for therapeutic science","headline":"Therapeutics Data Commons","name":"TDC","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Artificial intelligence foundation for therapeutic science","headline":"{{ title }}","name":"TDC","url":"http://localhost:4000/{{ endpt }}"}</script>
 <!-- End Jekyll SEO tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-183522810-1"></script>
 <script>
