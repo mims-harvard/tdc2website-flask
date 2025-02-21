@@ -1,6 +1,8 @@
 # from data.single_pred_tasks.tasks import _TASKS
 import backend.task_datasets as data
 from backend.metadata.publications import _PUBLICATIONS as publications
+from backend.data.loader.navigation import get_navigation_data
+from backend.data.loader.content import get_callouts_data, get_team_data
 import benchmark.groups as benchmark_groups
 import benchmark.leaderboards as benchmark_leaderboards
 
@@ -8,33 +10,69 @@ from flask import Flask, flash, send_from_directory, redirect, render_template, 
 from flask_restful import Api, Resource
 
 app = Flask(__name__)
+app.url_map.strict_slashes = False
 api = Api(app)
+
+navigation_data = get_navigation_data()
+callouts_data = get_callouts_data()
+team_data = get_team_data()
+
+class TDCRequest(dict):
+
+    def __init__(self,
+                 title: str,
+                 description: str,
+                 endpt: str,
+                 navbar: object,
+                 current_url: str,
+                 **kwargs):
+        super().__init__(**kwargs)
+        self["title"] = title
+        self["description"] = description
+        self["endpt"] = endpt
+        self["navbar"] = navbar
+        self["current_url"] = current_url
 
 @app.route('/')
 def index():
     publications.sort(key=lambda x: (-x["year"], -x["month"]))
     args = {
-        "publications": publications
+        "publications": publications,
+        "navbar": navigation_data,
+        "current_url": request.path,
+        "callouts": callouts_data,
+        "title": "TDC2: A Community Platform for AI-driven Drug Discovery and Development",
+        "description": "TDC2 is a community platform for AI-driven drug discovery and development that provides a comprehensive overview of the field, including models, datasets, tasks, and leaderboards.",
+        "endpt": ""
     }
-    return render_template('index.html', **args)
+    args = TDCRequest(**args)
+    return render_template('index_template.html', **args)
 
-@app.route('/start', strict_slashes=False)
+@app.route('/start')
 def start():
     return render_template('start.html')
 
-@app.route('/overview', strict_slashes=False)
+@app.route('/overview')
 def overview():
     return render_template('overview/index.html')
 
-@app.route("/news", strict_slashes=False)
+@app.route("/news")
 def news():
     return render_template('news.html')
 
-@app.route("/team", strict_slashes=False)
+@app.route("/team")
 def team():
-    return render_template('team.html')
+    args = TDCRequest(
+        title="Team",
+        description="Meet the TDC2 team.",
+        endpt="team",
+        navbar=navigation_data,
+        current_url=request.path,
+        team = team_data,
+        )
+    return render_template('team.html', **args)
 
-@app.route('/single_pred_tasks/overview', strict_slashes=False)
+@app.route('/single_pred_tasks/overview')
 def single_pred_tasks():
     vars = {
         "items": data.single_pred_tasks.tasks,
@@ -42,7 +80,7 @@ def single_pred_tasks():
     }
     return render_template('single_pred_tasks/index.html', **vars)
 
-@app.route("/single_pred_tasks/<task>", strict_slashes=False)
+@app.route("/single_pred_tasks/<task>")
 def single_pred_tasks_data(task):
     if task == "adme":
         return render_template("single_pred_tasks/adme.html")
@@ -70,7 +108,7 @@ def single_pred_tasks_data(task):
         return render_template("single_pred_tasks/task.html", **args)
     return redirect("/single_pred_tasks/overview")
 
-@app.route("/multi_pred_tasks/overview", strict_slashes=False)
+@app.route("/multi_pred_tasks/overview")
 def multi_pred_tasks():
     vars = {
         "items": data.multi_pred_tasks.tasks,
@@ -78,7 +116,7 @@ def multi_pred_tasks():
     }
     return render_template("multi_pred_tasks/index.html", **vars)
 
-@app.route("/multi_pred_tasks/<task>", strict_slashes=False)
+@app.route("/multi_pred_tasks/<task>")
 def multi_pred_task_data(task):
     if task == "catalyst":
         return render_template("multi_pred_tasks/catalyst.html")
@@ -127,11 +165,11 @@ def multi_pred_task_data(task):
     else:
         return redirect("/multi_pred_tasks/overview")
         
-@app.route("/generation_tasks/overview", strict_slashes=False)
+@app.route("/generation_tasks/overview")
 def generation_tasks():
     return render_template("generation_tasks/index.html")
 
-@app.route("/generation_tasks/<task>", strict_slashes=False)
+@app.route("/generation_tasks/<task>")
 def generation_tasks_data(task):
     if task == "molgen":
         return render_template("generation_tasks/molgen.html")
@@ -144,11 +182,11 @@ def generation_tasks_data(task):
     else:
         return redirect("/generation_tasks/overview")
 
-# @app.route("/fct_overview", strict_slashes=False)
-# def fct_overview():
-#     return render_template("/fct_overview.html")
+@app.route("/fct_overview")
+def fct_overview():
+    return render_template("/fct_overview.html")
 
-@app.route("/functions/<section>", strict_slashes=False)
+@app.route("/functions/<section>")
 def function_page(section):
     if section == "oracles":
         return render_template("/functions/oracles.html")
@@ -161,15 +199,15 @@ def function_page(section):
     else:
         return redirect("/fct_overview")
 
-@app.route("/benchmark", strict_slashes=False)
+@app.route("/benchmark")
 def benchmark():
     return render_template("/benchmark/index.html")
 
-@app.route("/benchmark/overview", strict_slashes=False)
+@app.route("/benchmark/overview")
 def benchmark_overview():
     return render_template("/benchmark/index.html")
 
-@app.route("/benchmark/<group>/<leaderboard>", strict_slashes=False)
+@app.route("/benchmark/<group>/<leaderboard>")
 def benchmark_leaderboard_overview(group, leaderboard):
     leads = benchmark_groups._GROUP_MEMBERSHIP[group]
     if leaderboard == "overview":
@@ -248,7 +286,6 @@ class LegacyHome(Resource):
         return make_response(render_template("/index.html", **args), 200, {'Content-Type': 'text/html'})
     
     
-api.add_resource(FctOverview, "/fct_overview")
 api.add_resource(FeedbackForm, "/feedback")
 api.add_resource(TDC2Homepage, "/pytdc")
 api.add_resource(LegacyHome, "/home")
