@@ -222,7 +222,7 @@ export const FQAInfo = [
 export const DocElementTitle = [
     {
         title:'NeurIPS\'24 AIDrugX Spotlight Paper',
-        link:'https://zitniklab.hms.harvard.edu/publications/papers/TDC-neurips21-main.pdf'
+        link:'https://openreview.net/pdf?id=kL8dlYp6IM'
     },
     {
         title:'NeurIPS\'24 AIDrugX Poster',
