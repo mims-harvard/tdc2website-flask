@@ -2472,8 +2472,20 @@ _LEADERBOARDS = {
                 "https://github.com/kuku-tss/IM-dti/blob/master/Integrated%20Model%20for%20Drug%E2%80%93Target%20Interaction%20Prediction%20Using%20Multiple%20Protein%20Language%20Embeddings.pdf", 0.596
             ],
             [
+                "SPRINT-ProtBert", "Andrew McNutt", "anm329@pitt.edu", "https://github.com/abhinadduri/panspecies-dti", 
+                "https://arxiv.org/abs/2411.15418", 0.593
+            ],
+            [
+                "SPRINT", "Andrew McNutt", "anm329@pitt.edu", "https://github.com/abhinadduri/panspecies-dti", 
+                "https://arxiv.org/abs/2411.15418", 0.588
+            ],
+            [
                 "Otter-Knowledge-Ensemble", "Hoang Thanh Lam", "t.l.hoang@ie.ibm.com", "https://github.com/IBM/otter-knowledge", 
                 "https://arxiv.org/abs/2306.12802", 0.588
+            ],
+            [
+                "SPRINT-ESM2", "Andrew McNutt", "anm329@pitt.edu", "https://github.com/abhinadduri/panspecies-dti", 
+                "https://arxiv.org/abs/2411.15418", 0.582
             ],
             [
                 "OrangeBalls-ProtBertMorgan", "Samuel Sledzieski", "samsl@mit.edu", "https://github.com/samsledje/MLSB2021_PLM_DTI/blob/main/train_plm_dti-TDC-DG.py",
