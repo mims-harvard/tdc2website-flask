@@ -281,9 +281,16 @@ class LegacyHome(Resource):
     def get(self):
         publications.sort(key=lambda x: (-x["year"], -x["month"]))
         args = {
-            "publications": publications
+            "publications": publications,
+            "navbar": navigation_data,
+            "current_url": request.path,
+            "callouts": callouts_data,
+            "title": "TDC2: A Community Platform for AI-driven Drug Discovery and Development",
+            "description": "TDC2 is a community platform for AI-driven drug discovery and development that provides a comprehensive overview of the field, including models, datasets, tasks, and leaderboards.",
+            "endpt": ""
         }
-        return make_response(render_template("/index.html", **args), 200, {'Content-Type': 'text/html'})
+        args = TDCRequest(**args)
+        return make_response(render_template("/index_template.html", **args), 200, {'Content-Type': 'text/html'})
     
     
 api.add_resource(FeedbackForm, "/feedback")
