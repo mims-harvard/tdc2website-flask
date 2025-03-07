@@ -2394,11 +2394,27 @@ _LEADERBOARDS = {
                 "MLP", "Yusuf Roohani", "yroohani@stanford.edu", "https://github.com/mims-harvard/TDC/tree/master/examples/multi_pred/drugcombo",
                 "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2509-3", "7,141,297", 4.453
             ],
+            [
+                'Innoplexus DC GNN', 'Ketan Sarode', 'ketan.sarode@ics.innoplexus.com', 'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/tree/main',
+                'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/blob/main/report/main.pdf', '17,533,553', 4.422
+            ],
+            [
+                'Innoplexus DC LM', 'Ketan Sarode', 'ketan.sarode@ics.innoplexus.com', 'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/tree/main',
+                'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/blob/main/report/main.pdf', '17,566,801', 4.108
+            ],
         ],
         [
             [
                 4.453,
                 0.002
+            ],
+            [
+                4.422, 
+                0.051
+            ],
+            [
+                4.108, 
+                0.013
             ]
         ],
         ["Label", "Size", "Task", "Metric", "Dataset Split"],
@@ -2413,12 +2429,26 @@ _LEADERBOARDS = {
                 "MLP", "Yusuf Roohani", "yroohani@stanford.edu", "https://github.com/mims-harvard/TDC/tree/master/examples/multi_pred/drugcombo",
                 "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2509-3", "7,141,297", 9.184
             ],
+            ['Innoplexus DC GNN', 'Ketan Sarode', 'ketan.sarode@ics.innoplexus.com', 'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/tree/main',
+                'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/blob/main/report/main.pdf', '17,533,553', 8.437
+            ],
+            ['Innoplexus DC LM', 'Ketan Sarode', 'ketan.sarode@ics.innoplexus.com', 'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/tree/main',
+                'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/blob/main/report/main.pdf', '17,566,801', 7.94
+            ],
         ],
         [
             [
                 9.184,
                 0.001
             ],
+            [
+                8.437, 
+                0.125
+            ],
+            [
+                7.94, 
+                0.023
+            ]
         ],
         ["Label", "Size", "Task", "Metric", "Dataset Split"],
         ["TDC.DrugComb_Loewe", "297,098", "Regression", "MAE", "Combination"],
@@ -2432,12 +2462,28 @@ _LEADERBOARDS = {
                 "MLP", "Yusuf Roohani", "yroohani@stanford","https://github.com/mims-harvard/TDC/tree/master/examples/multi_pred/drugcombo",
                 "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2509-3", "7,141,297", 4.560 
             ],
+            [
+                'Innoplexus DC GNN', 'Ketan Sarode', 'ketan.sarode@ics.innoplexus.com', 'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/tree/main',
+                'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/blob/main/report/main.pdf', '17,533,553', 4.533
+            ],
+            [
+                'Innoplexus DC LM', 'Ketan Sarode', 'ketan.sarode@ics.innoplexus.com', 'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/tree/main',
+                'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/blob/main/report/main.pdf', '17,566,801', 4.256
+            ],
         ],
         [
             [
                 4.560,
                 0.000
             ],
+            [
+                4.533, 
+                0.036
+            ],
+            [
+                4.256, 
+                0.01
+            ]
         ],
         ["Label", "Size", "Task", "Metric", "Dataset Split"],
         ["TDC.DrugComb_Bliss", "297,098", "Regression", "MAE", "Combination"],
@@ -2451,12 +2497,28 @@ _LEADERBOARDS = {
                 "MLP", "Yusuf Roohani", "yroohani@stanford","https://github.com/mims-harvard/TDC/tree/master/examples/multi_pred/drugcombo",
                 "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2509-3", "7,141,297", 4.027  
             ],
+            [
+                'Innoplexus DC GNN', 'Ketan Sarode', 'ketan.sarode@ics.innoplexus.com', 'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/tree/main',
+                'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/blob/main/report/main.pdf', '17,533,553', 3.799
+            ],
+            [
+                'Innoplexus DC LM', 'Ketan Sarode', 'ketan.sarode@ics.innoplexus.com', 'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/tree/main',
+                'https://github.com/Innoplexus-opensource/ics-drug-combination-tdc/blob/main/report/main.pdf', '17,566,801', 3.673
+            ],
         ],
         [
             [
                 4.027,
                 0.003
             ],
+            [
+                3.799, 
+                0.038
+            ],
+            [
+                3.673, 
+                0.019
+            ]
         ],
         ["Label", "Size", "Task", "Metric", "Dataset Split"],
         ["TDC.DrugComb_ZIP", "297,098", "Regression", "MAE", "Combination"],
